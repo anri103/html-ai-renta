@@ -1,0 +1,21 @@
+@use '../variables' as *;
+@use '../coreui' as *;
+
+// =========================================
+/* SECTIONS */
+// =========================================
+.section {
+    position: relative;
+    padding: 50px 0;
+
+    &__header {
+        margin-bottom: 46px;
+    }
+    
+    &__anchor {
+        position: absolute;
+        top: -120px;
+        width: 100%;
+        height: 10px;
+    }
+}

@@ -1,0 +1,62 @@
+@use '../variables' as *;
+@use '../coreui' as *;
+
+// =========================================
+/* TYPOGRAPHY */
+// =========================================
+.ff-main { font-family: $theme-ff-main; }
+.ff-title { font-family: $theme-ff-title; }
+
+// Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: $theme-ff-title;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+// Font Size
+// h1, .h1 { font-size: var(--fs-h1); }
+// h2, .h2 { font-size: var(--fs-h2); }
+// h3, .h3 { font-size: var(--fs-h3); }
+// h4, .h4 { font-size: var(--fs-h4); }
+// h5, .h5 { font-size: var(--fs-h5); }
+// h6, .h6 { font-size: var(--fs-h6); }
+// .fs-body { font-size: var(--cui-body-font-size); }
+// .fs-1 { font-size: var(--fs-h1) !important; }
+// .fs-2 { font-size: var(--fs-h2) !important; }
+// .fs-3 { font-size: var(--fs-h3) !important; }
+// .fs-4 { font-size: var(--fs-h4) !important; }
+// .fs-5 { font-size: var(--fs-h5) !important; }
+// .fs-6 { font-size: var(--fs-h6) !important; }
+// .fs-small { font-size: var(--fs-small); }
+// .fs-x-small { font-size: var(--fs-x-small); }
+
+// Font Weight
+.fw-300 { font-weight: 300 !important; }
+.fw-400 { font-weight: 400 !important; }
+.fw-500 { font-weight: 500 !important; }
+.fw-600 { font-weight: 600 !important; }
+.fw-700 { font-weight: 700 !important; }
+.fw-800 { font-weight: 800 !important; }
+
+// text color
+.text-gray-70 { color: #767B89 !important; }
+.text-primary-40 { color: #CFD6EE !important; }
+
+// text opacity
+.text-opacity-20 { --cui-text-opacity: 0.2; }
+.text-opacity-50 { --cui-text-opacity: 0.5; }
+.text-opacity-60 { --cui-text-opacity: 0.6; }
+.text-opacity-80 { --cui-text-opacity: 0.8; }
+
+// @include media-breakpoint-up(lg) {
+//     .fs-1 { font-size: var(--fs-h1) !important; }
+//     .fs-2 { font-size: var(--fs-h2) !important; }
+//     .fs-3 { font-size: var(--fs-h3) !important; }
+//     .fs-4 { font-size: var(--fs-h4) !important; }
+//     .fs-5 { font-size: var(--fs-h5) !important; }
+//     .fs-6 { font-size: var(--fs-h6) !important; }
+//     .fs-small { font-size: var(--fs-small); }
+//     .fs-x-small { font-size: var(--fs-x-small); }
+// }

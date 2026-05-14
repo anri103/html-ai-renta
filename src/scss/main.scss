@@ -1,0 +1,77 @@
+// =========================================
+// AI RENTA - MAIN SCSS FILE
+// =========================================
+// Автор: Andrew G
+// Версия: 1.00
+// =========================================
+
+// Import CoreUI PRO
+@use "@coreui/coreui-pro/scss/coreui" with (
+    // colors
+    $primary: #4251F7,
+    $secondary: #F74251,
+    $white: #F8FEFF,
+    $black: #100102,
+    $success: #006311,
+
+    // body settings
+    $body-color: #6A6367,
+    $body-bg: #ECECEC,
+
+    // fonts
+    $font-family-base: ("Golos Text", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"),
+    $line-height-base: 1.4,
+    // font-sizes
+    $h1-font-size: 4rem,
+    $h2-font-size: 3rem,
+    $h3-font-size: 2rem,
+    $h4-font-size: 1.75rem,
+    $h5-font-size: 1.5rem,
+
+    // borders
+    $border-width: 1px,
+    $border-color: #E4E4E5,
+    $border-radius: 16px,
+    $border-radius-sm: 8px,
+    $border-radius-lg: 20px,
+    $border-radius-xl: 22px,
+    $border-radius-2xl: 24px,
+    $border-radius-pill: 50px,
+
+    // breakpoints
+    $grid-breakpoints: (
+        xs: 0,
+        sm: 640px,
+        md: 768px,
+        lg: 960px,
+        xl: 1200px,
+        xxl: 1600px
+    ),
+
+    // containers
+    $container-max-widths: (
+        sm: 610px,
+        md: 728px,
+        lg: 920px,
+        xl: 1160px,
+        xxl: 1540px
+    ),
+);
+
+// Import Theme Variables
+@use 'variables';
+
+// Import Theme Components
+@use 'components/root';
+@use 'components/global';
+@use 'components/utils';
+@use 'components/grid';
+@use 'components/typography';
+@use 'components/forms';
+@use 'components/buttons';
+@use 'components/layout-header';
+@use 'components/layout-footer';
+@use 'components/cards';
+@use 'components/modals';
+@use 'components/swiper';
+@use 'components/sections';

@@ -1,0 +1,15 @@
+@use '../variables' as *;
+@use '../coreui' as *;
+
+// =========================================
+/* GLOBAL */
+// =========================================
+html { scroll-behavior: smooth; }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a { text-decoration: none; }

@@ -1,0 +1,9 @@
+@use '../variables' as *;
+@use '../coreui' as *;
+
+// =========================================
+/* SWIPER */
+// =========================================
+.swiper:has(.swiper-pagination) {
+    padding-bottom: 48px;
+}

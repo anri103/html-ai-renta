@@ -1,6 +1,95 @@
 // theme fonts
-$theme-ff-main: 'Golos Text', sans-serif;
-$theme-ff-title: 'Golos Text', sans-serif;
+$ff-main: 'Golos Text', sans-serif;
+$ff-title: 'Golos Text', sans-serif;
 
-// theme colors hex
-$theme-color-primary-hex: #444;
+$rounded-1: 0.25rem;
+$rounded-2: 0.5rem;
+$rounded-3: 0.75rem;
+$rounded-4: 1rem;
+$rounded-5: 1.25rem;
+
+// text HEX
+$hex-white:   #ffffff;
+$hex-gray-30: #cbd5e1;
+$hex-gray-40: #94a3b8;
+$hex-gray-50: #64748b;
+$hex-gray-60: #475569;
+$hex-gray-70: #334155;
+$hex-primary: #0B1226;
+
+// text RGB
+$rgb-white:   255, 255, 255;
+$rgb-gray-30: 203, 213, 225;
+$rgb-gray-40: 148, 163, 184;
+$rgb-gray-50: 100, 116, 139;
+$rgb-gray-60: 71, 85, 105;
+$rgb-gray-70: 51, 65, 85;
+$rgb-primary: 11, 18, 38;
+
+// brand HEX
+$hex-brand-50:  #f2f6ff;
+$hex-brand-100: #e6eeff;
+$hex-brand-200: #c7d7ff;
+$hex-brand-300: #9fb8ff;
+$hex-brand-400: #6f94ff;
+$hex-brand-500: #3771fd;
+$hex-brand-600: #2f63e6;
+$hex-brand-700: #2f63e6;
+$hex-brand-800: #2046aa;
+$hex-brand-900: #18347f;
+
+// neutral HEX
+$hex-neutral-50:  #f8fafc;
+$hex-neutral-100: #f1f5f9;
+$hex-neutral-200: #e2e8f0;
+$hex-neutral-300: #cbd5e1;
+$hex-neutral-400: #94a3b8;
+$hex-neutral-500: #65758c;
+$hex-neutral-600: #475569;
+$hex-neutral-700: #324154;
+$hex-neutral-800: #1e293b;
+$hex-neutral-900: #0f1729;
+
+// success HEX
+$hex-success-50:  #ebfcf4;
+$hex-success-100: #d2fae5;
+$hex-success-200: #a7f2cf;
+$hex-success-300: #6fe8b8;
+$hex-success-400: #35d499;
+$hex-success-500: #15a349;
+$hex-success-600: #14803c;
+$hex-success-700: #166635;
+$hex-success-800: #14542e;
+$hex-success-900: #0f3d21;
+
+// warning HEX
+$hex-warning-50:  #fffbeb;
+$hex-warning-100: #fff4c7;
+$hex-warning-200: #fce68b;
+$hex-warning-300: #fcd44e;
+$hex-warning-400: #fabd23;
+$hex-warning-500: #f59f0a;
+$hex-warning-600: #d97707;
+$hex-warning-700: #b55409;
+$hex-warning-800: #91410f;
+$hex-warning-900: #78350e;
+
+// error HEX
+$hex-error-50:  #fff2f2;
+$hex-error-100: #ffe3e3;
+$hex-error-200: #ffcccc;
+$hex-error-300: #fca4a4;
+$hex-error-400: #f77272;
+$hex-error-500: #f04343;
+$hex-error-600: #db2525;
+$hex-error-700: #ba1c1c;
+$hex-error-800: #991c1c;
+$hex-error-900: #801d1d;
+
+// bg HEX
+$bg-white:    #ffffff;
+$bg-neutral:  $hex-neutral-50;
+$bg-brand:    $hex-brand-50;
+$hex-success: $hex-success-50;
+$hex-warning: $hex-warning-50;
+$hex-error:   $hex-error-50;

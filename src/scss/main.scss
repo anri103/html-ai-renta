@@ -38,15 +38,15 @@
     $border-radius-sm: 0.25rem,
     $border-radius-lg: 0.75rem,
     $border-radius-xl: 1rem,
-    $border-radius-2xl: 2rem,
+    $border-radius-xxl: 1.25rem,
 
     // breakpoints
     $grid-breakpoints: (
         xs: 0,
         sm: 640px,
         md: 768px,
-        lg: 960px,
-        xl: 1200px,
+        lg: 1200px,
+        xl: 1400px,
         xxl: 1600px
     ),
 
@@ -54,8 +54,8 @@
     $container-max-widths: (
         sm: 610px,
         md: 728px,
-        lg: 920px,
-        xl: 1160px,
+        lg: 1160px,
+        xl: 1340px,
         xxl: 1540px
     ),
 );

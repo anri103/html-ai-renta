@@ -6,25 +6,42 @@
 // =========================================
 .form-control:focus,
 .form-select:focus,
+.form-check-input:focus,
 .form-password .form-password-action:focus {
     box-shadow: none !important;
 }
 
+// form-control
 .form-control {
     padding: 0.625rem;
     border-color: $bg-white;
     background-color: $bg-white;
+
+    &:focus {
+        border-color: $brand-500;
+        background-color: $bg-white;
+    }
 }
 
-.form-control:focus {
-    border-color: $brand-500;
-    background-color: $bg-white;
+// form-check-input
+.form-check {
+    font-size: 20px;
 }
 
-.input-group-text {
-    padding: 0.625rem;
+.form-check-input {
+    --cui-border-width: 1px;
+    font-size: 20px;
 }
 
+.form-check-input[type=checkbox] {
+    border-radius: $rounded-1;
+}
+
+.form-check-label {
+    font-size: var(--cui-body-font-size);
+}
+
+// form-password
 .form-password .form-password-action {
     inset-inline-end: 0.75rem;
     display: flex;
@@ -33,18 +50,29 @@
     padding: 0;
 }
 
+// form-custom-label
+.form-custom-label {
+    position: relative;
+    display: block;
+    padding: 0.75rem;
+    border: var(--cui-border-width) solid var(--cui-border-color);
+    border-radius: var(--cui-border-radius);
+    border-color: $bg-white;
+    background-color: $bg-white;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:has(input:checked[type="radio"]) {
+        border-color: $brand-500;
+        background-color: $bg-white;
+    }
+}
+
 // validation
 .was-validated .form-control:valid,
 .form-control.is-valid,
 .was-validated .form-control:invalid,
 .form-control.is-invalid {
     background-image: none;
-}
-
-.is-error .form-control {
-    color: $error-700;
-    border-color: $error-400;
-    background-color: $bg-error;
 }
 
 .form-feedback {
@@ -58,10 +86,7 @@
     z-index: 1;
 }
 
-.is-error .feedback-error {
-    display: block;
-}
-
+// feedback-error
 .feedback-error {
     color: $error-700;
     border-radius: $border-radius-sm;
@@ -69,20 +94,40 @@
     box-shadow: 0px 0px 2px 0px rgba(30, 41, 59, 0.08), 0px 2px 4px 0px rgba(30, 41, 59, 0.12);
 }
 
-.is-warning .form-control {
-    color: $warning-800;
-    border-color: $warning-400;
-    background-color: $bg-warning;
+.is-error {
+    .feedback-error {
+        display: block;
+    }
+
+    .form-control {
+        color: $error-700;
+        border-color: $error-400;
+        background-color: $bg-error;
+    }
+
+    .form-custom-label {
+        border-color: $error-400;
+        background-color: $bg-error;
+    }
 }
 
-.is-warning .feedback-warning {
-    display: block;
-}
-
+// feedback-warning
 .feedback-warning {
     padding: 12px;
     border: 2px solid $warning-400;
     border-radius: $border-radius;
     background-color: $bg-warning;
     z-index: 5;
+}
+
+.is-warning {
+    .feedback-warning {
+        display: block;
+    }
+
+    .form-control {
+        color: $warning-800;
+        border-color: $warning-400;
+        background-color: $bg-warning;
+    }
 }

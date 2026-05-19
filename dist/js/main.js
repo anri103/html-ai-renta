@@ -1,3 +1,21 @@
+// Preloader
+window.addEventListener("load", function () {
+    const preloader = document.querySelector(".preloader");
+
+    if (!preloader) return;
+
+    preloader.classList.add("loaded");
+
+    setTimeout(() => {
+        preloader.style.transition = "opacity 0.4s ease";
+        preloader.style.opacity = "0";
+
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 400);
+    }, 600);
+});
+
 // Валидация форм
 document.querySelectorAll('form.needs-validation').forEach(form => {
 
@@ -58,7 +76,7 @@ document.querySelectorAll('form.needs-validation').forEach(form => {
     });
 });
 
-// красивый переключатель с плавающим фоном
+// Красивый переключатель с плавающим фоном
 document.querySelectorAll('.tab-group').forEach(group => {
     const slider = group.querySelector('.tab-slider');
     const buttons = group.querySelectorAll('.tab-btn');
@@ -90,7 +108,7 @@ document.querySelectorAll('.tab-group').forEach(group => {
     });
 });
 
-// кнопка с таймером в модалках
+// Кнопка с таймером в модалках
 document.querySelectorAll('[data-bs-target], [data-coreui-target]').forEach(trigger => {
     const targetSelector = trigger.dataset.bsTarget || trigger.dataset.coreuiTarget;
     if (!targetSelector) return;

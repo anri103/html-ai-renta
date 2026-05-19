@@ -21,9 +21,44 @@
                     <!-- form sign-up -->
                     <div>
                         <form class="needs-validation" novalidate>
+                            <!-- form-custom-labels -->
+                            <div class="mb-20px">
+                                <div class="position-relative d-flex flex-column gap-2 has-validation">
+                                    <!-- form-custom-label -->
+                                    <div class="position-relative">
+                                        <label class="form-custom-label d-flex gap-2">
+                                            <input class="form-check-input flex-shrink-0" type="radio" name="radioSignUp" id="radioSignUp1" required>
+                                            <div>
+                                                <div class="h5 mb-1"><span class="fw-600">Я продавец</span> арендного бизнеса:</div>
+                                                <ul class="list-primary-bullets text-gray-60 mb-0">
+                                                    <li>Создам экономический паспорт объекта</li>
+                                                    <li>Пойму ликвидность актива</li>
+                                                    <li>Усилю цену аргументами ИИ</li>
+                                                </ul>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- form-custom-label -->
+                                    <div class="position-relative">
+                                        <label class="form-custom-label d-flex gap-2">
+                                            <input class="form-check-input flex-shrink-0" type="radio" name="radioSignUp" id="radioSignUp2" required>
+                                            <div>
+                                                <div class="h5 mb-1"><span class="fw-600">Я инвестор</span> в арендный бизнес:</div>
+                                                <ul class="list-primary-bullets text-gray-60 mb-0">
+                                                    <li>Проверю доходность и риски</li>
+                                                    <li>Оценю потенциал роста стоимости</li>
+                                                    <li>Получу позицию для торга от ИИ</li>
+                                                </ul>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <!-- validation feedbacks -->
+                                    <div class="form-feedback feedback-error">Нужно отметить одно из полей</div>
+                                </div>
+                            </div>
                             <!-- name -->
                             <div class="mb-20px">
-                                <div class="position-relative">
+                                <div class="position-relative has-validation">
                                     <div class="position-relative">
                                         <!-- icon -->
                                         <div class="position-absolute top-50 start-0 translate-middle-y mx-2">
@@ -32,8 +67,10 @@
                                             </svg>
                                         </div>
                                         <!-- field -->
-                                        <input type="text" class="form-control ps-40px" placeholder="Имя и Фамилия" id="exampleInputName1">
+                                        <input type="text" class="form-control ps-40px" placeholder="Имя и Фамилия" id="exampleInputName1" required>
                                     </div>
+                                    <!-- validation feedbacks -->
+                                    <div class="form-feedback feedback-error">Введите имя</div>
                                 </div>
                             </div>
                             <!-- email -->
@@ -103,8 +140,8 @@
                             <div class="mt-40px mb-20px">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="checkAgree">
-                                    <label class="form-check-label" for="checkAgree">
-                                        Я соглашаюсь с условиями <a href="#">пользовательского соглашения</a> и <a href="#">политикой обработки персональных данных</a>
+                                    <label class="form-check-label text-gray-50" for="checkAgree">
+                                        Я соглашаюсь с условиями <a href="#" class="text-decoration-underline">пользовательского соглашения</a> и <a href="#" class="text-decoration-underline">политикой обработки персональных данных</a>
                                     </label>
                                 </div>
                             </div>

@@ -1,0 +1,178 @@
+@use '../variables' as *;
+@use '../coreui' as *;
+
+// =========================================
+/* PRELOADER */
+// =========================================
+.preloader {
+    cursor: default;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+
+    .animation-preloader {
+        z-index: 1000;
+
+        .spinner {
+            animation: spinner 1s infinite linear;
+            border-radius: 50%;
+            border: 3px solid rgba(0, 0, 0, 0.2);
+            border-top-color: $brand-500;
+            height: 9em;
+            margin: 0 auto 3.5em auto;
+            width: 9em;
+
+            @media (max-width: 767px) {
+                width: 7.5em;
+                height: 7.5em;
+                margin: 0 auto 1.5em auto;
+            }
+        }
+    }
+
+    // p {
+    //     color: #415EF6;
+    //     font-size: 15px;
+    //     font-weight: 800;
+    //     text-transform: uppercase;
+    //     letter-spacing: 8px;
+    // }
+
+    .loader {
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        z-index: 1;
+
+        .row {
+            height: 100%;
+        }
+
+        .loader-section {
+            padding: 0px;
+
+            .bg {
+                background-color: $bg-white;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+            }
+        }
+    }
+
+    &.loaded {
+        .animation-preloader {
+            opacity: 0;
+            transition: 0.3s ease-out;
+        }
+
+        .loader-section {
+            .bg {
+                width: 0;
+                transition: 0.7s 0.3s allcubic-bezier(0.1, 0.1, 0.1, 1);
+            }
+        }
+    }
+}
+
+//>>>>> Preloader Animation Start <<<<<//
+@-webkit-keyframes spinner {
+    to {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes spinner {
+    to {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+//>>>>> Preloader Animation Start <<<<<//
+@keyframes loaderspin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@keyframes tpswing {
+    0% {
+        -webkit-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes width {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes width {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes loaderspin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes loaderpulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+//>>>>> Preloader Animation End <<<<<//
+
+//animation
+@keyframes rounded {
+    50% {
+        transform: rotate(20deg);
+    }
+}

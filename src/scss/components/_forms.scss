@@ -4,3 +4,85 @@
 // =========================================
 /* FORMS */
 // =========================================
+.form-control:focus,
+.form-select:focus,
+.form-password .form-password-action:focus {
+    box-shadow: none !important;
+}
+
+.form-control {
+    padding: 0.625rem;
+    border-color: $bg-white;
+    background-color: $bg-white;
+}
+
+.form-control:focus {
+    border-color: $brand-500;
+    background-color: $bg-white;
+}
+
+.input-group-text {
+    padding: 0.625rem;
+}
+
+.form-password .form-password-action {
+    inset-inline-end: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+// validation
+.was-validated .form-control:valid,
+.form-control.is-valid,
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    background-image: none;
+}
+
+.is-error .form-control {
+    color: $error-700;
+    border-color: $error-400;
+    background-color: $bg-error;
+}
+
+.form-feedback {
+    position: absolute;
+    top: 100%;
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    padding: 6px;
+    z-index: 1;
+}
+
+.is-error .feedback-error {
+    display: block;
+}
+
+.feedback-error {
+    color: $error-700;
+    border-radius: $border-radius-sm;
+    background-color: $bg-error;
+    box-shadow: 0px 0px 2px 0px rgba(30, 41, 59, 0.08), 0px 2px 4px 0px rgba(30, 41, 59, 0.12);
+}
+
+.is-warning .form-control {
+    color: $warning-800;
+    border-color: $warning-400;
+    background-color: $bg-warning;
+}
+
+.is-warning .feedback-warning {
+    display: block;
+}
+
+.feedback-warning {
+    padding: 12px;
+    border: 2px solid $warning-400;
+    border-radius: $border-radius;
+    background-color: $bg-warning;
+    z-index: 5;
+}

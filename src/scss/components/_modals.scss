@@ -4,3 +4,21 @@
 // =========================================
 /* MODALS & OFFCANVAS */
 // =========================================
+.modal {
+    --cui-modal-padding: 0.75rem;
+    --cui-modal-bg: #{$neutral-50};
+
+    .btn-close {
+        flex-shrink: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        --cui-modal-padding: 1.25rem;
+    }
+}
+
+// modal-forgot-pass
+.modal-forgot-pass {
+    --cui-modal-width: 400px;
+}
+

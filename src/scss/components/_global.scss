@@ -13,3 +13,9 @@ img {
 }
 
 a { text-decoration: none; }
+
+.divider-vertical {
+    width: 1px;
+    height: 100%;
+    background-color: $neutral-300;
+}

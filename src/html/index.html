@@ -8,18 +8,34 @@
 <body>
 
     <!-- HEADER -->
-    @@include('partials/layout/header.html')
+    <!-- @@include('partials/layout/header.html') -->
 
     <!-- MAIN -->
     <main class="main">
 
-        <!-- section-home-hero -->
-        @@include('partials/sections/home-hero.html')
+        <!-- section-test -->
+        <section class="section section-test py-0">
+            <div class="container">
+                <div class="d-flex flex-column justify-content-center min-h-100dvh">
+                    <!-- logo -->
+                    <div class="position-relative d-flex justify-content-center mb-60px">
+                        <a href="index.html">
+                            <img class="img-fluid" src="img/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <!-- list -->
+                    <div class="d-flex flex-column gap-2 w-100 mx-auto" style="max-width: 400px;">
+                        <a href="sign-in.html" class="btn btn-primary">Авторизация</a>
+                        <a href="sign-up.html" class="btn btn-primary">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <!-- FOOTER -->
-    @@include('partials/layout/footer.html')
+    <!-- @@include('partials/layout/footer.html') -->
 
     <!-- MODALS -->
     @@include('partials/modals/success.html')

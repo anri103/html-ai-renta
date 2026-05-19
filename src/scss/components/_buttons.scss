@@ -4,3 +4,94 @@
 // =========================================
 /* BASE BUTTONS */
 // =========================================
+.btn {
+    --cui-btn-padding-x: 0.75rem;
+    --cui-btn-padding-y: 0.625rem;
+    --cui-btn-font-size: 1rem;
+    --cui-btn-font-weight: 500;
+    --cui-btn-line-height: 1.3;
+    --cui-btn-color: #{$text-gray-60};
+    --cui-btn-hover-color: #{$text-primary};
+    --cui-btn-border-width: 2px;
+    --cui-btn-disabled-opacity: 1;
+}
+
+.btn-primary {
+    --cui-btn-color: #{$text-white};
+    --cui-btn-bg: #{$brand-500};
+    --cui-btn-border-color: #{$brand-500};
+    --cui-btn-hover-color: #{$text-white};
+    --cui-btn-hover-bg: #{$brand-800};
+    --cui-btn-hover-border-color: #{$brand-800};
+    --cui-btn-focus-shadow-rgb: 47.95, 97.55, 216.85;
+    --cui-btn-active-color: #{$text-white};
+    --cui-btn-active-bg: #{$brand-900};
+    --cui-btn-active-border-color: #{$brand-900};
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(8, 10, 12, 0.125);
+    --cui-btn-disabled-color: #{$brand-400};
+    --cui-btn-disabled-bg: #{$brand-100};
+    --cui-btn-disabled-border-color: #{$brand-100};
+}
+
+.btn-secondary {
+    --cui-btn-color: #{$text-gray-60};
+    --cui-btn-bg: #{$neutral-200};
+    --cui-btn-border-color: #{$neutral-200};
+    --cui-btn-hover-color: #{$text-primary};
+    --cui-btn-hover-bg: #{$neutral-400};
+    --cui-btn-hover-border-color: #{$neutral-400};
+    --cui-btn-focus-shadow-rgb: 47.95, 97.55, 216.85;
+    --cui-btn-active-color: #{$text-white};
+    --cui-btn-active-bg: #{$neutral-500};
+    --cui-btn-active-border-color: #{$neutral-500};
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(8, 10, 12, 0.125);
+    --cui-btn-disabled-color: #{$neutral-400};
+    --cui-btn-disabled-bg: #{$neutral-200};
+    --cui-btn-disabled-border-color: #{$neutral-200};
+}
+
+.btn-outline-secondary {
+    --cui-btn-color: #{$text-gray-60};
+    --cui-btn-bg: transparent;
+    --cui-btn-border-color: #{$text-gray-60};
+    --cui-btn-hover-color: #{$brand-700};
+    --cui-btn-hover-bg: transparent;
+    --cui-btn-hover-border-color: #{$brand-700};
+    --cui-btn-focus-shadow-rgb: 47.95, 97.55, 216.85;
+    --cui-btn-active-color: #{$brand-900};
+    --cui-btn-active-bg: transparent;
+    --cui-btn-active-border-color: #{$brand-900};
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(8, 10, 12, 0.125);
+    --cui-btn-disabled-color: #{$neutral-400};
+    --cui-btn-disabled-bg: transparent;
+    --cui-btn-disabled-border-color: #{$neutral-400};
+}
+
+.tab-slider {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.25rem;
+    height: calc(100% - 1rem);
+    border-radius: $rounded-2;
+    background: $brand-100;
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+                width    0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.tab-btn {
+    --cui-btn-padding-x: 0.75rem;
+    --cui-btn-padding-y: 0.325rem;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: $text-gray-60;
+}
+
+.tab-btn.active {
+    color: $text-primary;
+    font-weight: 700;
+}

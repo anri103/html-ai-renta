@@ -46,12 +46,12 @@ h1, h2, h3,
 .fw-800 { font-weight: 800 !important; }
 
 // text color
-.text-gray-30 { color: $hex-gray-30; }
-.text-gray-40 { color: $hex-gray-40; }
-.text-gray-50 { color: $hex-gray-50; }
-.text-gray-50 { color: $hex-gray-50; }
-.text-gray-60 { color: $hex-gray-60; }
-.text-gray-70 { color: $hex-gray-70; }
+.text-gray-30 { color: $text-gray-30; }
+.text-gray-40 { color: $text-gray-40; }
+.text-gray-50 { color: $text-gray-50; }
+.text-gray-50 { color: $text-gray-50; }
+.text-gray-60 { color: $text-gray-60; }
+.text-gray-70 { color: $text-gray-70; }
 .text-gradient-turquoise {
     background: linear-gradient(103.22deg, #4FD9FD 2.15%, #003868 100%);
     -webkit-background-clip: text;
@@ -64,6 +64,28 @@ h1, h2, h3,
 .text-opacity-50 { --cui-text-opacity: 0.5; }
 .text-opacity-60 { --cui-text-opacity: 0.6; }
 .text-opacity-80 { --cui-text-opacity: 0.8; }
+
+// text animation
+@keyframes shimmer {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.text-animation-turquoise-shimmer {
+    background: linear-gradient(
+    103.22deg,
+    #4FD9FD 2.15%,
+    #003868 40%,
+    #4FD9FD 70%,
+    #003868 100%
+    );
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s ease-in-out infinite;
+}
 
 // @include media-breakpoint-up(lg) {
 //     .fs-1 { font-size: var(--fs-h1) !important; }

@@ -9,7 +9,7 @@
 @use "@coreui/coreui-pro/scss/coreui" with (
     // colors
     $primary: #3771FD,
-    $secondary: #F74251,
+    $secondary: #E2E8F0,
     $success: #006311,
     $info: #39f,
     $warning: #FDE68A,
@@ -26,13 +26,13 @@
     $line-height-base: 1.3,
     // font-sizes
     $h1-font-size: 1.8125rem,
-    $h2-font-size: 1.625,
+    $h2-font-size: 1.625rem,
     $h3-font-size: 1.4375rem,
     $h4-font-size: 1.25rem,
     $h5-font-size: 1.125rem,
 
     // borders
-    $border-width: 1px,
+    $border-width: 2px,
     $border-color: #CBD5E1,
     $border-radius: 0.5rem,
     $border-radius-sm: 0.25rem,
@@ -58,6 +58,9 @@
         xl: 1340px,
         xxl: 1540px
     ),
+
+    // modals
+    $modal-sm: 400px,
 );
 
 // Import Theme Variables

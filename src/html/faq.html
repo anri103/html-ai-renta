@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Вопросы и ответы"
+})
+
+<body>
+    <div class="page-layout">
+
+        <!-- HEADER -->
+        <!-- @@include('partials/layout/header.html') -->
+
+        <!-- Sidenav (base) -->
+        @@include('partials/layout/sidebar.html', {
+            "activeLink": "faq"
+        })
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <div class="container-fluid">
+                (Вопросы и ответы)<br>
+                include('partials/sections/faq.html')
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <!-- @@include('partials/layout/footer.html') -->
+
+    </div>
+
+    <!-- MODALS -->
+    @@include('partials/modals/success.html')
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

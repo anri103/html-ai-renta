@@ -14,6 +14,17 @@
 .z-4 { z-index: 4; }
 .z-5 { z-index: 5; }
 
+.neutral-50 { color: $neutral-50;}
+.neutral-100 { color: $neutral-100; }
+.neutral-200 { color: $neutral-200; }
+.neutral-300 { color: $neutral-300; }
+.neutral-400 { color: $neutral-400; }
+.neutral-500 { color: $neutral-500; }
+.neutral-600 { color: $neutral-600; }
+.neutral-700 { color: $neutral-600; }
+.neutral-800 { color: $neutral-800; }
+.neutral-900 { color: $neutral-900; }
+
 .bg-overlay {
     position: absolute;
     top: 0;
@@ -83,6 +94,10 @@
 .pb-30px { padding-bottom: 30px !important; }
 .pb-40px { padding-bottom: 40px !important; }
 .ps-40px { padding-left: 40px !important; }
+.px-10px {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
 
 // margins
 .mt-0px { margin-top: 0px !important; }

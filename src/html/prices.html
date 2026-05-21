@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Тарифы"
+})
+
+<body>
+    <div class="page-layout">
+
+        <!-- HEADER -->
+        <!-- @@include('partials/layout/header.html') -->
+
+        <!-- Sidenav (base) -->
+        @@include('partials/layout/sidebar.html', {
+            "activeLink": "prices"
+        })
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <div class="container-fluid">
+                (Тарифы)<br>
+                include('partials/sections/prices.html')
+            </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <!-- @@include('partials/layout/footer.html') -->
+
+    </div>
+
+    <!-- MODALS -->
+    @@include('partials/modals/success.html')
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

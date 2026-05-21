@@ -21,8 +21,8 @@
 @font-face {
 	font-family: 'Golos Text';
 	src: 
-		url('golos-text_demiBold.woff2') format('woff2'),
-		url('golos-text_demiBold.woff') format('woff');
+		url('golos-text_demibold.woff2') format('woff2'),
+		url('golos-text_demibold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;

@@ -12,7 +12,7 @@
     height: 100vh;
     padding: 20px;
     padding-right: 0;
-    z-index: 1080;
+    z-index: 10;
 
     &__header,
     &__footer {
@@ -42,49 +42,47 @@
 
 // menu-area
 .app-sidebar-menu-area {
-    flex: 1 1 auto;
-    overflow: auto;
-    scrollbar-width: thin;
     padding: 20px 10px;
+}
 
-    .menu-inner {
-        --cui-nav-link-padding-x: 10px;
-        --cui-nav-link-padding-y: 10px;
-        --cui-nav-link-font-weight: 500;
-        --cui-nav-link-color: #{$text-gray-60};
-        --cui-nav-link-hover-color: #{$text-primary};
-        gap: 20px;
+// app main menu
+.app-menu {
+    --cui-nav-link-padding-x: 10px;
+    --cui-nav-link-padding-y: 10px;
+    --cui-nav-link-font-weight: 500;
+    --cui-nav-link-color: #{$text-gray-60};
+    --cui-nav-link-hover-color: #{$text-primary};
+    gap: 20px;
 
-        .nav-divider {
-            border-width: 1px;
-            color: $neutral-300;
-            opacity: 1;
-            margin: 0;
-        }
-        
-        .nav-link {
-            display: flex;
-            align-items: center;
-            border-radius: $rounded-2;
+    .nav-divider {
+        border-width: 1px;
+        color: $neutral-300;
+        opacity: 1;
+        margin: 0;
+    }
+    
+    .nav-link {
+        display: flex;
+        align-items: center;
+        border-radius: $rounded-2;
 
-            &.active {
-                font-weight: 700;
-            }
-
-            &.notification-active {
-                background-color: $warning-200;
-            }
-
-            .nav-icon {
-                flex-shrink: 0;
-                margin-right: 8px;
-            }
+        &.active {
+            font-weight: 700;
         }
 
-        .btn-add-object-wrapper {
-            margin-top: 4px;
-            margin-right: 10px;
-            margin-left: 42px;
+        &.notification-active {
+            background-color: $warning-200;
         }
+
+        .nav-icon {
+            flex-shrink: 0;
+            margin-right: 8px;
+        }
+    }
+
+    .btn-add-object-wrapper {
+        margin-top: 4px;
+        margin-right: 10px;
+        margin-left: 42px;
     }
 }

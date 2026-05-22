@@ -20,6 +20,10 @@ a { text-decoration: none; }
     background-color: $neutral-300;
 }
 
+.scrollbar-thin {
+    scrollbar-width: thin;
+}
+
 .list-primary-bullets {
     list-style: none;
     padding-left: 0;

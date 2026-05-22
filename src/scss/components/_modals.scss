@@ -22,3 +22,24 @@
     --cui-modal-width: 400px;
 }
 
+// offcanvas-mobile-menu
+.offcanvas-mobile-menu {
+    --cui-offcanvas-width: 300px;
+    --cui-offcanvas-padding-x: 12px;
+    --cui-offcanvas-padding-y: 12px;
+    --cui-offcanvas-border-width: 0;
+    --cui-offcanvas-bg: #{$neutral-100};
+    border-top-left-radius: $rounded-3;
+    border-bottom-left-radius: $rounded-3;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    .offcanvas-logo {
+        padding: 8px;
+    }
+
+    .offcanvas-footer {
+        padding: var(--cui-offcanvas-padding-y) var(--cui-offcanvas-padding-x);
+    }
+}

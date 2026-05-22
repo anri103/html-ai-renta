@@ -6,10 +6,15 @@
 })
 
 <body>
+    <!-- Mobile Menu -->
+    @@include('partials/modals/offcanvas-mobilemenu.html', {
+        "activeLink": "faq"
+    })
+
     <div class="page-layout">
 
         <!-- HEADER -->
-        <!-- @@include('partials/layout/header.html') -->
+        @@include('partials/layout/header.html')
 
         <!-- SIDEBAR -->
         @@include('partials/layout/sidebar.html', {

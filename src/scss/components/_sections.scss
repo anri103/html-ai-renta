@@ -4,13 +4,15 @@
 // =========================================
 /* SECTIONS */
 // =========================================
-.main {
+.app-main {
     padding: 20px;
     min-height: 100dvh;
 }
 
-:has(.sidebar-base-area) .main {
-    margin-left: var(--sidebar-width);
+@include media-breakpoint-up(lg) {
+    :has(.app-sidebar) .app-main {
+        margin-left: var(--sidebar-width);
+    }
 }
 
 .section {

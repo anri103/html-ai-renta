@@ -1,0 +1,70 @@
+@use '../variables' as *;
+@use '../coreui' as *;
+
+// =========================================
+/* HEADER */
+// =========================================
+.app-header {
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: transparent;
+
+    // .header-bar {}
+
+    .header-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+        padding: 12px;
+        border-radius: $rounded-3;
+        background-color: $neutral-100;
+
+        &__logo {
+            margin-left: 8px;
+        }
+
+        &__toggler {
+            position: relative;
+        }
+    }
+    
+    .btn-menu-toggler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 4px;
+    }
+
+    .notifications-counter {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        right: 32px;
+        height: 24px;
+        min-width: 24px;
+        text-align: center;
+        padding: 0 4px;
+        border-radius: var(--cui-border-radius-pill);
+        color: $text-gray-70;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        background-color: $warning-200;
+    }
+
+    @include media-breakpoint-up(lg) {
+        &.app-header-mobile {
+            display: none;
+        }
+    }
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1024;
+}

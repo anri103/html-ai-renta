@@ -4,17 +4,35 @@
 // =========================================
 /* SIDEBAR */
 // =========================================
-.sidebar-base-area {
+.app-sidebar {
     position: fixed;
     top: 0;
+    display: none;
     width: var(--sidebar-width);
     height: 100vh;
     padding: 20px;
     padding-right: 0;
     z-index: 1080;
+
+    &__header,
+    &__footer {
+        padding: 20px;
+    }
+
+    &__header {
+        padding-bottom: 0;
+    }
+    &__footer {
+        margin-top: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+        display: block;
+    }
 }
 
-.sidebar-base-wrapper {
+// app-sidebar-body
+.app-sidebar-body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -22,20 +40,8 @@
     background-color: $neutral-100;
 }
 
-.sidebar-base-header,
-.sidebar-base-footer {
-    padding: 20px;
-}
-
-.sidebar-base-header {
-    padding-bottom: 0;
-}
-
-.sidebar-base-footer {
-    margin-top: auto;
-}
-
-.sidebar-menu-area {
+// menu-area
+.app-sidebar-menu-area {
     flex: 1 1 auto;
     overflow: auto;
     scrollbar-width: thin;

@@ -1,25 +1,26 @@
-<header class="header" id="siteHeader">
+<header class="app-header app-header-mobile header-fixed">
+    <div class="header-bar">
+        <div class="header-row">
 
-    <!-- desktop -->
-    <div class="header-bar header__desktop" data-device="desktop">
-        <div class="header-row main-row">
-            <div class="container">
-
-
-
+            <!-- logo -->
+            <div class="header-row__logo">
+                <a href="index.html">
+                    <img class="img-fluid" src="img/logo/logo.svg" alt="logo">
+                </a>
             </div>
+
+            <!-- toggler -->
+            <div class="header-row__toggler">
+                <button type="button" class="btn btn-primary btn-menu-toggler" data-coreui-toggle="offcanvas" data-coreui-target="#offcanvasMobileMenu">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 17H19M5 12H19M5 7H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="notifications-counter">12</div>
+            </div>
+
         </div>
     </div>
-
-    <!-- mobile -->
-    <div class="header-bar header__mobile" data-device="mobile">
-        <div class="header-row main-row">
-            <div class="container">
-
-
-                
-            </div>
-        </div>
-    </div>
-
 </header>

@@ -39,6 +39,17 @@
     }
 }
 
+.rounded-neutral-wrapper {
+    position: relative;
+    padding: 1rem;
+    border-radius: $rounded-3;
+    background-color: $neutral-100;
+
+    @include media-breakpoint-up(xl) {
+        padding: 30px 20px;
+    }
+}
+
 // section-sign
 .section-sign {
     background-color: $neutral-100;

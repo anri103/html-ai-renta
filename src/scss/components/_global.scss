@@ -45,3 +45,15 @@ a { text-decoration: none; }
         }
     }
 }
+
+@include media-breakpoint-up(lg) {
+    .container,
+    .container-fluid,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        --cui-gutter-x: 2.5rem;
+    }
+}

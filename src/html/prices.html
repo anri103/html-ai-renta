@@ -25,8 +25,21 @@
         <!-- section-prices -->
         <section class="section section-prices">
             <div class="container-fluid">
-                <h1 class="fw-700 mb-20px">Тарифы</h1>
-                <code>include('partials/sections/prices.html')</code>
+                <div class="d-flex flex-column justify-content-center" style="min-height: calc(100dvh - 40px);">
+
+                    <div class="text-center max-w-800px mx-auto mb-40px">
+                        <h1 class="h2 fw-700 mb-20px">Оформить тариф</h1>
+                        <div class="h5 text-gray-50 fw-600 mb-20px">Создавайте экономические паспорта объектов, анализируйте данные и принимайте решения на основе объективных цифр и полезных рекомендаций</div>
+                        <div>
+                            <button type="button" class="btn btn-outline-secondary">Ввести промокод</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark rounded-3 p-3">
+                        <code>include('partials/sections/prices.html')</code>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -36,7 +49,7 @@
     <!-- @@include('partials/layout/footer.html') -->
 
     <!-- MODALS -->
-    @@include('partials/modals/success.html')
+    <!-- @@include('partials/modals/success.html') -->
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

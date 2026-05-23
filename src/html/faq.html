@@ -11,30 +11,31 @@
         "activeLink": "faq"
     })
 
-    <div class="page-layout">
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
 
-        <!-- HEADER -->
-        @@include('partials/layout/header.html')
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar.html', {
+        "activeLink": "faq"
+    })
 
-        <!-- SIDEBAR -->
-        @@include('partials/layout/sidebar.html', {
-            "activeLink": "faq"
-        })
+    <!-- MAIN -->
+    <main class="app-main">
 
-        <!-- MAIN -->
-        <main class="app-main">
-
+        <!-- section-faq -->
+        <section class="section section-faq">
             <div class="container-fluid">
-                (Вопросы и ответы)<br>
-                include('partials/sections/faq.html')
+                <!-- title -->
+                <h1 class="fw-700 mb-20px">Вопросы и ответы</h1>
+                <!-- code -->
+                <code>include('partials/sections/faq.html')</code>
             </div>
+        </section>
 
-        </main>
+    </main>
 
-        <!-- FOOTER -->
-        <!-- @@include('partials/layout/footer.html') -->
-
-    </div>
+    <!-- FOOTER -->
+    <!-- @@include('partials/layout/footer.html') -->
 
     <!-- MODALS -->
     @@include('partials/modals/success.html')

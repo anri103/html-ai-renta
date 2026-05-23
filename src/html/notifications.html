@@ -11,33 +11,27 @@
         "activeLink": "notifications"
     })
 
-    <div class="page-layout">
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
 
-        <!-- HEADER -->
-        @@include('partials/layout/header.html')
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar.html', {
+        "activeLink": "notifications"
+    })
 
-        <!-- SIDEBAR -->
-        @@include('partials/layout/sidebar.html', {
-            "activeLink": "notifications"
-        })
+    <!-- MAIN -->
+    <main class="app-main">
 
-        <!-- MAIN -->
-        <main class="app-main">
+        <!-- section-notifications -->
+        @@include('partials/sections/notifications.html')
 
-            <div class="container-fluid">
-                (Уведомления)<br>
-                include('partials/sections/notifications.html')
-            </div>
+    </main>
 
-        </main>
-
-        <!-- FOOTER -->
-        <!-- @@include('partials/layout/footer.html') -->
-
-    </div>
+    <!-- FOOTER -->
+    <!-- @@include('partials/layout/footer.html') -->
 
     <!-- MODALS -->
-    @@include('partials/modals/success.html')
+    <!-- @@include('partials/modals/success.html') -->
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

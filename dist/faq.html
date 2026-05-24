@@ -290,37 +290,275 @@
 
         <!-- section-faq -->
         <section class="section section-faq">
-            <div class="container-fluid">
-                <!-- grid -->
-                <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
+    <div class="container-fluid">
+        <!-- grid -->
+        <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
 
-                    <!-- faq-area -->
-                    <div class="col-span-12 col-span-lg-6 col-span-xl-7">
-                        <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
-                            <!-- title -->
-                            <h1 class="fw-700 mb-6">Вопросы и ответы</h1>
-                            <!-- code -->
-                            <div class="bg-dark rounded-3 p-5">
-                                <code>include('partials/sections/faq.html')</code>
+            <!-- faq-accordion-area -->
+            <div class="col-span-12 col-span-lg-6 col-span-xl-7">
+                <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                    <!-- title -->
+                    <h1 class="fw-700 mb-6">Вопросы и ответы</h1>
+                    <!-- accordion-faq -->
+                    <div class="accordion accordion-faq" id="accordionFaqSupport">
+                        <!-- accordion-item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-coreui-toggle="collapse"
+                                    data-coreui-target="#faq-answer-1"
+                                    aria-expanded="false"
+                                    aria-controls="faq-answer-1">
+                                    <span class="h5 fw-600 text-reset mb-0">Как работает платформа?</span>
+                                    <span class="accordion-icon btn border-0 p-0">
+                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="faq-answer-1" class="accordion-collapse collapse">
+                                <div class="accordion-body text-box">
+                                    <p>Пользователь заполняет чек-лист объекта, платформа формирует экономический паспорт недвижимости и с помощью нейросети анализирует данные, чтобы показать реальную стоимость, риски и потенциал объекта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-coreui-toggle="collapse"
+                                    data-coreui-target="#faq-answer-2"
+                                    aria-expanded="false"
+                                    aria-controls="faq-answer-2">
+                                    <span class="h5 fw-600 text-reset mb-0">Как происходит оплата?</span>
+                                    <span class="accordion-icon btn border-0 p-0">
+                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="faq-answer-2" class="accordion-collapse collapse">
+                                <div class="accordion-body text-box">
+                                    <p>Пользователь заполняет чек-лист объекта, платформа формирует экономический паспорт недвижимости и с помощью нейросети анализирует данные, чтобы показать реальную стоимость, риски и потенциал объекта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-coreui-toggle="collapse"
+                                    data-coreui-target="#faq-answer-3"
+                                    aria-expanded="false"
+                                    aria-controls="faq-answer-3">
+                                    <span class="h5 fw-600 text-reset mb-0">Это безопасно?</span>
+                                    <span class="accordion-icon btn border-0 p-0">
+                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="faq-answer-3" class="accordion-collapse collapse">
+                                <div class="accordion-body text-box">
+                                    <p>Пользователь заполняет чек-лист объекта, платформа формирует экономический паспорт недвижимости и с помощью нейросети анализирует данные, чтобы показать реальную стоимость, риски и потенциал объекта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-coreui-toggle="collapse"
+                                    data-coreui-target="#faq-answer-4"
+                                    aria-expanded="false"
+                                    aria-controls="faq-answer-4">
+                                    <span class="h5 fw-600 text-reset mb-0">Можно ли отправить таблицу риелтору или собственнику для заполнения?</span>
+                                    <span class="accordion-icon btn border-0 p-0">
+                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="faq-answer-4" class="accordion-collapse collapse">
+                                <div class="accordion-body text-box">
+                                    <p>Пользователь заполняет чек-лист объекта, платформа формирует экономический паспорт недвижимости и с помощью нейросети анализирует данные, чтобы показать реальную стоимость, риски и потенциал объекта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-coreui-toggle="collapse"
+                                    data-coreui-target="#faq-answer-5"
+                                    aria-expanded="false"
+                                    aria-controls="faq-answer-5">
+                                    <span class="h5 fw-600 text-reset mb-0">Чем ваш сервис отличается от обычных сайтов объявлений?</span>
+                                    <span class="accordion-icon btn border-0 p-0">
+                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="faq-answer-5" class="accordion-collapse collapse">
+                                <div class="accordion-body text-box">
+                                    <p>Пользователь заполняет чек-лист объекта, платформа формирует экономический паспорт недвижимости и с помощью нейросети анализирует данные, чтобы показать реальную стоимость, риски и потенциал объекта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-coreui-toggle="collapse"
+                                    data-coreui-target="#faq-answer-6"
+                                    aria-expanded="false"
+                                    aria-controls="faq-answer-6">
+                                    <span class="h5 fw-600 text-reset mb-0">Как создать экономический паспорт объекта?</span>
+                                    <span class="accordion-icon btn border-0 p-0">
+                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="faq-answer-6" class="accordion-collapse collapse">
+                                <div class="accordion-body text-box">
+                                    <p>Пользователь заполняет чек-лист объекта, платформа формирует экономический паспорт недвижимости и с помощью нейросети анализирует данные, чтобы показать реальную стоимость, риски и потенциал объекта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion-item -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-coreui-toggle="collapse"
+                                    data-coreui-target="#faq-answer-7"
+                                    aria-expanded="false"
+                                    aria-controls="faq-answer-7">
+                                    <span class="h5 fw-600 text-reset mb-0">Какие данные нужно заполнить для анализа?</span>
+                                    <span class="accordion-icon btn border-0 p-0">
+                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="faq-answer-7" class="accordion-collapse collapse">
+                                <div class="accordion-body text-box">
+                                    <p>Пользователь заполняет чек-лист объекта, платформа формирует экономический паспорт недвижимости и с помощью нейросети анализирует данные, чтобы показать реальную стоимость, риски и потенциал объекта</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- form-support-area -->
-                    <div class="col-span-12 col-span-lg-6 col-span-xl-5">
-                        <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
-                            <!-- title -->
-                            <div class="h1 fw-700 mb-6">Поддержка</div>
-                            <!-- code -->
-                            <div class="bg-dark rounded-3 p-5">
-                                <code>include('partials/sections/faq.html')</code>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
+
+            <!-- form-support-area -->
+            <div class="col-span-12 col-span-lg-6 col-span-xl-5">
+                <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                    <div class="d-flex flex-column justify-content-between gap-6 gap-xl-11 h-100">
+
+                        <div>
+                            <!-- title -->
+                            <div class="h1 fw-700 mb-4">Поддержка</div>
+                            <div class="text-gray-50 mb-6">Не&nbsp;нашли ответа на&nbsp;вопрос&nbsp;— напишите в&nbsp;поддержку на&nbsp;почту</div>
+                            <!-- form -->
+                            <div>
+                                <form class="form-support needs-validation" novalidate>
+                                    <!-- email -->
+                                    <div class="mb-6">
+                                        <label for="inputSupportEmail" class="h5 form-label">Email</label>
+                                        <div class="position-relative has-validation">
+                                            <div class="position-relative">
+                                                <!-- icon -->
+                                                <div class="position-absolute top-50 start-0 translate-middle-y mx-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M4 6L10.1076 10.6123L10.1097 10.614C10.7878 11.1113 11.1271 11.3601 11.4988 11.4562C11.8272 11.5412 12.1725 11.5412 12.501 11.4562C12.8729 11.36 13.2132 11.1105 13.8926 10.6123C13.8926 10.6123 17.8101 7.60594 20 6M3 15.8002V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V15.8036C21 16.9215 21 17.4805 20.7822 17.9079C20.5905 18.2842 20.2837 18.5905 19.9074 18.7822C19.48 19 18.921 19 17.8031 19H6.19691C5.07899 19 4.5192 19 4.0918 18.7822C3.71547 18.5905 3.40973 18.2842 3.21799 17.9079C3 17.4801 3 16.9203 3 15.8002Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <!-- field -->
+                                                <input type="email" class="form-control ps-10" placeholder="Введите ваш Email" id="inputSupportEmail" required>
+                                            </div>
+                                            <!-- validation feedbacks -->
+                                            <div class="form-feedback feedback-error">Неверный формат электронной почты</div>
+                                        </div>
+                                    </div>
+                                    <!-- textarea -->
+                                    <div class="mb-6">
+                                        <label for="inputSupportTextarea" class="h5 form-label">Сообщение</label>
+                                        <div class="position-relative has-validation">
+                                            <div class="position-relative">
+                                                <!-- field -->
+                                                <textarea class="form-control" placeholder="Напишите ваше сообщение" id="inputSupportTextarea" rows="8" required></textarea>
+                                            </div>
+                                            <!-- validation feedbacks -->
+                                            <div class="form-feedback feedback-error">Введите текст сообщения</div>
+                                        </div>
+                                    </div>
+                                    <!-- form-check -->
+                                    <div class="mt-6 mb-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="inputSupportAgree">
+                                            <label class="form-check-label text-gray-50" for="inputSupportAgree">
+                                                Я соглашаюсь с условиями <a href="#" class="text-decoration-underline">пользовательского соглашения</a> и <a href="#" class="text-decoration-underline">политикой обработки персональных данных</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- submit btn wrp -->
+                                    <div>
+                                        <button type="submit" class="btn btn-primary">
+                                            <span>Отправить</span>
+                                            <svg class="flex-shrink-0 ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M10.3078 13.6923L15.1539 8.84619M20.1113 5.88867L16.0207 19.1833C15.6541 20.3747 15.4706 20.9707 15.1544 21.1683C14.8802 21.3396 14.5406 21.3683 14.2419 21.2443C13.8975 21.1014 13.618 20.5433 13.0603 19.428L10.4694 14.2461C10.3809 14.0691 10.3366 13.981 10.2775 13.9043C10.225 13.8363 10.1645 13.7749 10.0965 13.7225C10.0215 13.6647 9.93486 13.6214 9.76577 13.5369L4.57192 10.9399C3.45662 10.3823 2.89892 10.1032 2.75601 9.75879C2.63207 9.4601 2.66033 9.12023 2.83169 8.84597C3.02928 8.52974 3.62523 8.34603 4.81704 7.97932L18.1116 3.88867C19.0486 3.60038 19.5173 3.45635 19.8337 3.57253C20.1094 3.67373 20.3267 3.89084 20.4279 4.16651C20.544 4.48283 20.3999 4.95126 20.1119 5.88729L20.1113 5.88867Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="h5 fw-600 mb-0">Или напишите нам на почту</div>
+                            <div class="h1 fw-700 mb-0">
+                                <a href="mailto:support@iirenta.ru" class="">support@iirenta.ru</a>
+                            </div>
+                            <div class="mt-5">
+                                <button type="button" class="btn btn-outline-secondary">
+                                    <span>support@iirenta.ru</span>
+                                    <svg class="flex-shrink-0 ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 9V6.2002C9 5.08009 9 4.51962 9.21799 4.0918C9.40973 3.71547 9.71547 3.40973 10.0918 3.21799C10.5196 3 11.0801 3 12.2002 3H17.8002C18.9203 3 19.4801 3 19.9079 3.21799C20.2842 3.40973 20.5905 3.71547 20.7822 4.0918C21.0002 4.51962 21.0002 5.07967 21.0002 6.19978V11.7998C21.0002 12.9199 21.0002 13.48 20.7822 13.9078C20.5905 14.2841 20.2839 14.5905 19.9076 14.7822C19.4802 15 18.921 15 17.8031 15H15M15 15L15 12.1969C15 11.079 15 10.5192 14.7822 10.0918C14.5905 9.71547 14.2842 9.40973 13.9079 9.21799C13.4801 9 12.9203 9 11.8002 9H9H6.2002C5.08009 9 4.51962 9 4.0918 9.21799C3.71547 9.40973 3.40973 9.71547 3.21799 10.0918C3 10.5196 3 11.0801 3 12.2002V17.8002C3 18.9203 3 19.4801 3.21799 19.9079C3.40973 20.2842 3.71547 20.5905 4.0918 20.7822C4.5192 21 5.07899 21 6.19691 21H11.8036C12.9215 21 13.4805 21 13.9079 20.7822C14.2842 20.5905 14.5905 20.2839 14.7822 19.9076C15 19.4802 15 18.921 15 17.8031V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     </main>
 

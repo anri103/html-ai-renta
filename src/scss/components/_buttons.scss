@@ -15,6 +15,9 @@
     --cui-btn-hover-color: #{$text-primary};
     --cui-btn-border-width: 2px;
     --cui-btn-disabled-opacity: 1;
+    // display: inline-flex;
+    // align-items: center;
+    // justify-content: center;
 }
 
 .btn-sm,
@@ -28,6 +31,8 @@
 
 .inline-icon {
     flex-shrink: 0;
+    width: 1em;
+    height: 1em;
     vertical-align: -0.125em;
 }
 

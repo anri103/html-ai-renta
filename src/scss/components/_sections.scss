@@ -109,7 +109,7 @@
     }
 
     @include media-breakpoint-down(md) {
-        padding-bottom: 0;
+        --section-padding-y: 0;
 
         .hero-area {
             margin-right: calc(-0.5 * var(--cui-gutter-x));

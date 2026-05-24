@@ -4,6 +4,7 @@
 // =========================================
 /* TYPOGRAPHY */
 // =========================================
+
 .ff-main { font-family: $ff-main; }
 .ff-title { font-family: $ff-title; }
 
@@ -20,24 +21,7 @@ h1, h2, h3,
     line-height: 1.2;
 }
 
-// Font Size
-// h1, .h1 { font-size: var(--fs-h1); }
-// h2, .h2 { font-size: var(--fs-h2); }
-// h3, .h3 { font-size: var(--fs-h3); }
-// h4, .h4 { font-size: var(--fs-h4); }
-// h5, .h5 { font-size: var(--fs-h5); }
-// h6, .h6 { font-size: var(--fs-h6); }
-// .fs-body { font-size: var(--cui-body-font-size); }
-// .fs-1 { font-size: var(--fs-h1) !important; }
-// .fs-2 { font-size: var(--fs-h2) !important; }
-// .fs-3 { font-size: var(--fs-h3) !important; }
-// .fs-4 { font-size: var(--fs-h4) !important; }
-// .fs-5 { font-size: var(--fs-h5) !important; }
-// .fs-6 { font-size: var(--fs-h6) !important; }
-// .fs-small { font-size: var(--fs-small); }
-// .fs-x-small { font-size: var(--fs-x-small); }
-
-// Font Weight
+// font weight
 .fw-300 { font-weight: 300 !important; }
 .fw-400 { font-weight: 400 !important; }
 .fw-500 { font-weight: 500 !important; }
@@ -86,14 +70,3 @@ h1, h2, h3,
     background-clip: text;
     animation: shimmer 4s ease-in-out infinite;
 }
-
-// @include media-breakpoint-up(lg) {
-//     .fs-1 { font-size: var(--fs-h1) !important; }
-//     .fs-2 { font-size: var(--fs-h2) !important; }
-//     .fs-3 { font-size: var(--fs-h3) !important; }
-//     .fs-4 { font-size: var(--fs-h4) !important; }
-//     .fs-5 { font-size: var(--fs-h5) !important; }
-//     .fs-6 { font-size: var(--fs-h6) !important; }
-//     .fs-small { font-size: var(--fs-small); }
-//     .fs-x-small { font-size: var(--fs-x-small); }
-// }

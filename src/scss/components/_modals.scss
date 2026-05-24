@@ -4,6 +4,7 @@
 // =========================================
 /* MODALS & OFFCANVAS */
 // =========================================
+
 .modal {
     --cui-modal-padding: 0.75rem;
     --cui-modal-bg: #{$neutral-50};
@@ -31,9 +32,8 @@
     --cui-offcanvas-bg: #{$neutral-100};
     border-top-left-radius: $rounded-3;
     border-bottom-left-radius: $rounded-3;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: var(--section-padding-y) var(--section-padding-x);
+    padding-left: 0 !important;
 
     .offcanvas-logo {
         padding: 8px;

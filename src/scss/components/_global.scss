@@ -4,13 +4,14 @@
 // =========================================
 /* GLOBAL */
 // =========================================
+
 html { scroll-behavior: smooth; }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+// img {
+//     display: block;
+//     max-width: 100%;
+//     height: auto;
+// }
 
 a { text-decoration: none; }
 
@@ -22,6 +23,11 @@ a { text-decoration: none; }
 
 .scrollbar-thin {
     scrollbar-width: thin;
+}
+
+.app-logo {
+    max-width: 100%;
+    height: auto;
 }
 
 .list-primary-bullets {
@@ -46,7 +52,7 @@ a { text-decoration: none; }
     }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(md) {
     .container,
     .container-fluid,
     .container-xxl,

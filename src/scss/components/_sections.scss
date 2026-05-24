@@ -4,31 +4,33 @@
 // =========================================
 /* SECTIONS */
 // =========================================
+
+// main
 .app-main {
-    // --main-body-padding-y: 20px;
-    // --main-body-padding-x: 20px;
     position: relative;
     overflow: hidden;
 }
 
-@include media-breakpoint-down(lg) {
-    :has(.app-header) .app-main {
-        padding-top: 88px; // header height + paddings
+@include media-breakpoint-down(xl) {
+    :has(.app-header.header-fixed) .app-main {
+        padding-top: calc(var(--header-height) + var(--section-padding-y) );
     }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
     :has(.app-sidebar) .app-main {
         margin-left: var(--sidebar-width);
     }
 }
 
+// section
 .section {
+    --section-padding-x: 0;
     position: relative;
-    padding: 20px 0;
+    padding: var(--section-padding-y) var(--section-padding-x);
 
     &__header {
-        margin-bottom: 46px;
+        margin-bottom: 1.25rem;
     }
     
     &__anchor {
@@ -39,6 +41,7 @@
     }
 }
 
+// rounded-neutral-wrapper
 .rounded-neutral-wrapper {
     position: relative;
     padding: 1rem;
@@ -46,7 +49,7 @@
     background-color: $neutral-100;
 
     @include media-breakpoint-up(xl) {
-        padding: 30px 20px;
+        padding: 1.875rem 1.25rem;
     }
 }
 
@@ -58,7 +61,7 @@
         position: relative;
         overflow: hidden;
         height: 100%;
-        padding: 40px calc(var(--cui-gutter-x) * 0.5);
+        padding: 2.5rem calc(var(--cui-gutter-x) * 0.5);
         background-color: #070706;
     }
 
@@ -73,7 +76,7 @@
     }
 
     .hero-title {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .hero-grid {
@@ -111,22 +114,21 @@
         .hero-area {
             margin-right: calc(-0.5 * var(--cui-gutter-x));
             margin-left: calc(-0.5 * var(--cui-gutter-x));
-            margin-bottom: -20px;
             padding-bottom: 425px;
         }
     }
 
     @include media-breakpoint-up(md) {
         .hero-area {
-            min-height: calc(100dvh - 40px);
+            min-height: calc(100dvh - 2.5rem);
             border-radius: $rounded-3;
-            padding: 20px;
+            padding: 1.25rem;
         }
     }
 
     @include media-breakpoint-up(lg) {
         .hero-area {
-            padding: 40px;
+            padding: 2.5rem;
         }
 
         .bg-img-absolute {
@@ -140,7 +142,7 @@
 
         .hero-title {
             max-width: 630px;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
         }
 
         .hero-grid {
@@ -166,18 +168,10 @@
         }
 
         .hero-title {
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
         }
     }
 }
 
 // section-notifications
-.section-notifications {
-    // background-position: right top;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-
-    // @include media-breakpoint-down(lg) {
-    //     background-image: none !important;
-    // }
-}
+// .section-notifications {}

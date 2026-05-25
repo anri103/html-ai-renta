@@ -2,13 +2,13 @@
 <html lang="ru">
 
 @@include('partials/layout/head.html', {
-    "title": "Уведомления"
+    "title": "Личный Кабинет"
 })
 
 <body>
     <!-- Mobile Menu -->
     @@include('partials/offcanvas/mobile-menu.html', {
-        "activeLink": "notifications"
+        "activeLink": "account"
     })
 
     <!-- HEADER -->
@@ -16,14 +16,14 @@
 
     <!-- SIDEBAR -->
     @@include('partials/layout/sidebar.html', {
-        "activeLink": "notifications"
+        "activeLink": "account"
     })
 
     <!-- MAIN -->
     <main class="app-main">
 
-        <!-- section-notifications -->
-        @@include('partials/sections/notifications.html')
+        <!-- section-account -->
+        @@include('partials/sections/account.html')
 
     </main>
 

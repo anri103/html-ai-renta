@@ -43,6 +43,63 @@ h1, h2, h3,
     background-clip: text;
 }
 
+// colors
+// brand
+.text-brand-50 { color: $brand-50;}
+.text-brand-100 { color: $brand-100; }
+.text-brand-200 { color: $brand-200; }
+.text-brand-300 { color: $brand-300; }
+.text-brand-400 { color: $brand-400; }
+.text-brand-500 { color: $brand-500; }
+.text-brand-600 { color: $brand-600; }
+.text-brand-700 { color: $brand-600; }
+.text-brand-800 { color: $brand-800; }
+.text-brand-900 { color: $brand-900; }
+// neutral
+.text-neutral-50 { color: $neutral-50;}
+.text-neutral-100 { color: $neutral-100; }
+.text-neutral-200 { color: $neutral-200; }
+.text-neutral-300 { color: $neutral-300; }
+.text-neutral-400 { color: $neutral-400; }
+.text-neutral-500 { color: $neutral-500; }
+.text-neutral-600 { color: $neutral-600; }
+.text-neutral-700 { color: $neutral-600; }
+.text-neutral-800 { color: $neutral-800; }
+.text-neutral-900 { color: $neutral-900; }
+// success
+.text-success-50 { color: $success-50;}
+.text-success-100 { color: $success-100; }
+.text-success-200 { color: $success-200; }
+.text-success-300 { color: $success-300; }
+.text-success-400 { color: $success-400; }
+.text-success-500 { color: $success-500; }
+.text-success-600 { color: $success-600; }
+.text-success-700 { color: $success-600; }
+.text-success-800 { color: $success-800; }
+.text-success-900 { color: $success-900; }
+// warning
+.text-warning-50 { color: $warning-50;}
+.text-warning-100 { color: $warning-100; }
+.text-warning-200 { color: $warning-200; }
+.text-warning-300 { color: $warning-300; }
+.text-warning-400 { color: $warning-400; }
+.text-warning-500 { color: $warning-500; }
+.text-warning-600 { color: $warning-600; }
+.text-warning-700 { color: $warning-600; }
+.text-warning-800 { color: $warning-800; }
+.text-warning-900 { color: $warning-900; }
+// error
+.text-error-50 { color: $error-50;}
+.text-error-100 { color: $error-100; }
+.text-error-200 { color: $error-200; }
+.text-error-300 { color: $error-300; }
+.text-error-400 { color: $error-400; }
+.text-error-500 { color: $error-500; }
+.text-error-600 { color: $error-600; }
+.text-error-700 { color: $error-600; }
+.text-error-800 { color: $error-800; }
+.text-error-900 { color: $error-900; }
+
 // text opacity
 .text-opacity-20 { --cui-text-opacity: 0.2; }
 .text-opacity-50 { --cui-text-opacity: 0.5; }

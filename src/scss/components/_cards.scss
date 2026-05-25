@@ -5,3 +5,54 @@
 /* BASE CARDS */
 // =========================================
 
+// card
+.card {
+    --cui-card-border-width: 0;
+    --cui-card-border-radius: var(--cui-border-radius-lg);
+}
+
+.card-footer {
+    border-top: none;
+    background-color: transparent;
+}
+
+// card-tariff
+.d-grid .card-tariff,
+.swiper .card-tariff {
+    height: 100%;
+}
+.card-tariff {
+    --cui-card-spacer-y: 1rem;
+    --cui-card-spacer-x: 1rem;
+    --cui-card-cap-padding-y: 1rem;
+    --cui-card-cap-padding-x: 1rem;
+    background: linear-gradient(180deg, #F8FAFC 0%, #E6EEFF 100%);
+
+    .card-body {
+        padding-bottom: 0 !important;
+    }
+
+    &.tariff-popular {
+        --cui-card-border-width: 2px;
+        --cui-card-border-color: #{$brand-500};
+
+        .popular-label {
+            position: absolute;
+            top: -0.75rem;
+            right: 1.25rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: var(--cui-border-radius);
+            color: $brand-700;
+            font-size: 0.875em;
+            font-weight: 500;
+            background-color: $brand-200;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        --cui-card-spacer-y: 1.25rem;
+        --cui-card-spacer-x: 1.25rem;
+        --cui-card-cap-padding-y: 1.25rem;
+        --cui-card-cap-padding-x: 1.25rem;
+    }
+}

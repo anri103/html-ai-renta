@@ -8,19 +8,21 @@
 .modal {
     --cui-modal-padding: 0.75rem;
     --cui-modal-bg: #{$neutral-50};
+    --cui-modal-border-width: 1px;
+    --cui-modal-border-color: #{$neutral-200};
+
+    .modal-content {
+        box-shadow: 0px 24px 50px -12px rgba(30, 41, 59, 0.12);
+    }
 
     .btn-close {
         flex-shrink: 0;
+        box-shadow: none !important;
     }
 
     @include media-breakpoint-up(xl) {
         --cui-modal-padding: 1.25rem;
     }
-}
-
-// modal-forgot-pass
-.modal-forgot-pass {
-    --cui-modal-width: 400px;
 }
 
 // offcanvas-mobile-menu

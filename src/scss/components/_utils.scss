@@ -5,19 +5,19 @@
 /* UTILITY CLASSES */
 // =========================================
 
-// colors
-.neutral-50 { color: $neutral-50;}
-.neutral-100 { color: $neutral-100; }
-.neutral-200 { color: $neutral-200; }
-.neutral-300 { color: $neutral-300; }
-.neutral-400 { color: $neutral-400; }
-.neutral-500 { color: $neutral-500; }
-.neutral-600 { color: $neutral-600; }
-.neutral-700 { color: $neutral-600; }
-.neutral-800 { color: $neutral-800; }
-.neutral-900 { color: $neutral-900; }
-
 // background
+// brand
+.bg-brand-50 { background-color: $brand-50;}
+.bg-brand-100 { background-color: $brand-100; }
+.bg-brand-200 { background-color: $brand-200; }
+.bg-brand-300 { background-color: $brand-300; }
+.bg-brand-400 { background-color: $brand-400; }
+.bg-brand-500 { background-color: $brand-500; }
+.bg-brand-600 { background-color: $brand-600; }
+.bg-brand-700 { background-color: $brand-600; }
+.bg-brand-800 { background-color: $brand-800; }
+.bg-brand-900 { background-color: $brand-900; }
+// neutral
 .bg-neutral-50 { background-color: $neutral-50;}
 .bg-neutral-100 { background-color: $neutral-100; }
 .bg-neutral-200 { background-color: $neutral-200; }
@@ -28,6 +28,39 @@
 .bg-neutral-700 { background-color: $neutral-600; }
 .bg-neutral-800 { background-color: $neutral-800; }
 .bg-neutral-900 { background-color: $neutral-900; }
+// success
+.bg-success-50 { background-color: $success-50;}
+.bg-success-100 { background-color: $success-100; }
+.bg-success-200 { background-color: $success-200; }
+.bg-success-300 { background-color: $success-300; }
+.bg-success-400 { background-color: $success-400; }
+.bg-success-500 { background-color: $success-500; }
+.bg-success-600 { background-color: $success-600; }
+.bg-success-700 { background-color: $success-600; }
+.bg-success-800 { background-color: $success-800; }
+.bg-success-900 { background-color: $success-900; }
+// warning
+.bg-warning-50 { background-color: $warning-50;}
+.bg-warning-100 { background-color: $warning-100; }
+.bg-warning-200 { background-color: $warning-200; }
+.bg-warning-300 { background-color: $warning-300; }
+.bg-warning-400 { background-color: $warning-400; }
+.bg-warning-500 { background-color: $warning-500; }
+.bg-warning-600 { background-color: $warning-600; }
+.bg-warning-700 { background-color: $warning-600; }
+.bg-warning-800 { background-color: $warning-800; }
+.bg-warning-900 { background-color: $warning-900; }
+// error
+.bg-error-50 { background-color: $error-50;}
+.bg-error-100 { background-color: $error-100; }
+.bg-error-200 { background-color: $error-200; }
+.bg-error-300 { background-color: $error-300; }
+.bg-error-400 { background-color: $error-400; }
+.bg-error-500 { background-color: $error-500; }
+.bg-error-600 { background-color: $error-600; }
+.bg-error-700 { background-color: $error-600; }
+.bg-error-800 { background-color: $error-800; }
+.bg-error-900 { background-color: $error-900; }
 
 .bg-img {
     background-position: 50% 50%;
@@ -59,6 +92,9 @@
 // width
 .w-100 { width: 100% !important; }
 .w-auto { width: auto !important; }
+
+// height
+.h-20px { height: 20px !important; }
 
 // max-width
 .max-w-800px { max-width: 800px; }

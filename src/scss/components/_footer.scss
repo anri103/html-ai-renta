@@ -5,3 +5,17 @@
 /* FOOTER */
 // =========================================
 
+.app-footer {
+    position: relative;
+    margin-bottom: 20px;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    :has(.app-sidebar) .app-footer {
+        margin-left: var(--sidebar-width);
+    }
+}

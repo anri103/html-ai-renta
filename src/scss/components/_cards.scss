@@ -56,3 +56,24 @@
         --cui-card-cap-padding-x: 1.25rem;
     }
 }
+
+// card-estate
+.card-estate {
+    --cui-card-spacer-y: 1rem;
+    --cui-card-spacer-x: 1rem;
+
+    @include media-breakpoint-down(lg) {
+        .btn-sm {
+            --cui-btn-padding-x: 0.75rem;
+            --cui-btn-padding-y: 0.625rem;
+            --cui-btn-font-size: 1rem;
+            --cui-btn-border-width: 2px;
+            --cui-btn-border-radius: var(--cui-border-radius);
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        --cui-card-spacer-y: 1.25rem;
+        --cui-card-spacer-x: 1.25rem;
+    }
+}

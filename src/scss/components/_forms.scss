@@ -74,6 +74,17 @@
     }
 }
 
+// autocomplete
+.autocomplete {
+    &.h-100 .autocomplete-input-group {
+        height: 100%;
+    }
+
+    .autocomplete-input {
+        padding-left: 2.25rem;
+    }
+}
+
 // validation
 .was-validated .form-control:valid,
 .form-control.is-valid,

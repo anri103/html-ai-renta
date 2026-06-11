@@ -46,6 +46,11 @@ a { text-decoration: none; }
     }
 }
 
+.dropdown-menu {
+    --cui-dropdown-padding-x: 0.25rem;
+    --cui-dropdown-item-border-radius: var(--cui-border-radius-sm);
+}
+
 @include media-breakpoint-up(md) {
     .container,
     .container-fluid,

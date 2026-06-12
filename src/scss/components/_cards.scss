@@ -69,6 +69,12 @@
             --cui-btn-font-size: 1rem;
             --cui-btn-border-width: 2px;
             --cui-btn-border-radius: var(--cui-border-radius);
+
+            .inline-icon {
+                width: 24px;
+                height: 24px;
+                vertical-align: -0.35em;
+            }
         }
     }
 

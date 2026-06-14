@@ -144,6 +144,10 @@
     padding-left: calc(var(--cui-gutter-x) * 0.5) !important;
 }
 
+.inset-0 {
+    inset: 0 !important;
+}
+
 .container-negative-mobile {
     @include media-breakpoint-down(xl) {
         margin-right: calc(-0.5 * var(--cui-gutter-x)) !important;

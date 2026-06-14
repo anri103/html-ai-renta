@@ -20,7 +20,7 @@
 
 // form-control
 .form-control {
-    padding: 0.625rem;
+    padding: 0.625rem 0.75rem;
     border-color: $bg-white;
     background-color: $bg-white;
 
@@ -76,9 +76,7 @@
 
 // autocomplete
 .autocomplete {
-    &.h-100 .autocomplete-input-group {
-        height: 100%;
-    }
+    --cui-autocomplete-padding-y: 0.625rem;
 
     .autocomplete-input {
         padding-left: 2.25rem;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Объекты (инвестор) (пустой)"
+})
+
+<body>
+    <!-- Mobile Menu -->
+    @@include('partials/offcanvas/mobile-menu-investor.html', {
+        "activeLink": "objects"
+    })
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
+
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar-investor.html', {
+        "activeLink": "objects"
+    })
+
+    <!-- MAIN -->
+    <main class="app-main">
+
+        <!-- section-objects (empty) -->
+        <section class="section section-objects">
+            <div class="container-fluid">
+                <div class="d-flex flex-column min-h-screen-lg min-h-screen-xl gap-6">
+
+                    @@include('partials/sections/objects-top-row.html')
+
+                    <!-- content-area -->
+                    <div class="flex-fill rounded-neutral-wrapper container-negative-mobile">
+
+                        <!-- empty wrapper -->
+                        @@include('partials/sections/objects-empty.html')
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+    <!-- @@include('partials/modals/enter-promo-code-1.html') -->
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

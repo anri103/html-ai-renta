@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Объекты (продавец)"
+})
+
+<body>
+    <!-- Mobile Menu -->
+    @@include('partials/offcanvas/mobile-menu-seller.html', {
+        "activeLink": "objects"
+    })
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
+
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar-seller.html', {
+        "activeLink": "objects"
+    })
+
+    <!-- MAIN -->
+    <main class="app-main">
+
+        <!-- section-objects (with cards) -->
+        <section class="section section-objects">
+            <div class="container-fluid">
+                <div class="d-flex flex-column min-h-screen-lg min-h-screen-xl gap-6">
+
+                    @@include('partials/sections/objects-top-row.html')
+
+                    <!-- content-area -->
+                    <div class="flex-fill rounded-neutral-wrapper container-negative-mobile">
+
+                        <!-- cards wrapper -->
+                        <div class="d-flex flex-column gap-2">
+                            @@include('partials/cards/estate.html', {
+                                "cardType": "common"
+                            })
+                            @@include('partials/cards/estate.html', {
+                                "cardType": "deadline-soon"
+                            })
+                            @@include('partials/cards/estate.html', {
+                                "cardType": "deadline-expired"
+                            })
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+    <!-- @@include('partials/modals/enter-promo-code-1.html') -->
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

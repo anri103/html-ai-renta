@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Объекты (инвестор)"
+})
+
+<body>
+    <!-- Mobile Menu -->
+    @@include('partials/offcanvas/mobile-menu-investor.html', {
+        "activeLink": "objects"
+    })
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
+
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar-investor.html', {
+        "activeLink": "objects"
+    })
+
+    <!-- MAIN -->
+    <main class="app-main">
+
+        <!-- section-objects (with cards) -->
+        <section class="section section-objects">
+            <div class="container-fluid">
+                <div class="d-flex flex-column min-h-screen-lg min-h-screen-xl gap-6">
+
+                    @@include('partials/sections/objects-top-row.html')
+
+                    <!-- content-area -->
+                    <div class="flex-fill rounded-neutral-wrapper container-negative-mobile">
+
+                        <!-- cards wrapper -->
+                        <div class="d-flex flex-column gap-2">
+                            @@include('partials/cards/estate.html', {
+                                "cardType": "investor"
+                            })
+                            @@include('partials/cards/estate.html', {
+                                "cardType": "investor"
+                            })
+                            @@include('partials/cards/estate.html', {
+                                "cardType": "investor"
+                            })
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('partials/layout/footer.html')
+
+    <!-- MODALS -->
+    <!-- @@include('partials/modals/enter-promo-code-1.html') -->
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

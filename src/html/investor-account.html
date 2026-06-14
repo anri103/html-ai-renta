@@ -2,28 +2,28 @@
 <html lang="ru">
 
 @@include('partials/layout/head.html', {
-    "title": "Вопросы и ответы"
+    "title": "Личный Кабинет (инвестор)"
 })
 
 <body>
     <!-- Mobile Menu -->
-    @@include('partials/offcanvas/mobile-menu-seller.html', {
-        "activeLink": "faq"
+    @@include('partials/offcanvas/mobile-menu-investor.html', {
+        "activeLink": "account"
     })
 
     <!-- HEADER -->
     @@include('partials/layout/header.html')
 
     <!-- SIDEBAR -->
-    @@include('partials/layout/sidebar-seller.html', {
-        "activeLink": "faq"
+    @@include('partials/layout/sidebar-investor.html', {
+        "activeLink": "account"
     })
 
     <!-- MAIN -->
     <main class="app-main">
 
-        <!-- section-faq -->
-        @@include('partials/sections/faq.html')
+        <!-- section-account -->
+        @@include('partials/sections/account.html')
 
     </main>
 
@@ -31,7 +31,7 @@
     <!-- @@include('partials/layout/footer.html') -->
 
     <!-- MODALS -->
-    @@include('partials/modals/support-success.html')
+    <!-- @@include('partials/modals/success.html') -->
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

@@ -9,22 +9,23 @@
     <title>Вопросы и ответы</title>
 
     <!-- fonts -->
-    <link rel="stylesheet" href="fonts/Golos-Text/Golos-Text.css">
+    <link rel="stylesheet" href="assets/fonts/Golos-Text/Golos-Text.css">
 
     <!-- styles -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/fancybox.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 <body>
     <!-- Mobile Menu -->
-    <div class="offcanvas offcanvas-mobile-menu offcanvas-end" tabindex="-1" id="offcanvasMobileMenu">
+    <!-- offcanvas seller -->
+<div class="offcanvas offcanvas-mobile-menu offcanvas-end" tabindex="-1" id="offcanvasMobileMenu">
     <div class="offcanvas-header justify-content-between">
         <div class="offcanvas-logo">
             <a href="index.html">
-                <img class="app-logo" src="img/logo/logo.svg" alt="logo">
+                <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
             </a>
         </div>
         <button type="button" class="btn btn-outline-secondary p-2" data-coreui-dismiss="offcanvas" aria-label="Close">
@@ -39,7 +40,7 @@
         <!-- menu -->
         <ul class="app-menu navbar-nav flex-column">
             <li class="nav-item">
-                <a href="objects.html" class="nav-link ">
+                <a href="seller-objects.html" class="nav-link ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M21 12L12 18L3 12M21 16L12 22L3 16M21 8L12 14L3 8L12 2L21 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -49,7 +50,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="add-new-object.html" class="btn btn-primary btn-add-object w-100">
+                <a href="seller-add-new-object.html" class="btn btn-primary btn-add-object w-100">
                     <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M8 2.66669V13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M2.66663 8H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,7 +59,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="drafts.html" class="nav-link ">
+                <a href="seller-drafts.html" class="nav-link ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M13 3.00087C12.9045 3 12.7973 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20296 19 9.09561 18.9991 9M13 3.00087C13.2856 3.00347 13.4663 3.01385 13.6388 3.05526C13.8429 3.10425 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59182 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53376 18.9963 8.71451 18.9991 9M13 3.00087V5.8C13 6.9201 13 7.47977 13.218 7.90759C13.4097 8.28392 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.9991M18.9991 9H19.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -68,7 +69,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="estate-database.html" class="nav-link ">
+                <a href="seller-estate-database.html" class="nav-link ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M2 20H4M4 20H15M4 20V14.3682C4 13.8428 4 13.58 4.063 13.335C4.11883 13.1178 4.21073 12.9118 4.33496 12.7252C4.47505 12.5147 4.67114 12.3384 5.06152 11.9877L7.3631 9.91997C8.11784 9.24192 8.49549 8.90264 8.92249 8.77393C9.29894 8.66045 9.7007 8.66045 10.0771 8.77393C10.5045 8.90275 10.8827 9.2422 11.6387 9.92139L13.9387 11.9877C14.3295 12.3388 14.5245 12.5146 14.6647 12.7252C14.7889 12.9118 14.8807 13.1178 14.9365 13.335C14.9995 13.58 15 13.8428 15 14.3682V20M15 20H20M20 20H22M20 20V7.19691C20 6.07899 20 5.5192 19.7822 5.0918C19.5905 4.71547 19.2837 4.40973 18.9074 4.21799C18.4796 4 17.9203 4 16.8002 4H10.2002C9.08009 4 8.51962 4 8.0918 4.21799C7.71547 4.40973 7.40973 4.71547 7.21799 5.0918C7 5.51962 7 6.08009 7 7.2002V10.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -81,7 +82,7 @@
                 <hr class="nav-divider">
             </li>
             <li class="nav-item">
-                <a href="account.html" class="nav-link ">
+                <a href="seller-account.html" class="nav-link ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M17 21C17 18.2386 14.7614 16 12 16C9.23858 16 7 18.2386 7 21M17 21H17.8031C18.921 21 19.48 21 19.9074 20.7822C20.2837 20.5905 20.5905 20.2837 20.7822 19.9074C21 19.48 21 18.921 21 17.8031V6.19691C21 5.07899 21 4.5192 20.7822 4.0918C20.5905 3.71547 20.2837 3.40973 19.9074 3.21799C19.4796 3 18.9203 3 17.8002 3H6.2002C5.08009 3 4.51962 3 4.0918 3.21799C3.71547 3.40973 3.40973 3.71547 3.21799 4.0918C3 4.51962 3 5.08009 3 6.2002V17.8002C3 18.9203 3 19.4796 3.21799 19.9074C3.40973 20.2837 3.71547 20.5905 4.0918 20.7822C4.5192 21 5.07899 21 6.19691 21H7M17 21H7M12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 11.6569 13.6569 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -143,7 +144,7 @@
             <!-- logo -->
             <div class="header-row__logo">
                 <a href="index.html">
-                    <img class="app-logo" src="img/logo/logo.svg" alt="logo">
+                    <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
                 </a>
             </div>
 
@@ -164,7 +165,8 @@
 </header>
 
     <!-- SIDEBAR -->
-    <aside class="app-sidebar">
+    <!-- sidebar seller -->
+<aside class="app-sidebar">
     <div class="app-sidebar-body">
 
         <!-- app-sidebar header -->
@@ -172,7 +174,7 @@
             <!-- logo -->
             <div class="position-relative d-flex justify-content-center mb-6">
                 <a href="index.html">
-                    <img class="app-logo" src="img/logo/logo.svg" alt="logo">
+                    <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
                 </a>
             </div>
             <!-- hr -->
@@ -185,7 +187,7 @@
             <ul class="app-menu navbar-nav flex-column">
                 <li class="nav-item">
                     <div class="d-flex flex-column">
-                        <a href="objects.html" class="nav-link ">
+                        <a href="seller-objects.html" class="nav-link ">
                             <span class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M21 12L12 18L3 12M21 16L12 22L3 16M21 8L12 14L3 8L12 2L21 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -194,7 +196,7 @@
                             <span>Объекты</span>
                         </a>
                         <div class="btn-add-object-wrapper">
-                            <a href="add-new-object.html" class="btn btn-primary btn-sm btn-add-object w-100">
+                            <a href="seller-add-new-object.html" class="btn btn-primary btn-sm btn-add-object w-100">
                                 <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M8 2.66669V13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M2.66663 8H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -205,7 +207,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="drafts.html" class="nav-link ">
+                    <a href="seller-drafts.html" class="nav-link ">
                         <span class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M13 3.00087C12.9045 3 12.7973 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20296 19 9.09561 18.9991 9M13 3.00087C13.2856 3.00347 13.4663 3.01385 13.6388 3.05526C13.8429 3.10425 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59182 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53376 18.9963 8.71451 18.9991 9M13 3.00087V5.8C13 6.9201 13 7.47977 13.218 7.90759C13.4097 8.28392 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.9991M18.9991 9H19.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -215,7 +217,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="estate-database.html" class="nav-link ">
+                    <a href="seller-estate-database.html" class="nav-link ">
                         <span class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M2 20H4M4 20H15M4 20V14.3682C4 13.8428 4 13.58 4.063 13.335C4.11883 13.1178 4.21073 12.9118 4.33496 12.7252C4.47505 12.5147 4.67114 12.3384 5.06152 11.9877L7.3631 9.91997C8.11784 9.24192 8.49549 8.90264 8.92249 8.77393C9.29894 8.66045 9.7007 8.66045 10.0771 8.77393C10.5045 8.90275 10.8827 9.2422 11.6387 9.92139L13.9387 11.9877C14.3295 12.3388 14.5245 12.5146 14.6647 12.7252C14.7889 12.9118 14.8807 13.1178 14.9365 13.335C14.9995 13.58 15 13.8428 15 14.3682V20M15 20H20M20 20H22M20 20V7.19691C20 6.07899 20 5.5192 19.7822 5.0918C19.5905 4.71547 19.2837 4.40973 18.9074 4.21799C18.4796 4 17.9203 4 16.8002 4H10.2002C9.08009 4 8.51962 4 8.0918 4.21799C7.71547 4.40973 7.40973 4.71547 7.21799 5.0918C7 5.51962 7 6.08009 7 7.2002V10.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -228,7 +230,7 @@
                     <hr class="nav-divider">
                 </li>
                 <li class="nav-item">
-                    <a href="account.html" class="nav-link ">
+                    <a href="seller-account.html" class="nav-link ">
                         <span class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M17 21C17 18.2386 14.7614 16 12 16C9.23858 16 7 18.2386 7 21M17 21H17.8031C18.921 21 19.48 21 19.9074 20.7822C20.2837 20.5905 20.5905 20.2837 20.7822 19.9074C21 19.48 21 18.921 21 17.8031V6.19691C21 5.07899 21 4.5192 20.7822 4.0918C20.5905 3.71547 20.2837 3.40973 19.9074 3.21799C19.4796 3 18.9203 3 17.8002 3H6.2002C5.08009 3 4.51962 3 4.0918 3.21799C3.71547 3.40973 3.40973 3.71547 3.21799 4.0918C3 4.51962 3 5.08009 3 6.2002V17.8002C3 18.9203 3 19.4796 3.21799 19.9074C3.40973 20.2837 3.71547 20.5905 4.0918 20.7822C4.5192 21 5.07899 21 6.19691 21H7M17 21H7M12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 11.6569 13.6569 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -592,7 +594,7 @@
 
                 <!-- btn-close -->
                 <div class="d-flex justify-content-between gap-3 mb-2">
-                    <img src="img/modals/check.svg" alt="check">
+                    <img src="assets/img/modals/check.svg" alt="check">
                     <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -614,10 +616,10 @@
 </div>
 
     <!-- scripts -->
-    <script src="js/coreui.bundle.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/custom.js"></script>
+    <script src="assets/js/coreui.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
 
 </html>

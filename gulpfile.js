@@ -35,7 +35,7 @@ function scssStyleDev() {
     )
     .pipe(rename('style.min.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/css/'))
+    .pipe(gulp.dest('dist/assets/css/'))
     .pipe(browserSync.stream());
 }
 
@@ -50,7 +50,7 @@ function scssStyleBuild() {
       }).on('error', sass.logError)
     )
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('dist/css/'))
+    .pipe(gulp.dest('dist/assets/css/'))
     .pipe(browserSync.stream());
 }
 
@@ -77,28 +77,28 @@ function vendorsJs() {
 // ===== Копирование css/ =====
 function css() {
   return gulp.src('src/css/**/*.css')
-    .pipe(gulp.dest('dist/css/'))
+    .pipe(gulp.dest('dist/assets/css/'))
     .pipe(browserSync.stream());
 }
 
 // ===== Копирование js/ =====
 function scripts() {
   return gulp.src('src/js/**/*.js')
-    .pipe(gulp.dest('dist/js/'))
+    .pipe(gulp.dest('dist/assets/js/'))
     .pipe(browserSync.stream());
 }
 
 // ===== Копирование img/ =====
 function images() {
   return gulp.src('src/img/**/*', { encoding: false })
-    .pipe(gulp.dest('dist/img/'))
+    .pipe(gulp.dest('dist/assets/img/'))
     .pipe(browserSync.stream());
 }
 
 // ===== Копирование fonts/ =====
 function fonts() {
   return gulp.src('src/fonts/**/*', { encoding: false })
-    .pipe(gulp.dest('dist/fonts/'))
+    .pipe(gulp.dest('dist/assets/fonts/'))
     .pipe(browserSync.stream());
 }
 

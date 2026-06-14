@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <!-- <link rel="icon" href="img/favicon/favicon.svg" sizes="32x32" /> -->
-    <title>Уведомления</title>
+    <title>Черновики (инвестор)</title>
 
     <!-- fonts -->
     <link rel="stylesheet" href="assets/fonts/Golos-Text/Golos-Text.css">
@@ -20,7 +20,7 @@
 
 <body>
     <!-- Mobile Menu -->
-    <!-- offcanvas seller -->
+    <!-- offcanvas investor -->
 <div class="offcanvas offcanvas-mobile-menu offcanvas-end" tabindex="-1" id="offcanvasMobileMenu">
     <div class="offcanvas-header justify-content-between">
         <div class="offcanvas-logo">
@@ -40,7 +40,7 @@
         <!-- menu -->
         <ul class="app-menu navbar-nav flex-column">
             <li class="nav-item">
-                <a href="seller-objects.html" class="nav-link ">
+                <a href="investor-objects.html" class="nav-link ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M21 12L12 18L3 12M21 16L12 22L3 16M21 8L12 14L3 8L12 2L21 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -50,7 +50,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="seller-add-new-object.html" class="btn btn-primary btn-add-object w-100">
+                <a href="investor-add-new-object.html" class="btn btn-primary btn-add-object w-100">
                     <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M8 2.66669V13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M2.66663 8H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -59,7 +59,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="seller-drafts.html" class="nav-link ">
+                <a href="investor-drafts.html" class="nav-link active">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M13 3.00087C12.9045 3 12.7973 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20296 19 9.09561 18.9991 9M13 3.00087C13.2856 3.00347 13.4663 3.01385 13.6388 3.05526C13.8429 3.10425 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59182 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53376 18.9963 8.71451 18.9991 9M13 3.00087V5.8C13 6.9201 13 7.47977 13.218 7.90759C13.4097 8.28392 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.9991M18.9991 9H19.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -69,7 +69,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="seller-estate-database.html" class="nav-link ">
+                <a href="investor-estate-database.html" class="nav-link ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M2 20H4M4 20H15M4 20V14.3682C4 13.8428 4 13.58 4.063 13.335C4.11883 13.1178 4.21073 12.9118 4.33496 12.7252C4.47505 12.5147 4.67114 12.3384 5.06152 11.9877L7.3631 9.91997C8.11784 9.24192 8.49549 8.90264 8.92249 8.77393C9.29894 8.66045 9.7007 8.66045 10.0771 8.77393C10.5045 8.90275 10.8827 9.2422 11.6387 9.92139L13.9387 11.9877C14.3295 12.3388 14.5245 12.5146 14.6647 12.7252C14.7889 12.9118 14.8807 13.1178 14.9365 13.335C14.9995 13.58 15 13.8428 15 14.3682V20M15 20H20M20 20H22M20 20V7.19691C20 6.07899 20 5.5192 19.7822 5.0918C19.5905 4.71547 19.2837 4.40973 18.9074 4.21799C18.4796 4 17.9203 4 16.8002 4H10.2002C9.08009 4 8.51962 4 8.0918 4.21799C7.71547 4.40973 7.40973 4.71547 7.21799 5.0918C7 5.51962 7 6.08009 7 7.2002V10.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,7 +82,7 @@
                 <hr class="nav-divider">
             </li>
             <li class="nav-item">
-                <a href="seller-account.html" class="nav-link ">
+                <a href="investor-account.html" class="nav-link ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M17 21C17 18.2386 14.7614 16 12 16C9.23858 16 7 18.2386 7 21M17 21H17.8031C18.921 21 19.48 21 19.9074 20.7822C20.2837 20.5905 20.5905 20.2837 20.7822 19.9074C21 19.48 21 18.921 21 17.8031V6.19691C21 5.07899 21 4.5192 20.7822 4.0918C20.5905 3.71547 20.2837 3.40973 19.9074 3.21799C19.4796 3 18.9203 3 17.8002 3H6.2002C5.08009 3 4.51962 3 4.0918 3.21799C3.71547 3.40973 3.40973 3.71547 3.21799 4.0918C3 4.51962 3 5.08009 3 6.2002V17.8002C3 18.9203 3 19.4796 3.21799 19.9074C3.40973 20.2837 3.71547 20.5905 4.0918 20.7822C4.5192 21 5.07899 21 6.19691 21H7M17 21H7M12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 11.6569 13.6569 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -120,7 +120,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="notifications.html" class="nav-link notification-active active">
+                <a href="notifications.html" class="nav-link notification-active ">
                     <span class="nav-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M12 8.44971V12.4497M7.33173 3.9375L3.9375 7.33173L3.93442 7.33462C3.59057 7.67847 3.41824 7.85081 3.29492 8.05204C3.18526 8.23098 3.10425 8.4263 3.05526 8.63037C3 8.86055 3 9.10506 3 9.59424V14.4058C3 14.8949 3 15.1395 3.05526 15.3697C3.10425 15.5738 3.18526 15.7688 3.29492 15.9478C3.41857 16.1495 3.59182 16.3228 3.9375 16.6685L7.33173 20.0627C7.67763 20.4086 7.85021 20.5812 8.05204 20.7048C8.23099 20.8145 8.42581 20.8958 8.62988 20.9448C8.85971 21 9.10382 21 9.59151 21H14.4075C14.8952 21 15.1404 21 15.3702 20.9448C15.5743 20.8958 15.7693 20.8145 15.9482 20.7049C16.1501 20.5812 16.323 20.4086 16.6689 20.0627L20.0632 16.6685C20.4091 16.3226 20.5817 16.1496 20.7053 15.9478C20.815 15.7688 20.8953 15.5738 20.9443 15.3697C20.9996 15.1395 21 14.895 21 14.4058V9.59424C21 9.10506 20.9996 8.86055 20.9443 8.63037C20.8953 8.4263 20.815 8.23099 20.7053 8.05205C20.5817 7.85022 20.4091 7.67761 20.0632 7.33173L16.6689 3.9375C16.3233 3.59181 16.15 3.41857 15.9482 3.29492C15.7693 3.18526 15.5743 3.10425 15.3702 3.05526C15.14 3 14.8945 3 14.4053 3H9.59375C9.10457 3 8.86006 3 8.62988 3.05526C8.42581 3.10425 8.23099 3.18526 8.05204 3.29492C7.85204 3.41748 7.68106 3.58847 7.3414 3.92813L7.33173 3.9375ZM12.0498 15.4497V15.5497L11.9502 15.5499V15.4497H12.0498Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -165,7 +165,7 @@
 </header>
 
     <!-- SIDEBAR -->
-    <!-- sidebar seller -->
+    <!-- sidebar investor -->
 <aside class="app-sidebar">
     <div class="app-sidebar-body">
 
@@ -187,7 +187,7 @@
             <ul class="app-menu navbar-nav flex-column">
                 <li class="nav-item">
                     <div class="d-flex flex-column">
-                        <a href="seller-objects.html" class="nav-link ">
+                        <a href="investor-objects.html" class="nav-link ">
                             <span class="nav-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M21 12L12 18L3 12M21 16L12 22L3 16M21 8L12 14L3 8L12 2L21 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -196,7 +196,7 @@
                             <span>Объекты</span>
                         </a>
                         <div class="btn-add-object-wrapper">
-                            <a href="seller-add-new-object.html" class="btn btn-primary btn-sm btn-add-object w-100">
+                            <a href="investor-add-new-object.html" class="btn btn-primary btn-sm btn-add-object w-100">
                                 <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M8 2.66669V13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M2.66663 8H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -207,7 +207,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="seller-drafts.html" class="nav-link ">
+                    <a href="investor-drafts.html" class="nav-link active">
                         <span class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M13 3.00087C12.9045 3 12.7973 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20296 19 9.09561 18.9991 9M13 3.00087C13.2856 3.00347 13.4663 3.01385 13.6388 3.05526C13.8429 3.10425 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59182 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53376 18.9963 8.71451 18.9991 9M13 3.00087V5.8C13 6.9201 13 7.47977 13.218 7.90759C13.4097 8.28392 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.9991M18.9991 9H19.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -217,7 +217,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="seller-estate-database.html" class="nav-link ">
+                    <a href="investor-estate-database.html" class="nav-link ">
                         <span class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M2 20H4M4 20H15M4 20V14.3682C4 13.8428 4 13.58 4.063 13.335C4.11883 13.1178 4.21073 12.9118 4.33496 12.7252C4.47505 12.5147 4.67114 12.3384 5.06152 11.9877L7.3631 9.91997C8.11784 9.24192 8.49549 8.90264 8.92249 8.77393C9.29894 8.66045 9.7007 8.66045 10.0771 8.77393C10.5045 8.90275 10.8827 9.2422 11.6387 9.92139L13.9387 11.9877C14.3295 12.3388 14.5245 12.5146 14.6647 12.7252C14.7889 12.9118 14.8807 13.1178 14.9365 13.335C14.9995 13.58 15 13.8428 15 14.3682V20M15 20H20M20 20H22M20 20V7.19691C20 6.07899 20 5.5192 19.7822 5.0918C19.5905 4.71547 19.2837 4.40973 18.9074 4.21799C18.4796 4 17.9203 4 16.8002 4H10.2002C9.08009 4 8.51962 4 8.0918 4.21799C7.71547 4.40973 7.40973 4.71547 7.21799 5.0918C7 5.51962 7 6.08009 7 7.2002V10.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -230,7 +230,7 @@
                     <hr class="nav-divider">
                 </li>
                 <li class="nav-item">
-                    <a href="seller-account.html" class="nav-link ">
+                    <a href="investor-account.html" class="nav-link ">
                         <span class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M17 21C17 18.2386 14.7614 16 12 16C9.23858 16 7 18.2386 7 21M17 21H17.8031C18.921 21 19.48 21 19.9074 20.7822C20.2837 20.5905 20.5905 20.2837 20.7822 19.9074C21 19.48 21 18.921 21 17.8031V6.19691C21 5.07899 21 4.5192 20.7822 4.0918C20.5905 3.71547 20.2837 3.40973 19.9074 3.21799C19.4796 3 18.9203 3 17.8002 3H6.2002C5.08009 3 4.51962 3 4.0918 3.21799C3.71547 3.40973 3.40973 3.71547 3.21799 4.0918C3 4.51962 3 5.08009 3 6.2002V17.8002C3 18.9203 3 19.4796 3.21799 19.9074C3.40973 20.2837 3.71547 20.5905 4.0918 20.7822C4.5192 21 5.07899 21 6.19691 21H7M17 21H7M12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 11.6569 13.6569 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -268,7 +268,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="notifications.html" class="nav-link notification-active active">
+                    <a href="notifications.html" class="nav-link notification-active ">
                         <span class="nav-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12 8.44971V12.4497M7.33173 3.9375L3.9375 7.33173L3.93442 7.33462C3.59057 7.67847 3.41824 7.85081 3.29492 8.05204C3.18526 8.23098 3.10425 8.4263 3.05526 8.63037C3 8.86055 3 9.10506 3 9.59424V14.4058C3 14.8949 3 15.1395 3.05526 15.3697C3.10425 15.5738 3.18526 15.7688 3.29492 15.9478C3.41857 16.1495 3.59182 16.3228 3.9375 16.6685L7.33173 20.0627C7.67763 20.4086 7.85021 20.5812 8.05204 20.7048C8.23099 20.8145 8.42581 20.8958 8.62988 20.9448C8.85971 21 9.10382 21 9.59151 21H14.4075C14.8952 21 15.1404 21 15.3702 20.9448C15.5743 20.8958 15.7693 20.8145 15.9482 20.7049C16.1501 20.5812 16.323 20.4086 16.6689 20.0627L20.0632 16.6685C20.4091 16.3226 20.5817 16.1496 20.7053 15.9478C20.815 15.7688 20.8953 15.5738 20.9443 15.3697C20.9996 15.1395 21 14.895 21 14.4058V9.59424C21 9.10506 20.9996 8.86055 20.9443 8.63037C20.8953 8.4263 20.815 8.23099 20.7053 8.05205C20.5817 7.85022 20.4091 7.67761 20.0632 7.33173L16.6689 3.9375C16.3233 3.59181 16.15 3.41857 15.9482 3.29492C15.7693 3.18526 15.5743 3.10425 15.3702 3.05526C15.14 3 14.8945 3 14.4053 3H9.59375C9.10457 3 8.86006 3 8.62988 3.05526C8.42581 3.10425 8.23099 3.18526 8.05204 3.29492C7.85204 3.41748 7.68106 3.58847 7.3414 3.92813L7.33173 3.9375ZM12.0498 15.4497V15.5497L11.9502 15.5499V15.4497H12.0498Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -291,106 +291,434 @@
     <!-- MAIN -->
     <main class="app-main">
 
-        <!-- section-notifications -->
-        <section class="section section-notifications">
+        <!-- section-estate-list -->
+        <section class="section section-estate-list">
+            <div class="container-fluid">
+                <!-- grid -->
+                <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
+                    <!-- list-area -->
+                    <div class="col-span-12 col-span-lg-12 col-span-xl-12">
+                        <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl container-negative-mobile">
 
-    <!-- bg image -->
-    <img class="img-fluid position-fixed top-0 end-0 bottom-0 d-none d-xl-block object-fit-contain pe-none" src="assets/img/notifications/bg-notifications.png" alt="ИИ Рента Уведомления">
-
-    <div class="container-fluid">
-        <!-- grid -->
-        <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
-            <!-- content -->
-            <div class="col-span-12 col-span-lg-12 col-span-xl-5">
-                <div class="rounded-neutral-wrapper min-h-screen-xl">
-
-                    <!-- title -->
-                    <h1 class="fw-700 mb-6">Уведомления</h1>
-
-                    <div class="flex-fill">
-                        <!-- list -->
-                        <div class="d-flex flex-column gap-3">
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
+                            <!-- cards list -->
+                            <div class="d-flex flex-column gap-2">
+                                <div class="card card-estate">
+    <div class="card-body">
+        <div class="d-flex flex-column gap-5 gap-xl-6">
+            
+            <!-- number + data -->
+            <div>
+                <div class="row gy-5 gy-xl-6">
+                    <!-- col: number -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13">
+                        <div class="d-flex flex-wrap flex-row flex-lg-column gap-1">
+                            <div class="small fw-400 text-gray-50 mb-0">№S1006F</div>
+                            <div class="small fw-400 text-gray-50 mb-0">от 26.03.2026</div>
+                        </div>
+                    </div>
+                    <!-- Mobile Title (double) -->
+                    <div class="d-lg-none">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="row align-items-center gy-5 gx-4">
+                            <div class="col-24 col-md-24 col-lg col-xl order-lg-last text-lg-end">
+                                <div class="h4 fw-600 mb-0">24 000 000 ₽</div>
                             </div>
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-5">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип помещения:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Бытовые услуги">Бытовые услуги</div>
                             </div>
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-4 order-xl-first">
+                                <div class="small fw-400 text-gray-50 mb-1">Арендатор:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Ozon">Ozon</div>
                             </div>
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
-                            </div>
-                            <!-- item -->
-                            <div class="position-relative bg-white rounded-2 p-6">
-                                <div class="small text-gray-50 fw-400 mb-2">10:33 12.03.2026</div>
-                                <div class="h5 fw-600 mb-2">Скоро изменение цены</div>
-                                <div class="text-box text-gray-60 fw-400">
-                                    <p>С 1 [месяц] стоимость тарифа «Стандарт» станет выше. Вы можете продлить тариф сейчас и зафиксировать текущую цену.</p>
-                                </div>
+                            <div class="col-24 col-md-8 col-lg col-xl">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип здания:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Жилой многоквартирный дом">Жилой многоквартирный дом</div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+
+            <!-- address + data -->
+            <div>
+                <div class="row align-items-center gy-5 gy-xl-6">
+                    <!-- col: address -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13 d-none d-lg-block">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="d-flex flex-column gap-2">
+                            
+                                <!-- empty for draft -->
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div>
+                
+                    <div class="row gy-4 gx-4">
+                        <div class="col-lg text-lg-end">
+                            <a href="#" class="btn btn-primary btn-sm w-100 w-lg-auto">
+                                <span>Заполнить</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-auto order-lg-first">
+                            <a href="#" class="btn btn-outline-secondary btn-sm w-100 w-lg-auto">
+                                <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4.66667 3.33325L2 5.99992L4.66667 8.66658M2 5.99992H10.6667C12.5076 5.99992 14 7.4923 14 9.33325C14 11.1742 12.5076 12.6666 10.6667 12.6666H7.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Чат активен до 12:00 24.03</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+            </div>
+
         </div>
     </div>
+</div>
+                                <div class="card card-estate">
+    <div class="card-body">
+        <div class="d-flex flex-column gap-5 gap-xl-6">
+            
+            <!-- number + data -->
+            <div>
+                <div class="row gy-5 gy-xl-6">
+                    <!-- col: number -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13">
+                        <div class="d-flex flex-wrap flex-row flex-lg-column gap-1">
+                            <div class="small fw-400 text-gray-50 mb-0">№S1006F</div>
+                            <div class="small fw-400 text-gray-50 mb-0">от 26.03.2026</div>
+                        </div>
+                    </div>
+                    <!-- Mobile Title (double) -->
+                    <div class="d-lg-none">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="row align-items-center gy-5 gx-4">
+                            <div class="col-24 col-md-24 col-lg col-xl order-lg-last text-lg-end">
+                                <div class="h4 fw-600 mb-0">24 000 000 ₽</div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-5">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип помещения:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Бытовые услуги">Бытовые услуги</div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-4 order-xl-first">
+                                <div class="small fw-400 text-gray-50 mb-1">Арендатор:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Ozon">Ozon</div>
+                            </div>
+                            <div class="col-24 col-md-8 col-lg col-xl">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип здания:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Жилой многоквартирный дом">Жилой многоквартирный дом</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</section>
+            <!-- address + data -->
+            <div>
+                <div class="row align-items-center gy-5 gy-xl-6">
+                    <!-- col: address -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13 d-none d-lg-block">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="d-flex flex-column gap-2">
+                            
+                                <!-- empty for draft -->
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div>
+                
+                    <div class="row gy-4 gx-4">
+                        <div class="col-lg text-lg-end">
+                            <a href="#" class="btn btn-primary btn-sm w-100 w-lg-auto">
+                                <span>Заполнить</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-auto order-lg-first">
+                            <a href="#" class="btn btn-outline-secondary btn-sm w-100 w-lg-auto">
+                                <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4.66667 3.33325L2 5.99992L4.66667 8.66658M2 5.99992H10.6667C12.5076 5.99992 14 7.4923 14 9.33325C14 11.1742 12.5076 12.6666 10.6667 12.6666H7.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Чат активен до 12:00 24.03</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+            </div>
+
+        </div>
+    </div>
+</div>
+                                <div class="card card-estate">
+    <div class="card-body">
+        <div class="d-flex flex-column gap-5 gap-xl-6">
+            
+            <!-- number + data -->
+            <div>
+                <div class="row gy-5 gy-xl-6">
+                    <!-- col: number -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13">
+                        <div class="d-flex flex-wrap flex-row flex-lg-column gap-1">
+                            <div class="small fw-400 text-gray-50 mb-0">№S1006F</div>
+                            <div class="small fw-400 text-gray-50 mb-0">от 26.03.2026</div>
+                        </div>
+                    </div>
+                    <!-- Mobile Title (double) -->
+                    <div class="d-lg-none">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="row align-items-center gy-5 gx-4">
+                            <div class="col-24 col-md-24 col-lg col-xl order-lg-last text-lg-end">
+                                <div class="h4 fw-600 mb-0">24 000 000 ₽</div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-5">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип помещения:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Бытовые услуги">Бытовые услуги</div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-4 order-xl-first">
+                                <div class="small fw-400 text-gray-50 mb-1">Арендатор:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Ozon">Ozon</div>
+                            </div>
+                            <div class="col-24 col-md-8 col-lg col-xl">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип здания:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Жилой многоквартирный дом">Жилой многоквартирный дом</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- address + data -->
+            <div>
+                <div class="row align-items-center gy-5 gy-xl-6">
+                    <!-- col: address -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13 d-none d-lg-block">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="d-flex flex-column gap-2">
+                            
+                                <!-- empty for draft -->
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div>
+                
+                    <div class="row gy-4 gx-4">
+                        <div class="col-lg text-lg-end">
+                            <a href="#" class="btn btn-primary btn-sm w-100 w-lg-auto">
+                                <span>Заполнить</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-auto order-lg-first">
+                            <a href="#" class="btn btn-outline-secondary btn-sm w-100 w-lg-auto">
+                                <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4.66667 3.33325L2 5.99992L4.66667 8.66658M2 5.99992H10.6667C12.5076 5.99992 14 7.4923 14 9.33325C14 11.1742 12.5076 12.6666 10.6667 12.6666H7.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Чат активен до 12:00 24.03</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+            </div>
+
+        </div>
+    </div>
+</div>
+                                <div class="card card-estate">
+    <div class="card-body">
+        <div class="d-flex flex-column gap-5 gap-xl-6">
+            
+            <!-- number + data -->
+            <div>
+                <div class="row gy-5 gy-xl-6">
+                    <!-- col: number -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13">
+                        <div class="d-flex flex-wrap flex-row flex-lg-column gap-1">
+                            <div class="small fw-400 text-gray-50 mb-0">№S1006F</div>
+                            <div class="small fw-400 text-gray-50 mb-0">от 26.03.2026</div>
+                        </div>
+                    </div>
+                    <!-- Mobile Title (double) -->
+                    <div class="d-lg-none">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="row align-items-center gy-5 gx-4">
+                            <div class="col-24 col-md-24 col-lg col-xl order-lg-last text-lg-end">
+                                <div class="h4 fw-600 mb-0">24 000 000 ₽</div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-5">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип помещения:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Бытовые услуги">Бытовые услуги</div>
+                            </div>
+                            <div class="col-12 col-md-8 col-lg col-xl-4 order-xl-first">
+                                <div class="small fw-400 text-gray-50 mb-1">Арендатор:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Ozon">Ozon</div>
+                            </div>
+                            <div class="col-24 col-md-8 col-lg col-xl">
+                                <div class="small fw-400 text-gray-50 mb-1">Тип здания:</div>
+                                <div class="small fw-500 text-line-clamp-1 mb-0" title="Жилой многоквартирный дом">Жилой многоквартирный дом</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- address + data -->
+            <div>
+                <div class="row align-items-center gy-5 gy-xl-6">
+                    <!-- col: address -->
+                    <div class="col-lg-7 col-xl-8 col-xxl-13 d-none d-lg-block">
+                        <div class="small fw-400 mb-0">Москва</div>
+                        <div class="fw-500 text-line-clamp-2 mb-2" title="ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)">ул. 50 лет Победы в Великой Отечественной войне, д.2 (2 строчки максимум, а дальше точки)</div>
+                        <div class="small fw-500 text-brand-600 mb-0">200,50 м2</div>
+                    </div>
+                    <!-- col: data -->
+                    <div class="col-lg-17 col-xl-16 col-xxl-11">
+                        <div class="d-flex flex-column gap-2">
+                            
+                                <!-- empty for draft -->
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div>
+                
+                    <div class="row gy-4 gx-4">
+                        <div class="col-lg text-lg-end">
+                            <a href="#" class="btn btn-primary btn-sm w-100 w-lg-auto">
+                                <span>Заполнить</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-auto order-lg-first">
+                            <a href="#" class="btn btn-outline-secondary btn-sm w-100 w-lg-auto">
+                                <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4.66667 3.33325L2 5.99992L4.66667 8.66658M2 5.99992H10.6667C12.5076 5.99992 14 7.4923 14 9.33325C14 11.1742 12.5076 12.6666 10.6667 12.6666H7.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Чат активен до 12:00 24.03</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+            </div>
+
+        </div>
+    </div>
+</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <!-- FOOTER -->
-    
+    <footer class="app-footer">
+    <div class="container-fluid">
+        <div class="rounded-neutral-wrapper">
+            <!-- grid -->
+            <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
+                <!-- col: logo -->
+                <div class="col-span-12 col-span-lg-12 col-span-xl-12">
+                    <div class="d-flex flex-column gap-6">
+                        <a href="index.html">
+                            <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <!-- col: copyright -->
+                <div class="col-span-12 col-span-lg-12 col-span-xl-5">
+                    <div>&copy; 2026 ИП Яровенко Владислав Анатольевич</div>
+                </div>
+                <!-- col: legal-links -->
+                <div class="col-span-12 col-span-lg-12 col-span-xl-7">
+                    <div class="d-flex flex-wrap justify-content-xl-end gap-6 gap-xl-10 row-gap-xl-5">
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Политика конфиденциальности</a>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Пользовательское соглашение</a>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Политика использования файлов cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <!-- MODALS -->
-    
+    <div class="modal modal-success support-success fade" id="modalSupportSuccess" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <!-- btn-close -->
+                <div class="d-flex justify-content-between gap-3 mb-2">
+                    <img src="assets/img/modals/check.svg" alt="check">
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- title -->
+                <div class="h2 fw-700 mb-2">Сообщение отправлено</div>
+
+                <!-- text -->
+                <div class="text-box text-gray-50">
+                    <p>Ваше сообщение отправлено в службу поддержки</p>
+                </div>
+
+                <div class="mt-6">
+                    <button type="button" class="btn btn-primary w-100" data-coreui-dismiss="modal">Хорошо</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- scripts -->
     <script src="assets/js/coreui.bundle.min.js"></script>

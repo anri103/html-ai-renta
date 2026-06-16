@@ -35,13 +35,13 @@
                         <!-- cards wrapper -->
                         <div class="d-flex flex-column gap-2">
                             @@include('partials/cards/estate.html', {
-                                "cardType": "common"
+                                "cardType": "seller-common"
                             })
                             @@include('partials/cards/estate.html', {
-                                "cardType": "deadline-soon"
+                                "cardType": "seller-deadline-soon"
                             })
                             @@include('partials/cards/estate.html', {
-                                "cardType": "deadline-expired"
+                                "cardType": "seller-deadline-expired"
                             })
                         </div>
 
@@ -57,7 +57,15 @@
     @@include('partials/layout/footer.html')
 
     <!-- MODALS -->
-    <!-- @@include('partials/modals/enter-promo-code-1.html') -->
+    @@include('partials/modals/estate-card-repeat.html', {
+        "userRole": "seller"
+    })
+    @@include('partials/modals/estate-card-add-link.html')
+    @@include('partials/modals/estate-card-change-link.html')
+    @@include('partials/modals/estate-card-publish-to-database.html')
+    @@include('partials/modals/estate-card-publish-extend.html')
+    @@include('partials/modals/estate-card-publish-repeat.html')
+    @@include('partials/modals/estate-card-publish-remove.html')
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

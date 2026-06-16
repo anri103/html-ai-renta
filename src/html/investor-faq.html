@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Вопросы и ответы (инвестор)"
+})
+
+<body>
+    <!-- Mobile Menu -->
+    @@include('partials/offcanvas/mobile-menu-investor.html', {
+        "activeLink": "faq"
+    })
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
+
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar-investor.html', {
+        "activeLink": "faq"
+    })
+
+    <!-- MAIN -->
+    <main class="app-main">
+
+        <!-- section-faq -->
+        @@include('partials/sections/faq.html')
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- @@include('partials/layout/footer.html') -->
+
+    <!-- MODALS -->
+    @@include('partials/modals/support-success.html')
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

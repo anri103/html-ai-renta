@@ -1,0 +1,85 @@
+<div class="modal fade" id="modalEstateCardPublishToDatabase" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content bg-neutral-100">
+            <div class="modal-body">
+
+                <!-- icon + btn-close -->
+                <div class="d-flex justify-content-between gap-3 mb-2">
+                    <img src="assets/img/modals/web-bilding.svg" alt="web-bilding">
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- title -->
+                <div class="h2 fw-700 mb-2">Публикация в базу недвижимости</div>
+
+                <!-- text -->
+                <div class="text-box text-gray-50">
+                    <p>Экономический паспорт будет опубликован в базе недвижимости и станет доступен инвесторам для просмотра</p>
+                </div>
+
+                <!-- form -->
+                <div class="mt-7">
+                    <form>
+                        <div class="mb-6">
+                            <label for="inputAddCustomNewLink" class="h5 fw-600 mb-4">Ссылка на Авито/Циан с этим объявлением</label>
+                            <div class="position-relative">
+                                <div class="position-relative">
+                                    <!-- icon -->
+                                    <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.903 10C15.963 10.629 16 11.292 16 12C16 12.2652 15.8946 12.5196 15.7071 12.7071C15.5196 12.8946 15.2652 13 15 13C14.7348 13 14.4804 12.8946 14.2929 12.7071C14.1054 12.5196 14 12.2652 14 12C14 11.287 13.961 10.622 13.895 10H10.092C9.953 11.33 9.952 12.67 10.088 14H12C12.2652 14 12.5196 14.1054 12.7071 14.2929C12.8946 14.4804 13 14.7348 13 15C13 15.2652 12.8946 15.5196 12.7071 15.7071C12.5196 15.8946 12.2652 16 12 16H10.416C10.885 18.08 11.618 19.41 12.001 20C12.001 20 12.79 20.013 12.927 20.002C13.1911 19.9849 13.4513 20.0723 13.6515 20.2453C13.8517 20.4184 13.9758 20.6632 13.997 20.927C14.0163 21.1914 13.9298 21.4526 13.7565 21.6533C13.5832 21.8539 13.3374 21.9776 13.073 21.997C12.979 22.004 12 22 12 22C6.486 22 2 17.514 2 12C2 6.485 6.486 2 12 2C17.514 2 22 6.485 22 12C22 12.379 21.964 12.749 21.921 13.116C21.8813 13.372 21.7439 13.6026 21.5377 13.7594C21.3315 13.9161 21.0725 13.9869 20.8153 13.9567C20.558 13.9265 20.3224 13.7978 20.1581 13.5976C19.9937 13.3974 19.9134 13.1412 19.934 12.883C19.969 12.592 20 12.3 20 12C20 11.308 19.902 10.64 19.737 10H15.903ZM11.988 4.036C11.602 4.642 10.888 5.967 10.424 8H13.561C13.095 5.967 12.376 4.642 11.988 4.036ZM4.263 14H8.082C8.01956 13.3365 7.98786 12.6704 7.987 12.004C7.987 11.334 8.02 10.666 8.083 10H4.263C4.09072 10.6528 4.00235 11.3249 4 12C4.0025 12.6751 4.09087 13.3472 4.263 14ZM5.082 16C6.0695 17.7037 7.64853 18.9852 9.519 19.601C8.99793 18.4493 8.61268 17.2408 8.371 16H5.082ZM8.373 8C8.61466 6.7583 9.00061 5.5491 9.523 4.397C7.65068 5.01232 6.07002 6.29471 5.082 8H8.373ZM15.612 8H18.917C17.9249 6.28668 16.3348 5.00032 14.452 4.388C14.9794 5.54217 15.3688 6.75456 15.612 8Z" fill="#64748B"/>
+                                            <path d="M17.2231 20.9442L14.6731 15.3342C14.631 15.2415 14.6182 15.1383 14.6364 15.0381C14.6546 14.938 14.7029 14.8458 14.7748 14.7739C14.8468 14.7019 14.9389 14.6537 15.0391 14.6355C15.1392 14.6173 15.2425 14.6301 15.3351 14.6722L20.9451 17.2222C21.0312 17.2612 21.1046 17.3238 21.1566 17.4027C21.2086 17.4817 21.2371 17.5738 21.2389 17.6683C21.2407 17.7629 21.2156 17.8559 21.1666 17.9368C21.1176 18.0177 21.0467 18.083 20.9621 18.1252L19.2201 18.9952C19.1235 19.0438 19.0453 19.1224 18.9971 19.2192L18.1261 20.9612C18.0839 21.0458 18.0186 21.1167 17.9377 21.1657C17.8569 21.2147 17.7638 21.2398 17.6692 21.238C17.5747 21.2362 17.4826 21.2077 17.4036 21.1557C17.3247 21.1037 17.2621 21.0303 17.2231 20.9442Z" fill="#64748B"/>
+                                        </svg>
+                                    </div>
+                                    <!-- field -->
+                                    <input type="text" class="form-control ps-10" placeholder="Вставьте ссылку" id="inputAddCustomNewLink">
+                                </div>
+                                <!-- validation feedbacks -->
+                                <!-- <div class="form-feedback feedback-error">
+                                    <div class="small text-error-900 fw-500 mb-1">Неверный промокод</div>
+                                    <div class="small text-error-700 fw-400">Промокод не найден</div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="inputAddPlacementPeriodEstate" class="h5 fw-600 mb-4">Срок размещения</label>
+                            <div class="position-relative">
+                                <div class="row align-items-center gx-5">
+                                    <div class="col-auto">
+                                        <select class="form-select" id="inputAddPlacementPeriodEstate">
+                                            <option value="7" selected>7</option>
+                                            <option value="14">14</option>
+                                            <option value="30">30</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="text-gray-50 small fw-500">Дней</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkAgreeAddToDatabase">
+                                <label class="form-check-label text-gray-50" for="checkAgreeAddToDatabase">
+                                    Подтверждаю публикацию экономического паспорта в базе недвижимости
+                                </label>
+                            </div>
+                        </div>
+                        <!-- submit btn wrp -->
+                        <div>
+                            <button type="submit" class="btn btn-primary w-100 w-sm-auto">
+                                <svg class="flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M2 20H4M4 20H15M4 20V14.3682C4 13.8428 4 13.58 4.063 13.335C4.11883 13.1178 4.21073 12.9118 4.33496 12.7252C4.47505 12.5147 4.67114 12.3384 5.06152 11.9877L7.3631 9.91997C8.11784 9.24192 8.49549 8.90264 8.92249 8.77393C9.29894 8.66045 9.7007 8.66045 10.0771 8.77393C10.5045 8.90275 10.8827 9.2422 11.6387 9.92139L13.9387 11.9877C14.3295 12.3388 14.5245 12.5146 14.6647 12.7252C14.7889 12.9118 14.8807 13.1178 14.9365 13.335C14.9995 13.58 15 13.8428 15 14.3682V20M15 20H20M20 20H22M20 20V7.19691C20 6.07899 20 5.5192 19.7822 5.0918C19.5905 4.71547 19.2837 4.40973 18.9074 4.21799C18.4796 4 17.9203 4 16.8002 4H10.2002C9.08009 4 8.51962 4 8.0918 4.21799C7.71547 4.40973 7.40973 4.71547 7.21799 5.0918C7 5.51962 7 6.08009 7 7.2002V10.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span>Опубликовать</span>
+                            </button>
+                            <button type="button" class="btn btn-secondary w-100 w-sm-auto" data-coreui-dismiss="modal">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

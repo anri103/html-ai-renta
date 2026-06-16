@@ -1,4 +1,7 @@
-<div class="card card-tariff">
+<div class="card card-tariff @@if (cardType === 'tariff-popular'){tariff-popular}">
+    @@if (cardType === 'tariff-popular'){
+        <div class="popular-label small">Популярный тариф</div>
+    }
     <div class="card-body">
         <div class="d-flex flex-column justify-content-between h-100">
             <div class="mb-10">
@@ -23,6 +26,11 @@
         </div>
     </div>
     <div class="card-footer">
-        <button type="button" class="btn btn-primary w-100">@@btnTitle</button>
+        @@if (cardType === 'tariff-common'){
+            <button type="button" class="btn btn-primary w-100">@@btnTitle</button>
+        }
+        @@if (cardType === 'tariff-popular'){
+            <button type="button" class="btn px-0 w-100 disabled">@@btnTitle</button>
+        }
     </div>
 </div>

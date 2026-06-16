@@ -35,13 +35,13 @@
                         <!-- cards wrapper -->
                         <div class="d-flex flex-column gap-2">
                             @@include('partials/cards/estate.html', {
-                                "cardType": "investor"
+                                "cardType": "investor-common"
                             })
                             @@include('partials/cards/estate.html', {
-                                "cardType": "investor"
+                                "cardType": "investor-common"
                             })
                             @@include('partials/cards/estate.html', {
-                                "cardType": "investor"
+                                "cardType": "investor-common"
                             })
                         </div>
 
@@ -57,7 +57,9 @@
     @@include('partials/layout/footer.html')
 
     <!-- MODALS -->
-    <!-- @@include('partials/modals/enter-promo-code-1.html') -->
+    @@include('partials/modals/estate-card-repeat.html', {
+        "userRole": "investor"
+    })
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Уведомления (инвестор)"
+})
+
+<body>
+    <!-- Mobile Menu -->
+    @@include('partials/offcanvas/mobile-menu-investor.html', {
+        "activeLink": "notifications"
+    })
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
+
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar-investor.html', {
+        "activeLink": "notifications"
+    })
+
+    <!-- MAIN -->
+    <main class="app-main">
+
+        <!-- section-notifications -->
+        @@include('partials/sections/notifications.html')
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- @@include('partials/layout/footer.html') -->
+
+    <!-- MODALS -->
+    <!-- @@include('partials/modals/success.html') -->
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

@@ -2,13 +2,13 @@
 <html lang="ru">
 
 @@include('partials/layout/head.html', {
-    "title": "Уведомления"
+    "title": "Вопросы и ответы (продавец)"
 })
 
 <body>
     <!-- Mobile Menu -->
     @@include('partials/offcanvas/mobile-menu-seller.html', {
-        "activeLink": "notifications"
+        "activeLink": "faq"
     })
 
     <!-- HEADER -->
@@ -16,14 +16,14 @@
 
     <!-- SIDEBAR -->
     @@include('partials/layout/sidebar-seller.html', {
-        "activeLink": "notifications"
+        "activeLink": "faq"
     })
 
     <!-- MAIN -->
     <main class="app-main">
 
-        <!-- section-notifications -->
-        @@include('partials/sections/notifications.html')
+        <!-- section-faq -->
+        @@include('partials/sections/faq.html')
 
     </main>
 
@@ -31,7 +31,7 @@
     <!-- @@include('partials/layout/footer.html') -->
 
     <!-- MODALS -->
-    <!-- @@include('partials/modals/success.html') -->
+    @@include('partials/modals/support-success.html')
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

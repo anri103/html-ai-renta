@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('partials/layout/head.html', {
+    "title": "Тарифы (инвестор)"
+})
+
+<body>
+    <!-- Mobile Menu -->
+    @@include('partials/offcanvas/mobile-menu-investor.html', {
+        "activeLink": "prices"
+    })
+
+    <!-- HEADER -->
+    @@include('partials/layout/header.html')
+
+    <!-- SIDEBAR -->
+    @@include('partials/layout/sidebar-investor.html', {
+        "activeLink": "prices"
+    })
+
+    <!-- MAIN -->
+    <main class="app-main">
+
+        <!-- section-prices -->
+        @@include('partials/sections/prices.html')
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- @@include('partials/layout/footer.html') -->
+
+    <!-- MODALS -->
+    @@include('partials/modals/enter-promo-code-1.html')
+    @@include('partials/modals/enter-promo-code-2.html')
+    @@include('partials/modals/disable-auto-renewal-1.html')
+    @@include('partials/modals/disable-auto-renewal-2.html')
+
+    <!-- scripts -->
+    @@include('partials/layout/scripts.html')
+</body>
+
+</html>

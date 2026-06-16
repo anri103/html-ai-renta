@@ -28,6 +28,20 @@
         border-color: $brand-500;
         background-color: $bg-white;
     }
+
+    &:disabled {
+        color: $text-gray-40;
+        border-color: var(--cui-secondary-bg);
+    }
+}
+
+// form-select
+.form-select {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    font-weight: 500;
+    border-color: $bg-white;
+    background-color: $bg-white;
 }
 
 // form-check-input

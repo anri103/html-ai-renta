@@ -83,3 +83,24 @@
         --cui-card-spacer-x: 1.25rem;
     }
 }
+
+// item-notification
+.item-notification {
+    position: relative;
+    padding: 1.25rem;
+    border-radius: var(--cui-border-radius);
+    background-color: #fff;
+
+    .text-box {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+
+    .text-box.expanded {
+        display: block;
+        -webkit-line-clamp: unset;
+        overflow: visible;
+    }
+}

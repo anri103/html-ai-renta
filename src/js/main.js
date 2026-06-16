@@ -16,6 +16,7 @@ window.addEventListener("load", function () {
     }, 600);
 });
 
+
 // Валидация форм
 document.querySelectorAll('form.needs-validation').forEach(form => {
 
@@ -76,6 +77,7 @@ document.querySelectorAll('form.needs-validation').forEach(form => {
     });
 });
 
+
 // Красивый переключатель с плавающим фоном
 document.querySelectorAll('.tab-group').forEach(group => {
     const slider = group.querySelector('.tab-slider');
@@ -107,6 +109,7 @@ document.querySelectorAll('.tab-group').forEach(group => {
         });
     });
 });
+
 
 // Кнопка с таймером в модалках
 document.querySelectorAll('[data-bs-target], [data-coreui-target]').forEach(trigger => {
@@ -169,55 +172,100 @@ document.querySelectorAll('[data-bs-target], [data-coreui-target]').forEach(trig
     modal.addEventListener('hide.coreui.modal', stopTimer);
 });
 
-// Поиск объектов
-const myAutoCompleteExternalData = document.getElementById('myAutoCompleteExternalData')
 
-const getUsers = async (name = '') => {
-    try {
-        const response = await fetch(`https://apitest.coreui.io/demos/users?first_name=${name}&limit=10`)
-        const users = await response.json()
+// notifications cards - read more button
+function initReadMore() {
+    document.querySelectorAll('.item-notification').forEach(card => {
+        const textBox = card.querySelector('.text-box');
+        const btnWrap = card.querySelector('.btn-read-more-wrap');
+        const toggleBtn = card.querySelector('.btn-read-more');
+        const btnSpan = toggleBtn?.querySelector('span');
 
-        return users.records.map(user => ({
-            value: user.id,
-            label: user.first_name
-        }))
-    } catch (error) {
-        // eslint-disable-next-line no-console
-        console.error('Error fetching users:', error)
-    }
+        if (!textBox || !btnWrap || !toggleBtn) return;
+
+        // сбрасываем состояние перед проверкой
+        textBox.classList.remove('expanded');
+        btnSpan.textContent = 'Читать дальше';
+
+        const isClamped = textBox.scrollHeight > textBox.clientHeight + 1;
+        btnWrap.style.display = isClamped ? '' : 'none';
+
+        if (!card.dataset.readMoreInit) {
+            card.dataset.readMoreInit = 'true';
+
+            toggleBtn.addEventListener('click', () => {
+                const expanded = textBox.classList.toggle('expanded');
+                btnSpan.textContent = expanded ? 'Свернуть' : 'Читать дальше';
+            });
+        }
+    });
 }
 
-const autocomplete = new coreui.Autocomplete(myAutoCompleteExternalData, {
-    cleaner: true,
-    highlightOptionsOnSearch: true,
-    name: 'autocomplete-external',
-    options: [],
-    placeholder: 'Введите адрес объекта',
-    search: ['external', 'global'], // 🔴 'external' is required for external search
-    showHints: true
-})
+initReadMore();
 
-let lastQuery = null
-let debounceTimer = null
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(initReadMore, 150);
+});
 
-myAutoCompleteExternalData.addEventListener('show.coreui.autocomplete', async () => {
-    const users = await getUsers()
-    autocomplete.update({ options: users })
-})
-
-myAutoCompleteExternalData.addEventListener('input.coreui.autocomplete', event => {
-    const query = event.value
-
-    if (query === lastQuery) {
+// Search field CoreUI Autocomplete
+// https://coreui.io/bootstrap/docs/forms/autocomplete/#external-data
+function initAutocompleteExternalData() {
+    const el = document.getElementById('myAutoCompleteExternalData')
+    if (!el) {
         return
     }
 
-    lastQuery = query
+    const getUsers = async (name = '') => {
+        try {
+            const response = await fetch(`https://apitest.coreui.io/demos/users?first_name=${name}&limit=10`)
+            const users = await response.json()
 
-    clearTimeout(debounceTimer)
+            return users.records.map(user => ({
+                value: user.id,
+                label: user.first_name
+            }))
+        } catch (error) {
+            // eslint-disable-next-line no-console
+            console.error('Error fetching users:', error)
+        }
+    }
 
-    debounceTimer = setTimeout(async () => {
-        const users = await getUsers(query)
+    const autocomplete = new coreui.Autocomplete(el, {
+        cleaner: true,
+        highlightOptionsOnSearch: true,
+        name: 'autocomplete-external',
+        options: [],
+        placeholder: 'Введите адрес объекта',
+        search: ['external', 'global'], // 🔴 'external' is required for external search
+        showHints: true
+    })
+
+    let lastQuery = null
+    let debounceTimer = null
+
+    el.addEventListener('show.coreui.autocomplete', async () => {
+        const users = await getUsers()
         autocomplete.update({ options: users })
-    }, 200)
-})
+    })
+
+    el.addEventListener('input.coreui.autocomplete', event => {
+        const query = event.value
+
+        if (query === lastQuery) {
+            return
+        }
+
+        lastQuery = query
+
+        clearTimeout(debounceTimer)
+
+        debounceTimer = setTimeout(async () => {
+            const users = await getUsers(query)
+            autocomplete.update({ options: users })
+        }, 200)
+    })
+}
+
+initAutocompleteExternalData();

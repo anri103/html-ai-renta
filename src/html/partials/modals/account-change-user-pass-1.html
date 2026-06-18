@@ -1,0 +1,107 @@
+<div class="modal fade" id="modalChangeUserPass-1" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content bg-neutral-100">
+            <div class="modal-body">
+
+                <!-- title + btn-close -->
+                <div class="d-flex justify-content-between gap-3 mb-6">
+                    <div class="h2 fw-700 mb-0">Смена пароля</div>
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- text -->
+                <div class="text-box text-gray-50 mb-6">
+                    <p>Введите текущий пароль и задайте новый</p>
+                </div>
+
+                <!-- form -->
+                <div>
+                    <form class="needs-validation" novalidate>
+                        <!-- password -->
+                        <div class="mb-6">
+                            <div class="h5 fw-600 mb-4">Текущий пароль</div>
+                            <div class="position-relative has-validation">
+                                <div class="form-password">
+                                    <!-- icon -->
+                                    <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M5 13C5 12.4696 5.21071 11.9609 5.58579 11.5858C5.96086 11.2107 6.46957 11 7 11H17C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V13Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 11V7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V11" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <!-- field -->
+                                    <input type="password" class="form-control ps-10" placeholder="Повторите пароль" id="inputChangeUserSellerPassEnterCurrentPassword" required>
+                                    <button type="button" class="form-password-action" data-coreui-toggle="password" aria-label="Toggle password visibility">
+                                        <span class="form-password-action-icon"></span>
+                                    </button>
+                                </div>
+                                <!-- validation feedbacks -->
+                                <div class="form-feedback feedback-error">Текущий пароль введён неверно</div>
+                            </div>
+                            <div class="mt-3">
+                                <button type="button" class="btn btn-outline-secondary btn-sm" data-coreui-toggle="modal" data-coreui-target="#modalChangeUserPass-2">Не помню пароль</button>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="h5 fw-600 mb-4">Новый пароль</div>
+                            <div class="position-relative">
+                                <div class="form-password">
+                                    <!-- icon -->
+                                    <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M5 13C5 12.4696 5.21071 11.9609 5.58579 11.5858C5.96086 11.2107 6.46957 11 7 11H17C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V13Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 11V7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V11" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <!-- field -->
+                                    <input type="password" class="form-control ps-10" placeholder="Повторите пароль" id="inputChangeUserSellerPassEnterNewPassword">
+                                    <button type="button" class="form-password-action" data-coreui-toggle="password" aria-label="Toggle password visibility">
+                                        <span class="form-password-action-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <div class="h5 fw-600 mb-4">Повторите новый пароль</div>
+                            <div class="position-relative has-validation">
+                                <div class="form-password">
+                                    <!-- icon -->
+                                    <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M5 13C5 12.4696 5.21071 11.9609 5.58579 11.5858C5.96086 11.2107 6.46957 11 7 11H17C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V13Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 11V7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V11" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <!-- field -->
+                                    <input type="password" class="form-control ps-10" placeholder="Повторите пароль" id="inputChangeUserSellerPassEnterRepeatNewPassword" required>
+                                    <button type="button" class="form-password-action" data-coreui-toggle="password" aria-label="Toggle password visibility">
+                                        <span class="form-password-action-icon"></span>
+                                    </button>
+                                </div>
+                                <!-- validation feedbacks -->
+                                <div class="form-feedback feedback-error">Повторение пароля выполнено неверно</div>
+                            </div>
+                        </div>
+                        <div class="text-gray-50 fw-400 mb-6">
+                            <p>Пароль должен содержать:</p>
+                            <ul>
+                                <li>не менее 8 символов</li>
+                                <li>хотя бы одну букву</li>
+                                <li>хотя бы одну цифру</li>
+                            </ul>
+                        </div>
+                        <!-- submit btn wrp -->
+                        <div class="d-flex flex-wrap gap-2 mt-6">
+                            <button type="button" class="btn btn-outline-secondary w-100 w-sm-auto" data-coreui-dismiss="modal">Отмена</button>
+                            <button type="submit" class="btn btn-primary w-100 w-sm-auto">Сменить пароль</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

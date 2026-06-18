@@ -8,16 +8,139 @@
         <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
             <!-- content -->
             <div class="col-span-12 col-span-lg-12 col-span-xl-4">
-                <div class="rounded-neutral-wrapper min-h-screen-xl">
+                <div class="rounded-neutral-wrapper d-flex flex-column justify-content-between min-h-screen-xl">
 
-                    <!-- title -->
-                    <div class="text-gray-50 mb-1">Email:</div>
-                    <div class="h3 fw-600 mb-6">vladlensuhosur@yandex.ru</div>
+                    <div>
+                        <!-- title -->
+                        <div class="text-gray-50 mb-1">Email:</div>
+                        <div class="h3 fw-600 mb-6">vladlensuhosur@yandex.ru</div>
+    
+                        <!-- btns group -->
+                        <div class="tab-group position-relative d-flex gap-2 bg-white rounded-3 p-2 mb-6">
+                            <div class="tab-slider"></div>
+                            <a href="#modalChangeUserRole-1" class="btn tab-btn w-100 active" data-coreui-toggle="modal">Продавец</a>
+                            <div class="divider-vertical"></div>
+                            <a href="#modalChangeUserRole-1" class="btn tab-btn w-100" data-coreui-toggle="modal">Инвестор</a>
+                        </div>
+    
+                        <!-- Имя и фамилия -->
+                        <div class="mb-6">
+                            <label for="inputQwerty" class="h5 fw-600 mb-4">Имя и фамилия</label>
+                            <div class="position-relative">
+                                <div class="row gy-2 gx-2">
+                                    <div class="col-lg">
+                                        <!-- field -->
+                                        <input type="text" class="form-control" placeholder="Имя и фамилия" id="inputQwerty" value="Владлен Сухосыр" readonly>
+                                    </div>
+                                    <div class="col-lg-auto">
+                                        <button type="button" class="btn btn-secondary w-100">Изменить</button>
+                                    </div>
+                                </div>
+                                <!-- validation feedbacks -->
+                            </div>
+                        </div>
+    
+                        <!-- Пароль -->
+                        <div class="mb-6">
+                            <label for="inputQwert" class="h5 fw-600 mb-4">Пароль</label>
+                            <div class="position-relative">
+                                <div class="row gy-2 gx-2">
+                                    <div class="col-lg">
+                                        <!-- field wrap -->
+                                        <div class="position-relative">
+                                            <div class="form-password">
+                                                <!-- icon -->
+                                                <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M5 13C5 12.4696 5.21071 11.9609 5.58579 11.5858C5.96086 11.2107 6.46957 11 7 11H17C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V13Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M8 11V7C8 5.93913 8.42143 4.92172 9.17157 4.17157C9.92172 3.42143 10.9391 3 12 3C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V11" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <!-- field -->
+                                                <input type="password" class="form-control ps-10" placeholder="" id="exampleInputPass2" value="3>14zdec" readonly>
+                                                <button type="button" class="form-password-action" data-coreui-toggle="password" aria-label="Toggle password visibility">
+                                                    <span class="form-password-action-icon"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-auto">
+                                        <button type="button" class="btn btn-secondary w-100" data-coreui-toggle="modal" data-coreui-target="#modalChangeUserPass-1">Изменить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Ваш тариф -->
+                        <div class="mb-6">
+                            <div class="h5 fw-600 mb-4">Ваш тариф</div>
+                            <div class="position-relative overflow-hidden rounded-3">
+                                <div class="bg-brand-200 text-center py-4 px-2">
+                                    <span class="text-gray-70 fw-500">Тариф №2 (20 генераций)</span>
+                                </div>
+                                <div class="bg-white p-4">
+                                    <div class="d-flex flex-column gap-5 gap-lg-2">
+                                        <div class="row gx-4">
+                                            <div class="col">
+                                                <div class="small fw-400 text-gray-50 mb-0">Генерации:</div>
+                                                <div class="h4 fw-600 mb-0">9/20</div>
+                                            </div>
+                                            <div class="col text-end">
+                                                <div class="h4 fw-600 mb-0">5 000 ₽/Мес</div>
+                                            </div>
+                                        </div>
+                                        <div class="row gy-4 gx-4 align-items-end">
+                                            <div class="col-lg">
+                                                <div class="small fw-400 text-gray-50 mb-0">Автопродление: 26.04.2026</div>
+                                            </div>
+                                            <div class="col-lg text-end">
+                                                <a href="seller-prices.html" class="btn btn-secondary btn-sm w-100 w-lg-auto">Изменить тариф</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Введите промокод -->
+                        <div class="mb-6">
+                            <div class="position-relative has-validation">
+                                <div class="row gy-2 gx-2">
+                                    <div class="col-lg">
+                                        <!-- field wrap -->
+                                        <div class="position-relative">
+                                            <!-- icon -->
+                                            <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M14 6H6C5.06812 6 4.60192 6 4.23438 6.15224C3.74432 6.35523 3.35523 6.74481 3.15224 7.23486C3 7.60241 3 8.06835 3 9.00023C4.65685 9.00023 6 10.3429 6 11.9998C6 13.6566 4.65685 15 3 15C3 15.9319 3 16.3978 3.15224 16.7654C3.35523 17.2554 3.74432 17.6447 4.23438 17.8477C4.60192 17.9999 5.06812 18 6 18H14M14 6H18C18.9319 6 19.3978 6 19.7654 6.15224C20.2554 6.35523 20.6447 6.74481 20.8477 7.23486C20.9999 7.6024 20.9999 8.06835 20.9999 9.00023C19.343 9.00023 18 10.3431 18 12C18 13.6569 19.343 15 20.9999 15C20.9999 15.9319 20.9999 16.3978 20.8477 16.7654C20.6447 17.2554 20.2554 17.6447 19.7654 17.8477C19.3978 17.9999 18.9319 18 18 18H14M14 6V18" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <!-- field -->
+                                            <input type="text" class="form-control ps-10" placeholder="Введите промокод" id="inputEnterPromoCode" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-auto">
+                                        <button type="button" class="btn btn-primary w-100 disabled">Применить</button>
+                                    </div>
+                                </div>
+                                <!-- validation feedbacks -->
+                                <div class="form-feedback feedback-error">
+                                    <div class="small text-error-900 fw-500 mb-1">Неверный промокод</div>
+                                    <div class="small text-error-700 fw-400">Промокод не найден</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="bg-dark rounded-3 p-5">
-                        <div class="text-danger mb-2">Error</div>
-                        <code>include('partials/sections/account.html')</code>
-                        <div class="small text-gray-30 mt-4">no such file or directory</div>
+                    <!-- logout btn -->
+                    <div class="text-end">
+                        <button type="button" class="btn border-0">
+                            <span>Выйти из аккаунта</span>
+                            <svg class="flex-shrink-0 ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 9L15 12L12 15M15 12H4M9 7.24859V7.2002C9 6.08009 9 5.51962 9.21799 5.0918C9.40973 4.71547 9.71547 4.40973 10.0918 4.21799C10.5196 4 11.0801 4 12.2002 4H16.8002C17.9203 4 18.4796 4 18.9074 4.21799C19.2837 4.40973 19.5905 4.71547 19.7822 5.0918C20 5.5192 20 6.07899 20 7.19691V16.8036C20 17.9215 20 18.4805 19.7822 18.9079C19.5905 19.2842 19.2837 19.5905 18.9074 19.7822C18.48 20 17.921 20 16.8031 20H12.1969C11.079 20 10.5192 20 10.0918 19.7822C9.71547 19.5905 9.40973 19.2839 9.21799 18.9076C9 18.4798 9 17.9201 9 16.8V16.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                     </div>
 
                 </div>

@@ -30,6 +30,9 @@
                     <div class="col-span-12 col-span-lg-12 col-span-xl-12">
                         <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl container-negative-mobile">
 
+                            <!-- sorting -->
+                            @@include('partials/sections/database-filterBar.html')
+
                             <!-- cards list -->
                             <div class="d-flex flex-column gap-2">
                                 @@include('partials/cards/estate.html', {
@@ -51,7 +54,7 @@
                 </div>
             </div>
         </section>
-
+ 
     </main>
 
     <!-- FOOTER -->

@@ -30,6 +30,20 @@
                     <div class="col-span-12 col-span-lg-12 col-span-xl-12">
                         <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl container-negative-mobile">
 
+                            <!-- objects-toggler -->
+                            <div class="mb-6">
+                                <!-- btns group -->
+                                <div class="tab-group position-relative d-inline-flex gap-2 bg-white rounded-3 p-2">
+                                    <div class="tab-slider"></div>
+                                    <a href="#" class="btn tab-btn flex-fill px-2 px-lg-8 active">Все объявления</a>
+                                    <div class="divider-vertical"></div>
+                                    <a href="#" class="btn tab-btn flex-fill px-2 px-lg-8">Мои объявления</a>
+                                </div>
+                            </div>
+
+                            <!-- sorting -->
+                            @@include('partials/sections/database-filterBar.html')
+
                             <!-- cards list -->
                             <div class="d-flex flex-column gap-2">
                                 @@include('partials/cards/estate.html', {

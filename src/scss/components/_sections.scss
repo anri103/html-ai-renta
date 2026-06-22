@@ -244,3 +244,19 @@
         }
     }
 }
+
+// filter-bar
+.filter-bar {
+    .dropdown-menu {
+        --cui-dropdown-link-active-bg: #{$brand-200};
+        min-width: 235px;
+    }
+
+    .dropdown-item {
+        white-space: inherit;
+    }
+
+    .form-check-label {
+        font-size: 0.875rem;
+    }
+}

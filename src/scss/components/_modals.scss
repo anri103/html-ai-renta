@@ -45,3 +45,15 @@
         padding: var(--cui-offcanvas-padding-y) var(--cui-offcanvas-padding-x);
     }
 }
+
+// offcanvasFilter
+.offcanvasFilter {
+    --cui-offcanvas-height: 70vh;
+    --cui-offcanvas-bg: #{$neutral-100};
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+
+    .offcanvas-footer {
+        padding: var(--cui-offcanvas-padding-y) var(--cui-offcanvas-padding-x);
+    }
+}

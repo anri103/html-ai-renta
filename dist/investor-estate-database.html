@@ -302,293 +302,441 @@
                             <!-- objects-toggler -->
                             <div class="mb-6">
                                 <!-- btns group -->
-                                <div class="tab-group position-relative d-inline-flex gap-2 bg-white rounded-3 p-2">
+                                <div class="tab-group position-relative d-flex gap-2 bg-white rounded-3 p-2" style="max-width: 420px;">
                                     <div class="tab-slider"></div>
-                                    <a href="#" class="btn tab-btn flex-fill px-2 px-lg-8 active">Все объявления</a>
+                                    <a href="#" class="btn tab-btn w-100 active">Все объявления</a>
                                     <div class="divider-vertical"></div>
-                                    <a href="#" class="btn tab-btn flex-fill px-2 px-lg-8">Мои объявления</a>
+                                    <a href="#" class="btn tab-btn w-100">Мои объявления</a>
                                 </div>
                             </div>
 
                             <!-- sorting -->
-                            <div class="filter-bar mb-6" id="filterBar">
-    <div class="d-flex align-items-center justify-content-between gap-2">
-        <div class="d-flex align-items-center gap-2">
-            <!-- Город -->
-            <div class="filter-item position-relative d-inline-flex">
-                <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap" data-coreui-toggle="dropdown" aria-expanded="false" data-coreui-auto-close="outside">
-                    <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>Город</span>
-                </button>
-                <div class="dropdown-menu border-1 rounded-3 py-4 px-0 shadow-sm">
-                    <!-- title -->
-                    <div class="h5 fw-600 px-4 mb-1">Выберите город</div>
-                    <!-- search -->
-                    <div class="py-2 px-4">
-                        <div class="position-relative">
-                            <!-- icon -->
-                            <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </div>
-                            <!-- field -->
-                            <input type="text" class="form-control ps-10 border-neutral-200" placeholder="Поиск..." id="filterSearchInputCity" aria-label="Поиск по Город">
-                        </div>
-                    </div>
-                    <!-- options -->
-                    <div class="options-list overflow-y-auto scrollbar-thin py-2 px-4" style="max-height: 246px;">
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Москва" id="city1">
-                                <label class="form-check-label text-gray-60" for="city1">Москва</label>
+                            <!-- Desktop -->
+<div class="d-none d-xl-block mb-6">
+    <div class="filter-bar" id="filterBarDesk">
+        <div class="d-flex align-items-center justify-content-between gap-2">
+            <div class="d-flex align-items-center gap-2">
+                <!-- Город -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap" data-coreui-toggle="dropdown" aria-expanded="false" data-coreui-auto-close="outside">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Город</span>
+                    </button>
+                    <!-- dropdown-menu -->
+                    <div class="dropdown-menu border-1 border-neutral-200 rounded-3 py-4 px-0 shadow-sm">
+                        <!-- title -->
+                        <div class="h5 fw-600 px-4 mb-1">Выберите город</div>
+                        <!-- search -->
+                        <div class="py-2 px-4">
+                            <div class="position-relative">
+                                <!-- icon -->
+                                <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z" stroke="#334155" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <!-- field -->
+                                <input type="text" class="form-control ps-10 border-neutral-200" placeholder="Поиск..." id="filterSearchInputCity" aria-label="Поиск по Город">
                             </div>
                         </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Санкт-Петербург" id="city2">
-                                <label class="form-check-label text-gray-60" for="city2">Санкт-Петербург</label>
+                        <!-- options -->
+                        <div class="options-list overflow-y-auto scrollbar-thin py-2 px-4" style="max-height: 246px;">
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Москва" id="city1">
+                                    <label class="form-check-label text-gray-60" for="city1">Москва</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Санкт-Петербург" id="city2">
+                                    <label class="form-check-label text-gray-60" for="city2">Санкт-Петербург</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Казань" id="city3">
+                                    <label class="form-check-label text-gray-60" for="city3">Казань</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Новосибирск" id="city4">
+                                    <label class="form-check-label text-gray-60" for="city4">Новосибирск</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Екатеринбург" id="city5">
+                                    <label class="form-check-label text-gray-60" for="city5">Екатеринбург</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Краснодар" id="city6">
+                                    <label class="form-check-label text-gray-60" for="city6">Краснодар</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Таганрог" id="city7">
+                                    <label class="form-check-label text-gray-60" for="city7">Таганрог</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Тверь" id="city8">
+                                    <label class="form-check-label text-gray-60" for="city8">Тверь</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Казань" id="city3">
-                                <label class="form-check-label text-gray-60" for="city3">Казань</label>
-                            </div>
+                        <!-- buttons -->
+                        <div class="d-flex flex-column gap-2 py-2 px-4">
+                            <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
+                            <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
                         </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Новосибирск" id="city4">
-                                <label class="form-check-label text-gray-60" for="city4">Новосибирск</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Екатеринбург" id="city5">
-                                <label class="form-check-label text-gray-60" for="city5">Екатеринбург</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Краснодар" id="city6">
-                                <label class="form-check-label text-gray-60" for="city6">Краснодар</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Таганрог" id="city7">
-                                <label class="form-check-label text-gray-60" for="city7">Таганрог</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Тверь" id="city8">
-                                <label class="form-check-label text-gray-60" for="city8">Тверь</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- buttons -->
-                    <div class="d-flex flex-column gap-2 py-2 px-4">
-                        <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
-                        <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
                     </div>
                 </div>
-            </div>
-            <!-- Тип здания -->
-            <div class="filter-item position-relative d-inline-flex">
-                <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap" data-coreui-toggle="dropdown" aria-expanded="false" data-coreui-auto-close="outside">
-                    <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>Тип здания</span>
-                </button>
-                <div class="dropdown-menu border-1 rounded-3 py-4 px-0 shadow-sm">
-                    <!-- title -->
-                    <div class="h5 fw-600 px-4 mb-1">Тип здания</div>
-                    <!-- options -->
-                    <div class="options-list overflow-y-auto scrollbar-thin py-2 px-4" style="max-height: 100%;">
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Бизнес-центр «А»" id="buildingType1">
-                                <label class="form-check-label text-gray-60" for="buildingType1">Бизнес-центр «А»</label>
+                <!-- Тип здания -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap" data-coreui-toggle="dropdown" aria-expanded="false" data-coreui-auto-close="outside">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Тип здания</span>
+                    </button>
+                    <!-- dropdown-menu -->
+                    <div class="dropdown-menu border-1 border-neutral-200 rounded-3 py-4 px-0 shadow-sm">
+                        <!-- title -->
+                        <div class="h5 fw-600 px-4 mb-1">Тип здания</div>
+                        <!-- options -->
+                        <div class="options-list overflow-y-auto scrollbar-thin py-2 px-4" style="max-height: 100%;">
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Бизнес-центр «А»" id="buildingType1">
+                                    <label class="form-check-label text-gray-60" for="buildingType1">Бизнес-центр «А»</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Бизнес-центр «B»" id="buildingType2">
+                                    <label class="form-check-label text-gray-60" for="buildingType2">Бизнес-центр «B»</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Бизнес-центр «C»" id="buildingType3">
+                                    <label class="form-check-label text-gray-60" for="buildingType3">Бизнес-центр «C»</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Торговый комплекс" id="buildingType4">
+                                    <label class="form-check-label text-gray-60" for="buildingType4">Торговый комплекс</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Складской комплекс" id="buildingType5">
+                                    <label class="form-check-label text-gray-60" for="buildingType5">Складской комплекс</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Производственный комплекс" id="buildingType6">
+                                    <label class="form-check-label text-gray-60" for="buildingType6">Производственный комплекс</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Жилой многоквартирный дом" id="buildingType7">
+                                    <label class="form-check-label text-gray-60" for="buildingType7">Жилой многоквартирный дом</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Здание апартаментов" id="buildingType8">
+                                    <label class="form-check-label text-gray-60" for="buildingType8">Здание апартаментов</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Гостиница (отель)" id="buildingType9">
+                                    <label class="form-check-label text-gray-60" for="buildingType9">Гостиница (отель)</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Отдельно стоящее здание (свободного назначения)" id="buildingType10">
+                                    <label class="form-check-label text-gray-60" for="buildingType10">Отдельно стоящее здание (свободного назначения)</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Бизнес-центр «B»" id="buildingType2">
-                                <label class="form-check-label text-gray-60" for="buildingType2">Бизнес-центр «B»</label>
-                            </div>
+                        <!-- buttons -->
+                        <div class="d-flex flex-column gap-2 py-2 px-4">
+                            <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
+                            <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
                         </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Бизнес-центр «C»" id="buildingType3">
-                                <label class="form-check-label text-gray-60" for="buildingType3">Бизнес-центр «C»</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Торговый комплекс" id="buildingType4">
-                                <label class="form-check-label text-gray-60" for="buildingType4">Торговый комплекс</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Складской комплекс" id="buildingType5">
-                                <label class="form-check-label text-gray-60" for="buildingType5">Складской комплекс</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Производственный комплекс" id="buildingType6">
-                                <label class="form-check-label text-gray-60" for="buildingType6">Производственный комплекс</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Жилой многоквартирный дом" id="buildingType7">
-                                <label class="form-check-label text-gray-60" for="buildingType7">Жилой многоквартирный дом</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Здание апартаментов" id="buildingType8">
-                                <label class="form-check-label text-gray-60" for="buildingType8">Здание апартаментов</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Гостиница (отель)" id="buildingType9">
-                                <label class="form-check-label text-gray-60" for="buildingType9">Гостиница (отель)</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Отдельно стоящее здание (свободного назначения)" id="buildingType10">
-                                <label class="form-check-label text-gray-60" for="buildingType10">Отдельно стоящее здание (свободного назначения)</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- buttons -->
-                    <div class="d-flex flex-column gap-2 py-2 px-4">
-                        <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
-                        <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
                     </div>
                 </div>
-            </div>
-            <!-- Тип помещения -->
-            <div class="filter-item position-relative d-inline-flex">
-                <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap" data-coreui-toggle="dropdown" aria-expanded="false" data-coreui-auto-close="outside">
-                    <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span>Тип помещения</span>
-                </button>
-                <div class="dropdown-menu border-1 rounded-3 py-4 px-0 shadow-sm">
-                    <!-- title -->
-                    <div class="h5 fw-600 px-4 mb-1">Тип помещения</div>
-                    <!-- options -->
-                    <div class="options-list overflow-y-auto scrollbar-thin py-2 px-4" style="max-height: 100%;">
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Офис" id="buildingPurpose1">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose1">Офис</label>
+                <!-- Тип помещения -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap" data-coreui-toggle="dropdown" aria-expanded="false" data-coreui-auto-close="outside">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Тип помещения</span>
+                    </button>
+                    <!-- dropdown-menu -->
+                    <div class="dropdown-menu border-1 border-neutral-200 rounded-3 py-4 px-0 shadow-sm">
+                        <!-- title -->
+                        <div class="h5 fw-600 px-4 mb-1">Тип помещения</div>
+                        <!-- options -->
+                        <div class="options-list overflow-y-auto scrollbar-thin py-2 px-4" style="max-height: 100%;">
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Офис" id="buildingPurpose1">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose1">Офис</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Торговля" id="buildingPurpose2">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose2">Торговля</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Склад" id="buildingPurpose3">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose3">Склад</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Помещение свободного назначения" id="buildingPurpose4">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose4">Помещение свободного назначения</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Общественное питание" id="buildingPurpose5">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose5">Общественное питание</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Пункт выдачи заказов" id="buildingPurpose6">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose6">Пункт выдачи заказов</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Производство" id="buildingPurpose7">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose7">Производство</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Автосервис" id="buildingPurpose8">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose8">Автосервис</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Бытовые услуги" id="buildingPurpose9">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose9">Бытовые услуги</label>
+                                </div>
+                            </div>
+                            <div class="dropdown-item px-1">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" value="Апартаменты" id="buildingPurpose10">
+                                    <label class="form-check-label text-gray-60" for="buildingPurpose10">Апартаменты</label>
+                                </div>
                             </div>
                         </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Торговля" id="buildingPurpose2">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose2">Торговля</label>
-                            </div>
+                        <!-- buttons -->
+                        <div class="d-flex flex-column gap-2 py-2 px-4">
+                            <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
+                            <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
                         </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Склад" id="buildingPurpose3">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose3">Склад</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Помещение свободного назначения" id="buildingPurpose4">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose4">Помещение свободного назначения</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Общественное питание" id="buildingPurpose5">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose5">Общественное питание</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Пункт выдачи заказов" id="buildingPurpose6">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose6">Пункт выдачи заказов</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Производство" id="buildingPurpose7">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose7">Производство</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Автосервис" id="buildingPurpose8">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose8">Автосервис</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Бытовые услуги" id="buildingPurpose9">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose9">Бытовые услуги</label>
-                            </div>
-                        </div>
-                        <div class="dropdown-item px-1">
-                            <div class="form-check m-0">
-                                <input class="form-check-input" type="checkbox" value="Апартаменты" id="buildingPurpose10">
-                                <label class="form-check-label text-gray-60" for="buildingPurpose10">Апартаменты</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- buttons -->
-                    <div class="d-flex flex-column gap-2 py-2 px-4">
-                        <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
-                        <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
                     </div>
                 </div>
+    
+                <div class="vr text-neutral-200 opacity-100 mx-6"></div>
+    
+                <!-- Диапазон -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap" data-coreui-toggle="dropdown" aria-expanded="false" data-coreui-auto-close="outside">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Диапазон</span>
+                        <svg class="btn-icon flex-shrink-0 ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14 15H21M3 15H5M5 15C5 16.3807 6.11929 17.5 7.5 17.5C8.88071 17.5 10 16.3807 10 15C10 13.6193 8.88071 12.5 7.5 12.5C6.11929 12.5 5 13.6193 5 15ZM20 9H21M3 9H10M16.5 11.5C15.1193 11.5 14 10.3807 14 9C14 7.61929 15.1193 6.5 16.5 6.5C17.8807 6.5 19 7.61929 19 9C19 10.3807 17.8807 11.5 16.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <!-- dropdown-menu -->
+                    <div class="dropdown-menu border-1 border-neutral-200 rounded-3 py-4 px-0 shadow-sm" style="min-width: 331px;">
+                        <div class="px-4">
+                            <!-- title -->
+                            <div class="h5 fw-600 mb-1">Стоимость продажи</div>
+                            <!-- range -->
+                            <div class="py-2">
+                                <div data-coreui-toggle="range-slider" data-coreui-min="0" data-coreui-max="100000000" data-coreui-step="100000" data-coreui-distance="10000000" data-coreui-value="20000000, 80000000"></div>
+                                <div class="bg-range-slider"></div>
+                                <div class="mt-3">
+                                    <div class="row align-items-center gx-2">
+                                        <div class="col">
+                                            <input class="form-control form-control-sm border-neutral-200 min-price" type="text" name="MAX_SMART_FILTER_P1_MIN" id="MAX_SMART_FILTER_P1_MIN" value="" size="5" placeholder="100 000">
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2" fill="none">
+                                                <line y1="1" x2="10" y2="1" stroke="#E2E8F0" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control form-control-sm border-neutral-200 max-price" type="text" name="MAX_SMART_FILTER_P1_MAX" id="MAX_SMART_FILTER_P1_MAX" value="" size="5" placeholder="100 000 000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- buttons -->
+                            <div class="d-flex gap-2 py-2">
+                                <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
+                                <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
+                            </div>
+                        </div>
+    
+                        <hr class="text-neutral-200 border-1 opacity-100 my-4">
+    
+                        <div class="px-4">
+                            <!-- title -->
+                            <div class="h5 fw-600 mb-1">Чистый операционный доход (NOI)</div>
+                            <!-- radio -->
+                            <div class="mb-1">
+                                <div class="d-flex gap-6">
+                                    <div class="form-check m-0">
+                                        <input class="form-check-input" type="radio" name="radioFilterRangeNOI" id="radioFilterRangeNOI1" checked>
+                                        <label class="form-check-label fw-500" for="radioFilterRangeNOI1">в Год</label>
+                                    </div>
+                                    <div class="form-check m-0">
+                                        <input class="form-check-input" type="radio" name="radioFilterRangeNOI" id="radioFilterRangeNOI2">
+                                        <label class="form-check-label fw-500" for="radioFilterRangeNOI2">в Месяц</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- range -->
+                            <div class="py-2">
+                                <div data-coreui-toggle="range-slider" data-coreui-min="0" data-coreui-max="100000000" data-coreui-step="100000" data-coreui-distance="10000000" data-coreui-value="20000000, 80000000"></div>
+                                <div class="bg-range-slider"></div>
+                                <div class="mt-3">
+                                    <div class="row align-items-center gx-2">
+                                        <div class="col">
+                                            <input class="form-control form-control-sm border-neutral-200 min-price" type="text" name="MAX_SMART_FILTER_P6_MIN" id="MAX_SMART_FILTER_P6_MIN" value="" size="5" placeholder="10 000">
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2" fill="none">
+                                                <line y1="1" x2="10" y2="1" stroke="#E2E8F0" stroke-width="2"/>
+                                            </svg>
+                                        </div>
+                                        <div class="col">
+                                            <input class="form-control form-control-sm border-neutral-200 max-price" type="text" name="MAX_SMART_FILTER_P6_MAX" id="MAX_SMART_FILTER_P6_MAX" value="" size="5" placeholder="100 000 000">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- buttons -->
+                            <div class="d-flex gap-2 py-2">
+                                <button type="button" class="btn btn-primary btn-sm w-100">Применить</button>
+                                <button type="button" class="btn btn-secondary btn-sm w-100">Сбросить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="vr text-neutral-200 opacity-100 mx-6"></div>
+    
+                <!-- Сape Rate -->
+                <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
+                    <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 16L8 19L11 16M8 19V5M19 8L16 5L13 8M16 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Сape Rate</span>
+                </button>
             </div>
-
-            <div class="vr text-neutral-200 opacity-100 mx-6"></div>
-
-            <!-- Диапазон -->
-            <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
-                <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Диапазон</span>
-                <svg class="btn-icon flex-shrink-0 ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M14 15H21M3 15H5M5 15C5 16.3807 6.11929 17.5 7.5 17.5C8.88071 17.5 10 16.3807 10 15C10 13.6193 8.88071 12.5 7.5 12.5C6.11929 12.5 5 13.6193 5 15ZM20 9H21M3 9H10M16.5 11.5C15.1193 11.5 14 10.3807 14 9C14 7.61929 15.1193 6.5 16.5 6.5C17.8807 6.5 19 7.61929 19 9C19 10.3807 17.8807 11.5 16.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-
-            <div class="vr text-neutral-200 opacity-100 mx-6"></div>
-
-            <!-- Сape Rate -->
-            <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
-                <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M5 16L8 19L11 16M8 19V5M19 8L16 5L13 8M16 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Сape Rate</span>
-            </button>
+            <div>
+                <button type="button" class="btn btn-sm border-0">
+                    <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3333 13.3334L7.99999 8.00008M7.99999 8.00008L2.66666 2.66675M7.99999 8.00008L13.3333 2.66675M7.99999 8.00008L2.66666 13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Очистить фильтры</span>
+                </button>
+            </div>
         </div>
-        <div>
-            <button type="button" class="btn btn-sm border-0">
-                <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M13.3333 13.3334L7.99999 8.00008M7.99999 8.00008L2.66666 2.66675M7.99999 8.00008L13.3333 2.66675M7.99999 8.00008L2.66666 13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span>Очистить фильтры</span>
-            </button>
+    </div>
+</div>
+                            <!-- mobile -->
+<div class="d-xl-none mb-6">
+    <div class="filter-bar" id="filterBarMob">
+        <div class="d-flex align-items-center justify-content-between gap-2">
+            <div class="d-flex align-items-center gap-2">
+                <!-- Город -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Город</span>
+                    </button>
+                </div>
+                <!-- Тип здания -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Тип здания</span>
+                    </button>
+                </div>
+                <!-- Тип помещения -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Тип помещения</span>
+                    </button>
+                </div>
+                <!-- Диапазон -->
+                <div class="filter-item position-relative d-inline-flex">
+                    <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
+                        <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Диапазон</span>
+                        <svg class="btn-icon flex-shrink-0 ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14 15H21M3 15H5M5 15C5 16.3807 6.11929 17.5 7.5 17.5C8.88071 17.5 10 16.3807 10 15C10 13.6193 8.88071 12.5 7.5 12.5C6.11929 12.5 5 13.6193 5 15ZM20 9H21M3 9H10M16.5 11.5C15.1193 11.5 14 10.3807 14 9C14 7.61929 15.1193 6.5 16.5 6.5C17.8807 6.5 19 7.61929 19 9C19 10.3807 17.8807 11.5 16.5 11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Сape Rate -->
+                <button type="button" class="btn btn-secondary filter-btn btn-sm text-nowrap">
+                    <svg class="btn-icon flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 16L8 19L11 16M8 19V5M19 8L16 5L13 8M16 5V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Сape Rate</span>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-sm border-0">
+                    <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M13.3333 13.3334L7.99999 8.00008M7.99999 8.00008L2.66666 2.66675M7.99999 8.00008L13.3333 2.66675M7.99999 8.00008L2.66666 13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Очистить фильтры</span>
+                </button>
+            </div>
         </div>
     </div>
 </div>

@@ -33,16 +33,17 @@
                             <!-- objects-toggler -->
                             <div class="mb-6">
                                 <!-- btns group -->
-                                <div class="tab-group position-relative d-inline-flex gap-2 bg-white rounded-3 p-2">
+                                <div class="tab-group position-relative d-flex gap-2 bg-white rounded-3 p-2" style="max-width: 420px;">
                                     <div class="tab-slider"></div>
-                                    <a href="#" class="btn tab-btn flex-fill px-2 px-lg-8 active">Все объявления</a>
+                                    <a href="#" class="btn tab-btn w-100 active">Все объявления</a>
                                     <div class="divider-vertical"></div>
-                                    <a href="#" class="btn tab-btn flex-fill px-2 px-lg-8">Мои объявления</a>
+                                    <a href="#" class="btn tab-btn w-100">Мои объявления</a>
                                 </div>
                             </div>
 
                             <!-- sorting -->
-                            @@include('partials/sections/database-filterBar.html')
+                            @@include('partials/sections/database-filterBar-desk.html')
+                            @@include('partials/sections/database-filterBar-mob.html')
 
                             <!-- cards list -->
                             <div class="d-flex flex-column gap-2">

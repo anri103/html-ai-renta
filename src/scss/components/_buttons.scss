@@ -39,6 +39,11 @@
     vertical-align: -0.125em;
 }
 
+.inline-icon-big {
+    flex-shrink: 0;
+    vertical-align: -0.35em;
+}
+
 .btn-primary {
     --cui-btn-color: #{$text-white};
     --cui-btn-bg: #{$brand-500};

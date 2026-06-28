@@ -62,6 +62,10 @@
     border-radius: $rounded-1;
 }
 
+.form-switch .form-check-input {
+    border-radius: 2em;
+}
+
 .form-check-label {
     font-size: var(--cui-body-font-size);
 }
@@ -99,6 +103,21 @@
     .autocomplete-input {
         padding-left: 2.25rem;
     }
+}
+
+// date-picker
+.date-picker {
+    --cui-date-picker-padding-y: 0.75rem;
+    --cui-date-picker-padding-x: 0.75rem;
+    --cui-date-picker-border-color: $bg-white;
+    --cui-date-picker-focus-border-color: $brand-500;
+    --cui-date-picker-gap: 1rem;
+    --cui-date-picker-cleaner-width: 1.5rem;
+    --cui-date-picker-cleaner-icon-size: 1.25rem;
+    --cui-date-picker-indicator-width: 1.5rem;
+    --cui-date-picker-indicator-icon-size: 1.25rem;
+    --cui-date-picker-separator-width: 1.55rem;
+    --cui-date-picker-separator-icon-size: 1.25rem;
 }
 
 // validation

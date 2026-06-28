@@ -2,7 +2,7 @@
 <html lang="ru">
 
 @@include('partials/layout/head.html', {
-    "title": "Новый объект (продавец)"
+    "title": "Информация о помещении (1/3)"
 })
 
 <body>
@@ -50,14 +50,18 @@
                                 </div>
                             </div>
                             <!-- body -->
-                            <div class="flex-fill py-9">
-                                <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(1/3)</sup></div>
-                                <div class="mb-6">
+                            <div class="flex-fill d-flex flex-column gap-10 py-9">
+                                <!-- Информация о помещении (1/3) -->
+                                <div>
+                                    <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(1/3)</sup></div>
                                     <div class="row gy-9">
+                                        <!-- Адрес -->
                                         <div class="col-lg-16 col-xl-24">
-                                            <label for="formCheckListInputAddress" class="h5 fw-600 form-label">Адрес</label>
+                                            <label for="addObjectInputAddress" class="h5 fw-600 form-label">Адрес</label>
                                             <div class="position-relative">
                                                 <div class="position-relative">
+                                                    <!-- field -->
+                                                    <input type="text" class="form-control pe-10" placeholder="Введите адрес" id="addObjectInputAddress">
                                                     <!-- icon -->
                                                     <div class="position-absolute top-50 end-0 translate-middle-y me-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -65,42 +69,45 @@
                                                             <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"/>
                                                         </svg>
                                                     </div>
-                                                    <!-- field -->
-                                                    <input type="text" class="form-control pe-10" placeholder="Введите адрес" id="formCheckListInputAddress">
                                                 </div>
                                                 <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
                                             </div>
                                         </div>
+                                        <!-- Площадь -->
                                         <div class="col-12 col-lg-3 col-xl-auto">
-                                            <label for="formCheckListInputArea" class="h5 fw-600 form-label">Площадь</label>
+                                            <label for="addObjectInputArea" class="h5 fw-600 form-label">Площадь</label>
                                             <div class="position-relative">
                                                 <div class="position-relative" style="max-width: 150px;">
+                                                    <!-- field -->
+                                                    <input type="text" class="form-control pe-10" placeholder="--" id="addObjectInputArea">
                                                     <!-- icon -->
                                                     <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                        <span class="text-gray-50 fw-400 mb-0">м2</span>
+                                                        <div class="text-gray-50 fw-400 mb-0">м<sup>2</sup></div>
                                                     </div>
-                                                    <!-- field -->
-                                                    <input type="text" class="form-control pe-10" placeholder="--" id="formCheckListInputArea">
                                                 </div>
                                                 <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
                                             </div>
                                         </div>
+                                        <!-- Этаж -->
                                         <div class="col-12 col-lg-5 col-xl-auto">
-                                            <label for="formCheckListInputFloor" class="h5 fw-600 form-label">Этаж</label>
+                                            <label for="addObjectInputFloor" class="h5 fw-600 form-label">Этаж</label>
                                             <div class="d-flex gap-6">
                                                 <div class="position-relative">
                                                     <div class="position-relative" style="max-width: 80px;">
                                                         <!-- field -->
-                                                        <input type="text" class="form-control" placeholder="--" id="formCheckListInputFloor">
+                                                        <input type="text" class="form-control" placeholder="--" id="addObjectInputFloor">
                                                     </div>
                                                 </div>
                                                 <div class="small fw-400 text-gray-50 mb-0" style="max-width: 100px;">0 = цокольный этаж</div>
                                             </div>
                                         </div>
+                                        <!-- Ссылка на Авито/Циан -->
                                         <div class="col-lg-16 col-xl-24">
-                                            <label for="formCheckListInputLink" class="h5 fw-600 form-label">Ссылка на Авито/Циан</label>
+                                            <label for="addObjectInputLink" class="h5 fw-600 form-label">Ссылка на Авито/Циан</label>
                                             <div class="position-relative">
                                                 <div class="position-relative">
+                                                    <!-- field -->
+                                                    <input type="text" class="form-control ps-10 pe-10" placeholder="Вставьте ссылку" id="addObjectInputLink">
                                                     <!-- icon -->
                                                     <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -115,11 +122,10 @@
                                                             <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"/>
                                                         </svg>
                                                     </div>
-                                                    <!-- field -->
-                                                    <input type="text" class="form-control ps-10 pe-10" placeholder="Вставьте ссылку" id="formCheckListInputLink">
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- Тип помещения -->
                                         <div class="col-lg-16 col-xl-24">
                                             <div class="d-flex flex-wrap gap-4 mb-2">
                                                 <div class="h5 fw-600 mb-0">Тип помещения</div>
@@ -133,45 +139,46 @@
                                                 <span>Выберите вариант, который соответствует текущему использованию помещения</span>
                                             </div>
                                             <div class="d-flex flex-wrap gap-2">
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding1" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding1">Офис</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding2" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding2">Торговля</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding3" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding3">Склад</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding4" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding4">Помещение свободного назначения</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding5" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding5">Общественное питание</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding6" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding6">Пункт выдачи заказов</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding7" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding7">Производство</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding8" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding8">Автосервис</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding9" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding9">Бытовые услуги</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeBuilding" id="formCheckListInputRadioTypeBuilding10" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeBuilding10">Апартаменты</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType1" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType1">Офис</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType2" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType2">Торговля</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType3" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType3">Склад</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType4" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType4">Помещение свободного назначения</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType5" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType5">Общественное питание</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType6" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType6">Пункт выдачи заказов</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType7" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType7">Производство</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType8" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType8">Автосервис</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType9" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType9">Бытовые услуги</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType10" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectType10">Апартаменты</label>
                                             </div>
                                         </div>
+                                        <!-- Вход в помещение -->
                                         <div class="col-lg-16 col-xl-24">
                                             <div class="d-flex flex-wrap gap-4 mb-5">
                                                 <div class="h5 fw-600 mb-0">Вход в помещение</div>
                                             </div>
                                             <div class="d-flex flex-wrap gap-2">
-                                                <input type="radio" class="btn-check d-none" name="optionTypeEnterBuilding" id="formCheckListInputRadioTypeEnterBuilding1" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeEnterBuilding1">Независимый, с улицы</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeEnterBuilding" id="formCheckListInputRadioTypeEnterBuilding2" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeEnterBuilding2">Независимый, со двора</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeEnterBuilding" id="formCheckListInputRadioTypeEnterBuilding3" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeEnterBuilding3">Через общий вход (или подъезд)</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeEnterBuilding" id="formCheckListInputRadioTypeEnterBuilding4" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeEnterBuilding4">Через внешнюю лестницу</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeEnterBuilding" id="formCheckListInputRadioTypeEnterBuilding5" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeEnterBuilding5">Через вестибюль/рецепцию</label>
-                                                <input type="radio" class="btn-check d-none" name="optionTypeEnterBuilding" id="formCheckListInputRadioTypeEnterBuilding6" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="formCheckListInputRadioTypeEnterBuilding6">Через смежные коммерческие помещения</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter1" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectEnter1">Независимый, с улицы</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter2" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectEnter2">Независимый, со двора</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter3" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectEnter3">Через общий вход (или подъезд)</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter4" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectEnter4">Через внешнюю лестницу</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter5" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectEnter5">Через вестибюль/рецепцию</label>
+                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter6" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioObjectEnter6">Через смежные коммерческие помещения</label>
                                             </div>
                                         </div>
                                     </div>

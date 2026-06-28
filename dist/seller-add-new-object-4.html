@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <!-- <link rel="icon" href="img/favicon/favicon.svg" sizes="32x32" /> -->
-    <title>Информация о помещении (1/2)</title>
+    <title>Информация о здании</title>
 
     <!-- fonts -->
     <link rel="stylesheet" href="assets/fonts/Golos-Text/Golos-Text.css">
@@ -305,7 +305,7 @@
                             <div>
                                 <div class="row align-items-center">
                                     <div class="col-auto">
-                                        <a href="seller-add-new-object.html" class="btn btn-secondary p-2">
+                                        <a href="seller-add-new-object-3.html" class="btn btn-secondary p-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
@@ -320,81 +320,112 @@
                             </div>
                             <!-- body -->
                             <div class="flex-fill d-flex flex-column gap-10 py-9">
-                                <!-- Информация о помещении (2/3) -->
+                                <!-- Информация о здании -->
                                 <div>
-                                    <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(2/3)</sup></div>
+                                    <div class="h2 fw-700 mb-8">Информация о здании</div>
                                     <div class="row gy-9">
-                                        <!-- Выделенная электрическая мощность на помещение -->
-                                        <div class="col-lg-24 col-xl-auto">
+                                        <!-- Тип здания -->
+                                        <div class="col-lg-16 col-xl-24">
+                                            <div class="d-flex flex-wrap gap-4 mb-5">
+                                                <div class="h5 fw-600 mb-0">Тип здания</div>
+                                                <div class="d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2">Обязательно выберите</div>
+                                            </div>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType1" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType1">Бизнес-центр «А»</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType2" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType2">Бизнес-центр «B»</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType3" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType3">Бизнес-центр «C»</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType4" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType4">Торговый комплекс</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType5" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType5">Складской комплекс</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType6" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType6">Производственный комплекс</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType7" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType7">Жилой многоквартирный дом</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType8" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType8">Здание апартаментов</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType9" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType9">Гостиница (отель)</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType10" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingType10">Отдельно стоящее здание (свободного назначения)</label>
+                                            </div>
+                                        </div>
+                                        <!-- Количество этажей в здании -->
+                                        <div class="col-lg-24 col-xl-8">
                                             <div class="d-flex gap-6">
-                                                <label for="addObjectInputPower" class="h5 fw-600 mb-0" style="max-width: 250px;">Выделенная электрическая мощность на помещение:</label>
+                                                <label for="addObjectInputFloors" class="h5 fw-600 mb-0" style="max-width: 160px;">Количество этажей в здании:</label>
+                                                <div class="position-relative">
+                                                    <div class="position-relative" style="max-width: 60px;">
+                                                        <!-- field -->
+                                                        <input type="text" class="form-control" placeholder="---" id="addObjectInputFloors">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Год ввода в эксплуатацию (строительства) здания -->
+                                        <div class="col-lg-12 col-xl-8">
+                                            <div class="d-flex gap-6">
+                                                <label for="addObjectInputCommissioningYear" class="h5 fw-600 mb-0" style="max-width: 240px;">Год ввода в эксплуатацию (строительства) здания:</label>
                                                 <div class="position-relative">
                                                     <div class="position-relative" style="max-width: 100px;">
                                                         <!-- field -->
-                                                        <input type="text" class="form-control pe-10" placeholder="--" id="addObjectInputPower">
+                                                        <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputCommissioningYear">
                                                         <!-- icon -->
                                                         <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                            <div class="text-gray-50 fw-400 mb-0">кВт</div>
+                                                            <div class="text-gray-50 fw-400 mb-0">год</div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Наличие в помещении инженерных систем -->
-                                        <div class="col-lg-16 col-xl-24">
-                                            <div class="d-flex flex-wrap gap-4 mb-2">
-                                                <div class="h5 fw-600 mb-0">Наличие в помещении инженерных систем</div>
+                                        <!-- Год реконструкции здания (при наличии) -->
+                                        <div class="col-lg-12 col-xl-8">
+                                            <div class="d-flex gap-6">
+                                                <label for="addObjectInputReconstructionYear" class="h5 fw-600 mb-0" style="max-width: 205px;">Год реконструкции здания (при наличии):</label>
+                                                <div class="position-relative">
+                                                    <div class="position-relative" style="max-width: 100px;">
+                                                        <!-- field -->
+                                                        <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputReconstructionYear">
+                                                        <!-- icon -->
+                                                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                            <div class="text-gray-50 fw-400 mb-0">год</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="d-flex text-gray-50 fw-400 mb-5">
-                                                <svg class="flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <path d="M10.6669 6L7.11133 10L5.33333 8M2 11.8668V4.13346C2 3.38673 2 3.01308 2.14532 2.72786C2.27316 2.47698 2.47698 2.27316 2.72786 2.14532C3.01308 2 3.38673 2 4.13346 2H11.8668C12.6135 2 12.9864 2 13.2716 2.14532C13.5225 2.27316 13.727 2.47698 13.8548 2.72786C14 3.0128 14 3.386 14 4.13127V11.8691C14 12.6143 14 12.987 13.8548 13.2719C13.727 13.5228 13.5225 13.727 13.2716 13.8548C12.9867 14 12.614 14 11.8687 14H4.13127C3.386 14 3.0128 14 2.72786 13.8548C2.47698 13.727 2.27316 13.5228 2.14532 13.2719C2 12.9867 2 12.6135 2 11.8668Z" stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <span>Выберите варианты</span>
+                                        </div>
+                                        <!-- Управление зданием осуществляется -->
+                                        <div class="col-lg-16 col-xl-24">
+                                            <div class="d-flex flex-wrap gap-4 mb-5">
+                                                <div class="h5 fw-600 mb-0">Управление зданием осуществляется</div>
                                             </div>
                                             <div class="d-flex flex-wrap gap-2">
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems1" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems1">Электроснабжение</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems2" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems2">Водоснабжение</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems3" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems3">Водоотведение</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems4" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems4">Теплоснабжение</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems5" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems5">Приточно-вытяжные системы</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems6" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems6">Кондиционирование</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems7" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems7">Дымоудаление</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems8" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems8">Пожарная сигнализация</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems9" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems9">Автоматическое пожаротушение</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems10" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems10">Видеонаблюдение</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems11" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems11">СКУД/Домофон</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems12" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems12">Охранная сигнализация</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems13" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems13">Интернет/Телеком</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems14" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems14">Wi-Fi</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems15" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems15">Телевидение</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems16" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems16">Конференц-связь</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems17" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystems17">Серверная</label>
-                                                <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystemsLast" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectCheckboxEngineeringSystemsLast" data-coreui-toggle="collapse" data-coreui-target="#collapseInputEngineeringSystems" aria-expanded="false">Иное:</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy1" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedBy1">Управляющая компания</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy2" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedBy2">Товарищество собственников</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy3" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedBy3">Сам собственник</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy4" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedBy4">Государственная / муниципальная управляющая организация</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy5" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedBy5">Специализированный девелопер или доверительный управляющий</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy6" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedBy6">Прямые договоры собственников с ресурсоснабжающими и сервисными организациями (без единого управляющего органа)</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy7" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedBy7">Сервисная (эксплуатационная) компания застройщика</label>
+                                                <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedByLast" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioBuildingManagedByLast" data-coreui-toggle="collapse" data-coreui-target="#collapseInputBuildingManagedBy" aria-expanded="false">Иное:</label>
                                             </div>
-                                            <div class="collapse" id="collapseInputEngineeringSystems">
+                                            <div class="collapse" id="collapseInputBuildingManagedBy">
                                                 <div class="mt-4 pb-7">
                                                     <div class="position-relative">
                                                         <div class="position-relative">
                                                             <!-- field -->
-                                                            <input type="text" class="form-control pe-10" placeholder="Перечислите" id="addObjectInputEngineeringSystems">
+                                                            <input type="text" class="form-control pe-10" placeholder="Введите" id="addObjectInputBuildingManagedBy">
                                                             <!-- icon -->
                                                             <div class="position-absolute top-50 end-0 translate-middle-y me-3">
                                                                 <div class="d-flex align-items-center gap-2">
@@ -411,15 +442,39 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Оборудование, переданное в аренду и подлежащее отчуждению вместе с помещением -->
-                                        <div class="col-24">
-                                            <div class="row gy-9">
-                                                <div class="col-lg-24 col-xl-12">
-                                                    <div class="h5 fw-600 mb-4">Оборудование, переданное в&nbsp;аренду и&nbsp;подлежащее отчуждению вместе с&nbsp;помещением</div>
+                                        <!-- Право на земельный участок -->
+                                        <div class="col-lg-16 col-xl-24">
+                                            <div class="d-flex flex-wrap gap-4 mb-5">
+                                                <div class="h5 fw-600 mb-0">Право на земельный участок</div>
+                                            </div>
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight1" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight1">Доля на собственника помещения не оформлено</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight2" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight2">Доля в праве собственности</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight3" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight3">Доля в праве постоянного (бессрочного) пользования</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight4" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight4">Доля в праве аренды земельного участка</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight5" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight5">Доля в праве субаренды</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight6" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight6">Доля в праве безвозмездного срочного пользования земельным участком</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight7" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight7">Доля в праве ограниченного пользования (земельный сервитут)</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight8" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRight8">Доля в праве застройки (суперфиция)</label>
+                                                <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRightLast" autocomplete="off">
+                                                <label class="btn btn-secondary-2 btn-sm" for="addObjectRadioLandRightLast" data-coreui-toggle="collapse" data-coreui-target="#collapseInputLandRight" aria-expanded="false">Иное:</label>
+                                            </div>
+                                            <div class="collapse" id="collapseInputLandRight">
+                                                <div class="mt-4 pb-7">
                                                     <div class="position-relative">
                                                         <div class="position-relative">
-                                                            <textarea class="form-control pb-10" rows="5" placeholder="Перечислите (при наличии)"></textarea>
-                                                            <div class="position-absolute bottom-0 end-0 mb-3 me-3">
+                                                            <!-- field -->
+                                                            <input type="text" class="form-control pe-10" placeholder="Введите" id="addObjectInputLandRight">
+                                                            <!-- icon -->
+                                                            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
                                                                 <div class="d-flex align-items-center gap-2">
                                                                     <div class="text-gray-50 fw-400 mb-0">0/200</div>
                                                                     <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -429,23 +484,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-24 col-xl-12">
-                                                    <div class="h5 fw-600 mb-4">Мебель и&nbsp;элементы интерьера, переданные в&nbsp;аренду и&nbsp;подлежащее отчуждению вместе с&nbsp;помещением</div>
-                                                    <div class="position-relative">
-                                                        <div class="position-relative">
-                                                            <textarea class="form-control pb-10" rows="5" placeholder="Перечислите (при наличии)"></textarea>
-                                                            <div class="position-absolute bottom-0 end-0 mb-3 me-3">
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <div class="text-gray-50 fw-400 mb-0">0/200</div>
-                                                                    <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                                        <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
-                                                                        <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
-                                                                    </svg>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -461,7 +500,7 @@
                                     </svg>
                                     <span>Сохранить черновик</span>
                                 </a>
-                                <a href="seller-add-new-object-3.html" class="btn btn-primary">
+                                <a href="seller-add-new-object-5.html" class="btn btn-primary">
                                     <span>Далее</span>
                                     <svg class="inline-icon-big ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                         <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

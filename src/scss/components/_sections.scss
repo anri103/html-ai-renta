@@ -306,3 +306,154 @@
         background-color: #{$brand-200};
     }
 }
+
+// Table
+.expense-table {
+    min-width: 860px;
+    table-layout: fixed;
+
+    th,
+    td {
+        vertical-align: middle;
+        color: $text-primary;
+    }
+
+    // Header
+    thead {
+        th {
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            background: $neutral-500;
+        }
+
+        th.th-landlord {
+            padding: 0;
+            color: $text-primary;
+            background: $brand-300;
+        }
+
+        th.th-tenant,
+        th.sub-header {
+            color: $text-primary;
+            background: $warning-300;
+        }
+    }
+
+    th.col-name  { text-align: left; }
+    th.col-value { width: 140px; min-width: 140px; max-width: 140px; }
+    th.col-sum   { width: 110px; min-width: 110px; max-width: 110px; }
+    th.col-check { width: 110px; min-width: 110px; max-width: 110px; }
+
+    /* ── Name cell ── */
+    td.col-name {
+        font-weight: 500;
+        word-break: break-word;
+    }
+
+    /* ── Value input ── */
+    td.col-value {
+        text-align: right;
+        white-space: nowrap;
+
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            color: $text-primary;
+            background: transparent;
+        }
+    
+        input[type="text"]:focus {
+            border-radius: 3px;
+            box-shadow: 0 0 0 2px #bfdbfe;
+        }
+    }
+
+    .unit {
+        font-weight: 500;
+        color: $text-primary;
+        margin-left: 0.5rem;
+    }
+
+    /* ── Sum cell ── */
+    td.col-sum {
+        text-align: right;
+        font-weight: 500;
+        color: $text-primary;
+        background: $success-100;
+    }
+
+    /* ── Column base backgrounds ── */
+    tbody td.col-landlord    { background: $brand-50; }
+    tbody td.col-tenant-comp,
+    tbody td.col-tenant-dir  { background: $warning-50; }
+
+    /* ── Checkbox cells ── */
+    td.col-check {
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        transition: background 0.12s;
+
+        .check-icon {
+            display: block;
+            margin: 0 auto;
+            color: $neutral-200;
+        }
+
+        &.col-landlord.checked .check-icon    { color: $brand-700; }
+        &.col-tenant-comp.checked .check-icon { color: $warning-700; }
+        &.col-tenant-dir.checked .check-icon  { color: $warning-700; }
+
+        &.checked.col-landlord    { background: $brand-300; }
+        &.checked.col-tenant-comp { background: $warning-300; }
+        &.checked.col-tenant-dir  { background: $warning-300; }
+    }
+
+    /* ── Group header row ── */
+    tr.group-header td {
+        font-weight: 500;
+        border-bottom: var(--cui-border-width) solid $success-500;
+        background: $success-100;
+    }
+
+    tr.group-member {
+        td:first-child {
+            border-left: var(--cui-border-width) solid $success-500;
+        }
+    
+        td:last-child {
+            border-right: var(--cui-border-width) solid $success-500;
+        }
+    }
+
+    tr.group-member.group-last {
+        td {
+            border-bottom: var(--cui-border-width) solid $success-500;
+        }
+    }
+
+    /* ── Accent rows (last 3 data rows, first 2 cols) ── */
+    tr.accent-row td.col-name,
+    tr.accent-row td.col-value { background: $brand-100; }
+
+    /* ── Total row ── */
+    tr.total-row {
+        td {
+            min-height: 52px;
+            font-weight: 500;
+            color: $text-primary;
+            background: $brand-300;
+        }
+    }
+
+    /* ── Hover ── */
+    tbody td.col-value:hover       { background: $brand-300; }
+    tbody td.col-landlord:hover    { background: $brand-200; }
+    tbody td.col-tenant-comp:hover { background: $warning-200; }
+    tbody td.col-tenant-dir:hover  { background: $warning-200; }
+    tbody td.col-landlord:hover .check-icon    { color: $brand-500; }
+    tbody td.col-tenant-comp:hover .check-icon { color: $warning-600; }
+    tbody td.col-tenant-dir:hover .check-icon  { color: $warning-600; }
+}

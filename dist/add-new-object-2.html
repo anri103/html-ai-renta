@@ -305,7 +305,7 @@
                             <div>
                                 <div class="row align-items-center">
                                     <div class="col-auto">
-                                        <a href="seller-add-new-object.html" class="btn btn-secondary p-2">
+                                        <a href="add-new-object.html" class="btn btn-secondary p-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                                 <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </svg>
@@ -461,7 +461,7 @@
                                     </svg>
                                     <span>Сохранить черновик</span>
                                 </a>
-                                <a href="seller-add-new-object-3.html" class="btn btn-primary">
+                                <a href="add-new-object-3.html" class="btn btn-primary">
                                     <span>Далее</span>
                                     <svg class="inline-icon-big ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                         <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -510,47 +510,6 @@
 </footer>
 
     <!-- MODALS -->
-    <div class="modal fade" id="modalChecklistLeave" aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-        <div class="modal-content">
-            <div class="modal-body">
-
-                <!-- icon + btn-close -->
-                <div class="d-flex justify-content-between gap-3 mb-2">
-                    <img src="assets/img/modals/atention.svg" alt="atention">
-                    <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
-                </div>
-
-                <!-- title -->
-                <div class="h2 fw-700 mb-2">Выйти без сохранения?</div>
-
-                <!-- text -->
-                <div class="text-box text-gray-50">
-                    <p>Данные чек-листа будут потеряны</p>
-                    <p style="color: #0B1226;">Сохраните черновик — и продолжите в любое время</p>
-                </div>
-
-                <!-- buttons -->
-                <div class="d-flex flex-wrap justify-content-center gap-2 mt-6">
-                    <a href="seller-objects.html" class="btn btn-primary">
-                        <svg class="inline-icon-big me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M7 21H6.19691C5.07899 21 4.5192 21 4.0918 20.7822C3.71547 20.5905 3.40973 20.2837 3.21799 19.9074C3 19.4796 3 18.9203 3 17.8002V6.2002C3 5.08009 3 4.51962 3.21799 4.0918C3.40973 3.71547 3.71547 3.40973 4.0918 3.21799C4.51962 3 5.08009 3 6.2002 3H15.075C15.5998 3 15.8625 3 16.1073 3.06287C16.3242 3.11858 16.5303 3.21 16.7168 3.33398C16.9242 3.47181 17.0969 3.66374 17.4377 4.04241L20.1929 7.10378C20.487 7.43055 20.6366 7.59674 20.7432 7.78595C20.8393 7.95652 20.9095 8.14 20.9521 8.33105C21 8.54521 21 8.77072 21 9.21955V17.8031C21 18.921 21 19.4806 20.7822 19.908C20.5905 20.2843 20.2837 20.5905 19.9074 20.7822C19.48 21 18.921 21 17.8031 21L17 21.0002L7 21ZM17 21.0002V17.1969C17 16.079 17 15.5192 16.7822 15.0918C16.5905 14.7155 16.2837 14.4097 15.9074 14.218C15.4796 14 14.9203 14 13.8002 14H10.2002C9.08009 14 8.51962 14 8.0918 14.218C7.71547 14.4097 7.40973 14.7155 7.21799 15.0918C7 15.5196 7 16.0801 7 17.2002V21M15 7H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Сохранить и выйти</span>
-                    </a>
-                    <button type="button" class="btn btn-secondary" data-coreui-dismiss="modal">Остаться</button>
-                    <a href="seller-objects.html" class="btn border-0">
-                        <svg class="inline-icon-big me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 8.44971V12.4497M7.33173 3.9375L3.9375 7.33173L3.93442 7.33462C3.59057 7.67847 3.41824 7.85081 3.29492 8.05204C3.18526 8.23098 3.10425 8.4263 3.05526 8.63037C3 8.86055 3 9.10506 3 9.59424V14.4058C3 14.8949 3 15.1395 3.05526 15.3697C3.10425 15.5738 3.18526 15.7688 3.29492 15.9478C3.41857 16.1495 3.59182 16.3228 3.9375 16.6685L7.33173 20.0627C7.67763 20.4086 7.85021 20.5812 8.05204 20.7048C8.23099 20.8145 8.42581 20.8958 8.62988 20.9448C8.85971 21 9.10382 21 9.59151 21H14.4075C14.8952 21 15.1404 21 15.3702 20.9448C15.5743 20.8958 15.7693 20.8145 15.9482 20.7049C16.1501 20.5812 16.323 20.4086 16.6689 20.0627L20.0632 16.6685C20.4091 16.3226 20.5817 16.1496 20.7053 15.9478C20.815 15.7688 20.8953 15.5738 20.9443 15.3697C20.9996 15.1395 21 14.895 21 14.4058V9.59424C21 9.10506 20.9996 8.86055 20.9443 8.63037C20.8953 8.4263 20.815 8.23099 20.7053 8.05205C20.5817 7.85022 20.4091 7.67761 20.0632 7.33173L16.6689 3.9375C16.3233 3.59181 16.15 3.41857 15.9482 3.29492C15.7693 3.18526 15.5743 3.10425 15.3702 3.05526C15.14 3 14.8945 3 14.4053 3H9.59375C9.10457 3 8.86006 3 8.62988 3.05526C8.42581 3.10425 8.23099 3.18526 8.05204 3.29492C7.85204 3.41748 7.68106 3.58847 7.3414 3.92813L7.33173 3.9375ZM12.0498 15.4497V15.5497L11.9502 15.5499V15.4497H12.0498Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Выйти без сохранения</span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
 
     <!-- scripts -->
     <script src="assets/js/coreui.bundle.min.js"></script>

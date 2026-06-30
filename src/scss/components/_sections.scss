@@ -307,7 +307,7 @@
     }
 }
 
-// Table
+// expense-table
 .expense-table {
     min-width: 860px;
     table-layout: fixed;
@@ -456,4 +456,99 @@
     tbody td.col-landlord:hover .check-icon    { color: $brand-500; }
     tbody td.col-tenant-comp:hover .check-icon { color: $warning-600; }
     tbody td.col-tenant-dir:hover .check-icon  { color: $warning-600; }
+}
+
+// income-table
+.income-table {
+    --cui-border-width: 0;
+    --cui-table-striped-bg: #{$brand-100};
+    min-width: 860px;
+    table-layout: fixed;
+
+    th,
+    td {
+        vertical-align: middle;
+        color: $text-primary;
+    }
+
+    // Header
+    thead {
+        th {
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            background: $neutral-500;
+        }
+
+        th.th-landlord {
+            padding: 0;
+            color: $text-primary;
+            background: $brand-300;
+        }
+
+        th.th-tenant,
+        th.sub-header {
+            color: $text-primary;
+            background: $warning-300;
+        }
+    }
+
+    // body
+    tr:nth-of-type(even) td {
+        background: $brand-100;
+    }
+
+    th.col-name  { text-align: left; }
+    th.col-value { text-align: left; width: 260px; min-width: 260px; max-width: 260px; }
+
+    /* ── Name cell ── */
+    td.col-name {
+        font-weight: 500;
+        word-break: break-word;
+    }
+
+    /* ── Value input ── */
+    td.col-value {
+        text-align: right;
+        white-space: nowrap;
+
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            outline: none;
+            color: $text-primary;
+            background: transparent;
+        }
+    
+        input[type="text"]:focus {
+            border-radius: 3px;
+            box-shadow: 0 0 0 2px #bfdbfe;
+        }
+    }
+
+    .unit {
+        font-weight: 500;
+        color: $text-primary;
+        margin-left: 0.5rem;
+    }
+
+    /* ── Group header row ── */
+    tr.group-member td {
+        font-weight: 500;
+        background: $success-100;
+    }
+}
+
+// ai-wrapper
+.ai-wrapper {
+    .user-question {
+        max-width: 650px;
+        margin-left: auto;
+    }
+}
+
+// .ai-conversation {}
+
+.ai-send-form {
+    margin-top: 1rem;
 }

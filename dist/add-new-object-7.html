@@ -50,7 +50,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="add-new-object.html" class="btn btn-primary btn-add-object w-100">
+                <a href="add-new-object-1.html" class="btn btn-primary btn-add-object w-100">
                     <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M8 2.66669V13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M2.66663 8H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -196,7 +196,7 @@
                             <span>Объекты</span>
                         </a>
                         <div class="btn-add-object-wrapper">
-                            <a href="add-new-object.html" class="btn btn-primary btn-sm btn-add-object w-100">
+                            <a href="add-new-object-1.html" class="btn btn-primary btn-sm btn-add-object w-100">
                                 <svg class="inline-icon me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                     <path d="M8 2.66669V13.3334" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M2.66663 8H13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -303,7 +303,7 @@
                         <div class="d-flex flex-column rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
                             <!-- header -->
                             <div>
-                                <div class="row align-items-center">
+                                <div class="row align-items-center gx-2">
                                     <div class="col-auto">
                                         <a href="add-new-object-6.html" class="btn btn-secondary p-2">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -311,8 +311,8 @@
                                             </svg>
                                         </a>
                                     </div>
-                                    <div class="col-auto">
-                                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-3 py-3 px-5">
+                                    <div class="col">
+                                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-3 py-3 px-5 w-100 w-lg-auto">
                                             <span class="h5 fw-600 mb-0">Запрос №00002</span>
                                         </div>
                                     </div>
@@ -320,519 +320,525 @@
                             </div>
                             <!-- body -->
                             <div class="flex-fill d-flex flex-column gap-10 py-9">
+                                <div>
 
-                                <div class="table-responsive">
-                                    <table class="expense-table table table-bordered mb-0">
-                                        <colgroup>
-                                            <col>
-                                            <col style="width:140px;">
-                                            <col style="width:110px;">
-                                            <col style="width:110px;">
-                                            <col style="width:110px;">
-                                            <col style="width:110px;">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th class="col-name" rowspan="3">
-                                                    <span class="h5 fw-600 mb-0">Наименование показателей для расчета расходов</span>
-                                                </th>
-                                                <th class="col-value" rowspan="3">Показатель<br>(₽, %)</th>
-                                                <th class="col-sum" rowspan="3">Сумма<br>(в Мес, ₽)</th>
-                                                <th colspan="3">Отнесение затрат (признак — V)</th>
-                                            </tr>
-                                            <tr>
-                                                <th class="col-check th-landlord" rowspan="2">
-                                                    <span class="small">Арендодатель</span>
-                                                </th>
-                                                <th class="th-tenant" colspan="2">
-                                                    <span class="small">Арендатор</span>
-                                                </th>
-                                            </tr>
-                                            <tr>
-                                                <th class="col-check sub-header th-tenant text-start" style="font-size:10px;">Компенсирует расходы арендодателя</th>
-                                                <th class="col-check sub-header th-tenant text-start" style="font-size:10px;">Заключает прямые договоры (без компенсации)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Налог на недвижимость
-                                                    <span class="text-gray-50 fw-500"> Property Tax</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
+                                    <!-- table -->
+                                    <div class="table-responsive">
+                                        <table class="expense-table table table-bordered mb-0">
+                                            <colgroup>
+                                                <col>
+                                                <col style="width:140px;">
+                                                <col style="width:110px;">
+                                                <col style="width:110px;">
+                                                <col style="width:110px;">
+                                                <col style="width:110px;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th class="col-name" rowspan="3">
+                                                        <span class="h5 fw-600 mb-0">Наименование показателей для расчета расходов</span>
+                                                    </th>
+                                                    <th class="col-value" rowspan="3">Показатель<br>(₽, %)</th>
+                                                    <th class="col-sum" rowspan="3">Сумма<br>(в Мес, ₽)</th>
+                                                    <th colspan="3">Отнесение затрат (признак — V)</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="col-check th-landlord" rowspan="2">
+                                                        <span class="small">Арендодатель</span>
+                                                    </th>
+                                                    <th class="th-tenant" colspan="2">
+                                                        <span class="small">Арендатор</span>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="col-check sub-header th-tenant text-start" style="font-size:10px;">Компенсирует расходы арендодателя</th>
+                                                    <th class="col-check sub-header th-tenant text-start" style="font-size:10px;">Заключает прямые договоры (без компенсации)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Налог на недвижимость
+                                                        <span class="text-gray-50 fw-500"> Property Tax</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord checked" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp checked" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Расходы на пользование<br> долей земельного участка
+                                                        <span class="text-gray-50 fw-500"> Land occupancy costs</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp checked" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Страхование имущества
+                                                        <span class="text-gray-50 fw-500"> Insurance</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-header">
+                                                    <td colspan="6">
+                                                        <span>Коммунальные среднегодовые расходы</span>
+                                                        <span class="text-gray-50 fw-500"> Utilities</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Электричество
+                                                        <span class="text-gray-50 fw-500"> U1</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Отопление
+                                                        <span class="text-gray-50 fw-500"> U2</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Водоснабжение
+                                                        <span class="text-gray-50 fw-500"> U3</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Водоотведение (канализация)
+                                                        <span class="text-gray-50 fw-500"> U4</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member group-last">
+                                                    <td class="col-name">
+                                                        Иные дополнительные коммунальные расходы
+                                                        <span class="text-gray-50 fw-500"> U0</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Эксплуатационные расходы УК<br> (в т.ч. МОП)
+                                                        <span class="text-gray-50 fw-500"> Management Fee</span>
+                                                        <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
+                                                        <span>
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
+                                                                <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Интернет/ТВ
+                                                        <span class="text-gray-50 fw-500"> Internet/TV</span>
+                                                        <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Охрана помещения
+                                                        <span class="text-gray-50 fw-500"> Security</span>
+                                                        <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Управленческие расходы,<br> % от Base Rent
+                                                        <span class="text-gray-50 fw-500"> Management expenses</span>
+                                                        <span>
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
+                                                                <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>%</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Текущий ремонт,<br> % от Base Rent
+                                                        <span class="text-gray-50 fw-500"> Maintenance &amp; Repairs</span>
+                                                        <span>
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
+                                                                <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>%</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name">
+                                                        Резерв на капремонт,<br> % от Base Rent
+                                                        <span class="text-gray-50 fw-500"> CapEx Reserve</span>
+                                                        <span>
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
+                                                                <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
+                                                            </svg>
+                                                        </span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">%</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>%</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-header">
+                                                    <td colspan="6">
+                                                        <span>Иные средние операционные расходы</span>
+                                                        <span class="text-gray-50 fw-500"> Other OpEx</span>
+                                                        
+                                                    </td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Обслуживание систем вентиляции<br> и кондиционирования
+                                                        <span class="text-gray-50 fw-500"> O1</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Обслуживание переданного<br> с помещением оборудования
+                                                        <span class="text-gray-50 fw-500"> O2</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Обслуживание систем пожарной безопасности
+                                                        <span class="text-gray-50 fw-500"> O3</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Содержание парковочных мест
+                                                        <span class="text-gray-50 fw-500"> O4</span>
+                                                        <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Вывоз, утилизация отходов<br> (если не входит в эксплуатационные расходы)
+                                                        <span class="text-gray-50 fw-500"> O5</span>
+                                                        <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member">
+                                                    <td class="col-name">
+                                                        Вывеска арендатора
+                                                        <span class="text-gray-50 fw-500"> O6</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="group-member group-last">
+                                                    <td class="col-name">
+                                                        Клининг помещения<br> (если не входит в эксплуатационные расходы)
+                                                        <span class="text-gray-50 fw-500"> O7</span>
+                                                        <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="accent-row">
+                                                    <td class="col-name">
+                                                        Иные расходы арендодателя<br> без компенсации арендатором (суммарно)
+                                                        <span class="text-gray-50 fw-500"> OO1</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="accent-row">
+                                                    <td class="col-name">
+                                                        Иные расходы арендодателя<br> с компенсацией арендатором (суммарно)
+                                                        <span class="text-gray-50 fw-500"> OO2</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="accent-row">
+                                                    <td class="col-name">
+                                                        Иные расходы арендатора (суммарно)
+                                                        <span class="text-gray-50 fw-500"> OO3</span>
+                                                        <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
+                                                    </td>
+                                                    <td class="col-value">
+                                                        <div class="d-flex">
+                                                            <input type="text" placeholder="0">
+                                                            <span class="unit">₽</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-sum"><span>₽</span></td>
+                                                    <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                    <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
+                                                </tr>
+                                                <tr class="total-row">
+                                                    <td class="col-name"><span class="h5 fw-600 mb-0">Итого:</span></td>
+                                                    <td class="col-sum"></td>
+                                                    <td class="col-sum">₽</td>
+                                                    <td class="col-sum">₽</td>
+                                                    <td class="col-sum">₽</td>
+                                                    <td class="col-sum">₽</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+    
+                                    <!-- summary -->
+                                    <div class="mt-5 mt-md-6">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-xl-7 ms-auto">
+                                                <div class="bg-success-100 border border-success-500 rounded-2 p-4 p-lg-6">
+                                                    <div class="row gy-5">
+                                                        <div class="col-md col-xl">
+                                                            <div class="fw-500 text-gray-70 mb-1"><span class="text-brand-700">NOI</span> - Чистый операционный доход:</div>
+                                                            <div class="d-flex align-items-center gap-7 text-nowrap">
+                                                                <div><span class="fw-400 text-gray-70">в год: </span><span class="fw-500 text-body">1 810 720 ₽</span></div>
+                                                                <div><span class="fw-400 text-gray-70">в мес: </span><span class="fw-500 text-body">150 720 ₽</span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5 col-xl-6">
+                                                            <div class="fw-400 text-brand-700 mb-1">Cap Rate</div>
+                                                            <div class="fw-500 text-body mb-0">9%</div>
+                                                        </div>
                                                     </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord checked" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp checked" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Расходы на пользование<br> долей земельного участка
-                                                    <span class="text-gray-50 fw-500"> Land occupancy costs</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp checked" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Страхование имущества
-                                                    <span class="text-gray-50 fw-500"> Insurance</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-header">
-                                                <td colspan="6">
-                                                    <span>Коммунальные среднегодовые расходы</span>
-                                                    <span class="text-gray-50 fw-500"> Utilities</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Электричество
-                                                    <span class="text-gray-50 fw-500"> U1</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Отопление
-                                                    <span class="text-gray-50 fw-500"> U2</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Водоснабжение
-                                                    <span class="text-gray-50 fw-500"> U3</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Водоотведение (канализация)
-                                                    <span class="text-gray-50 fw-500"> U4</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member group-last">
-                                                <td class="col-name">
-                                                    Иные дополнительные коммунальные расходы
-                                                    <span class="text-gray-50 fw-500"> U0</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Эксплуатационные расходы УК<br> (в т.ч. МОП)
-                                                    <span class="text-gray-50 fw-500"> Management Fee</span>
-                                                    <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
-                                                    <span>
-                                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
-                                                            <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
-                                                        </svg>
-                                                    </span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Интернет/ТВ
-                                                    <span class="text-gray-50 fw-500"> Internet/TV</span>
-                                                    <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Охрана помещения
-                                                    <span class="text-gray-50 fw-500"> Security</span>
-                                                    <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Управленческие расходы,<br> % от Base Rent
-                                                    <span class="text-gray-50 fw-500"> Management expenses</span>
-                                                    <span>
-                                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
-                                                            <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
-                                                        </svg>
-                                                    </span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">%</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>%</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Текущий ремонт,<br> % от Base Rent
-                                                    <span class="text-gray-50 fw-500"> Maintenance &amp; Repairs</span>
-                                                    <span>
-                                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
-                                                            <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
-                                                        </svg>
-                                                    </span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">%</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>%</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-name">
-                                                    Резерв на капремонт,<br> % от Base Rent
-                                                    <span class="text-gray-50 fw-500"> CapEx Reserve</span>
-                                                    <span>
-                                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
-                                                            <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
-                                                        </svg>
-                                                    </span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">%</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>%</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-header">
-                                                <td colspan="6">
-                                                    <span>Иные средние операционные расходы</span>
-                                                    <span class="text-gray-50 fw-500"> Other OpEx</span>
-                                                    
-                                                </td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Обслуживание систем вентиляции<br> и кондиционирования
-                                                    <span class="text-gray-50 fw-500"> O1</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Обслуживание переданного<br> с помещением оборудования
-                                                    <span class="text-gray-50 fw-500"> O2</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Обслуживание систем пожарной безопасности
-                                                    <span class="text-gray-50 fw-500"> O3</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Содержание парковочных мест
-                                                    <span class="text-gray-50 fw-500"> O4</span>
-                                                    <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Вывоз, утилизация отходов<br> (если не входит в эксплуатационные расходы)
-                                                    <span class="text-gray-50 fw-500"> O5</span>
-                                                    <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member">
-                                                <td class="col-name">
-                                                    Вывеска арендатора
-                                                    <span class="text-gray-50 fw-500"> O6</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="group-member group-last">
-                                                <td class="col-name">
-                                                    Клининг помещения<br> (если не входит в эксплуатационные расходы)
-                                                    <span class="text-gray-50 fw-500"> O7</span>
-                                                    <span class="badge-month d-inline-block bg-brand-200 text-brand-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Месяц</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="accent-row">
-                                                <td class="col-name">
-                                                    Иные расходы арендодателя<br> без компенсации арендатором (суммарно)
-                                                    <span class="text-gray-50 fw-500"> OO1</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="accent-row">
-                                                <td class="col-name">
-                                                    Иные расходы арендодателя<br> с компенсацией арендатором (суммарно)
-                                                    <span class="text-gray-50 fw-500"> OO2</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="accent-row">
-                                                <td class="col-name">
-                                                    Иные расходы арендатора (суммарно)
-                                                    <span class="text-gray-50 fw-500"> OO3</span>
-                                                    <span class="badge-year d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2 ms-2">в Год</span>
-                                                </td>
-                                                <td class="col-value">
-                                                    <div class="d-flex">
-                                                        <input type="text" placeholder="0">
-                                                        <span class="unit">₽</span>
-                                                    </div>
-                                                </td>
-                                                <td class="col-sum"><span>₽</span></td>
-                                                <td class="col-check col-landlord" data-col="c1"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-comp" data-col="c2"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                                <td class="col-check col-tenant-dir" data-col="c3"><svg class="check-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.0005L8.94975 16.9502L19.5572 6.34375" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></td>
-                                            </tr>
-                                            <tr class="total-row">
-                                                <td class="col-name"><span class="h5 fw-600 mb-0">Итого:</span></td>
-                                                <td class="col-sum"></td>
-                                                <td class="col-sum">₽</td>
-                                                <td class="col-sum">₽</td>
-                                                <td class="col-sum">₽</td>
-                                                <td class="col-sum">₽</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                            </div>
-                            <!-- footer -->
-                            <div class="row">
-                                <div class="col-lg-12 col-xl-7 ms-auto">
-                                    <div class="bg-success-100 border border-success-500 rounded-2 p-4 p-lg-6">
-                                        <div class="row gy-5">
-                                            <div class="col-md col-xl">
-                                                <div class="fw-500 text-gray-70 mb-1"><span class="text-brand-700">NOI</span> - Чистый операционный доход:</div>
-                                                <div class="d-flex align-items-center gap-7 text-nowrap">
-                                                    <div><span class="fw-400 text-gray-70">в год: </span><span class="fw-500 text-body">1 810 720 ₽</span></div>
-                                                    <div><span class="fw-400 text-gray-70">в мес: </span><span class="fw-500 text-body">150 720 ₽</span></div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-5 col-xl-6">
-                                                <div class="fw-400 text-brand-700 mb-1">Cap Rate</div>
-                                                <div class="fw-500 text-body mb-0">9%</div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
-                            
                         </div>
 
+                        <!-- footer -->
                         <div class="rounded-neutral-wrapper mt-5 mt-md-6">
                             <div class="row align-items-center gy-4">
                                 <div class="col-lg-12">

@@ -51,6 +51,10 @@ a { text-decoration: none; }
     --cui-dropdown-item-border-radius: var(--cui-border-radius-sm);
 }
 
+.alert-dismissible {
+    padding-inline-end: 3rem !important;
+}
+
 @include media-breakpoint-up(md) {
     .container,
     .container-fluid,

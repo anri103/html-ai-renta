@@ -1093,12 +1093,12 @@
                                 </div>
                             </div>
 
-                            <!-- col: Проверьте вашу почту -->
+                            <!-- col: Востановление пароля -->
                             <div class="col-span-12 col-span-lg-6 col-span-xxl-3">
                                 <div class="card border-1 border-neutral-200 h-100">
                                     <div class="p-4">
                                         <a href="#modalChangeUserPass-2" data-coreui-toggle="modal">
-                                            <img class="card-img border border-1 border-neutral-200 shadow-sm" src="assets/img/intro/modalChangeUserPass-2.jpg" alt="Проверьте вашу почту">
+                                            <img class="card-img border border-1 border-neutral-200 shadow-sm" src="assets/img/intro/modalChangeUserPass-2.jpg" alt="Востановление пароля">
                                         </a>
                                     </div>
                                     <div class="card-body">
@@ -1107,7 +1107,30 @@
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="h5 fw-600 mb-0">
-                                                        <a href="#modalChangeUserPass-2" data-coreui-toggle="modal" class="link-body-emphasis">Проверьте вашу почту</a>
+                                                        <a href="#modalChangeUserPass-2" data-coreui-toggle="modal" class="link-body-emphasis">Востановление пароля</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- col: Проверьте вашу почту -->
+                            <div class="col-span-12 col-span-lg-6 col-span-xxl-3">
+                                <div class="card border-1 border-neutral-200 h-100">
+                                    <div class="p-4">
+                                        <a href="#modalChangeUserPass-3" data-coreui-toggle="modal">
+                                            <img class="card-img border border-1 border-neutral-200 shadow-sm" src="assets/img/intro/modalChangeUserPass-3.jpg" alt="Проверьте вашу почту">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="h5 fw-600 mb-0">
+                                                        <a href="#modalChangeUserPass-3" data-coreui-toggle="modal" class="link-body-emphasis">Проверьте вашу почту</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1507,6 +1530,52 @@
                                 </div>
                             </div>
 
+                            <!-- col: Удалить черновик объекта? -->
+                            <div class="col-span-12 col-span-lg-6 col-span-xxl-3">
+                                <div class="card border-1 border-neutral-200 h-100">
+                                    <div class="p-4">
+                                        <a href="#modalEstateCardDeleteDraft1" data-coreui-toggle="modal">
+                                            <img class="card-img border border-1 border-neutral-200 shadow-sm" src="assets/img/intro/modalEstateCardDeleteDraft1.jpg" alt="Удалить черновик объекта?">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="h5 fw-600 mb-0">
+                                                        <a href="#modalEstateCardDeleteDraft1" data-coreui-toggle="modal" class="link-body-emphasis">Удалить черновик объекта?</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- col: Черновик объекта удалён -->
+                            <div class="col-span-12 col-span-lg-6 col-span-xxl-3">
+                                <div class="card border-1 border-neutral-200 h-100">
+                                    <div class="p-4">
+                                        <a href="#modalEstateCardDeleteDraft2" data-coreui-toggle="modal">
+                                            <img class="card-img border border-1 border-neutral-200 shadow-sm" src="assets/img/intro/modalEstateCardDeleteDraft2.jpg" alt="Черновик объекта удалён">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Title -->
+                                        <div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="h5 fw-600 mb-0">
+                                                        <a href="#modalEstateCardDeleteDraft2" data-coreui-toggle="modal" class="link-body-emphasis">Черновик объекта удалён</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -1632,6 +1701,33 @@
         <div class="modal-content">
             <div class="modal-body">
 
+                <!-- title + btn-close -->
+                <div class="d-flex justify-content-between gap-3 mb-6">
+                    <div class="h2 fw-700 mb-0">Востановление пароля</div>
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- text -->
+                <div class="text-box text-gray-50">
+                    <p>Мы&nbsp;отправим вам&nbsp;инструкцию на почту для&nbsp;восстановления пароля.</p>
+                    <p>Восстановить пароль?</p>
+                </div>
+
+                <!-- buttons -->
+                <div class="d-flex flex-wrap gap-2 mt-6">
+                    <button type="button" class="btn btn-outline-secondary w-100 w-sm-auto" data-coreui-toggle="modal" data-coreui-target="#modalChangeUserPass-3">Востановить пароль</button>
+                    <button type="button" class="btn btn-primary w-100 w-sm-auto" data-coreui-dismiss="modal">Отмена</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade" id="modalChangeUserPass-3" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+
                 <!-- icon + btn-close -->
                 <div class="d-flex justify-content-between gap-3 mb-2">
                     <img src="assets/img/modals/mail.svg" alt="mail">
@@ -1673,15 +1769,15 @@
                 <!-- text -->
                 <div class="text-box text-gray-50">
                     <p>Вы переключаетесь с <span>Продавца</span> на <span>Инвестора</span></p>
-                    <p style="color: #0B1226; font-weight: 500;">Это удобно, если объекты похожи и отличаются только отдельными характеристиками</p>
-                    <p>Продавец:</p>
+                    <p style="color: #0B1226; font-weight: 500;">Повторно изменить роль можно будет только через&nbsp;24&nbsp;часа</p>
+                    <p style="margin-bottom: 4px;">Продавец:</p>
                     <ul>
                         <li>Оценка ликвидности</li>
                         <li>Аргументы для повышения цены</li>
                         <li>Экономический паспорт объекта</li>
                         <li>Публикация объекта в «Базу недвижимости»</li>
                     </ul>
-                    <p>Инвестор:</p>
+                    <p style="margin-bottom: 4px;">Инвестор:</p>
                     <ul>
                         <li>Доходность и риски объекта</li>
                         <li>Потенциал роста стоимости</li>
@@ -2388,6 +2484,59 @@
                         <span>Выйти без сохранения</span>
                     </a>
                 </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade" id="modalEstateCardDeleteDraft1" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content bg-neutral-100">
+            <div class="modal-body">
+
+                <!-- icon + btn-close -->
+                <div class="d-flex justify-content-between gap-3 mb-2">
+                    <img src="assets/img/modals/atention.svg" alt="atention">
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- title -->
+                <div class="h2 fw-700 mb-2">Удалить черновик объекта?</div>
+
+                <!-- data -->
+                <div class="text-gray-50 mb-2">
+                    <div>ул.50 лет Победы в Великой Отечественной войне д.2</div>
+                    <div>от 26.03.2026</div>
+                </div>
+
+                <!-- text -->
+                <div class="text-box text-gray-70">
+                    <p>Черновик будет удалён без&nbsp;возможности восстановления. Все&nbsp;введённые данные по&nbsp;объекту не&nbsp;сохранятся</p>
+                </div>
+
+                <!-- buttons -->
+                <div class="d-flex flex-wrap gap-2 mt-6">
+                    <button type="button" class="btn btn-outline-secondary w-100 w-sm-auto" data-coreui-toggle="modal" data-coreui-target="#modalEstateCardDeleteDraft2">Удалить черновик</button>
+                    <button type="button" class="btn btn-primary w-100 w-sm-auto" data-coreui-dismiss="modal">Отмена</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade" id="modalEstateCardDeleteDraft2" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content bg-neutral-100">
+            <div class="modal-body">
+
+                <!-- icon + btn-close -->
+                <div class="d-flex justify-content-between gap-3 mb-2">
+                    <img src="assets/img/modals/check.svg" alt="check">
+                    <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <!-- title -->
+                <div class="h2 fw-700 mb-2">Черновик объекта удалён</div>
 
             </div>
         </div>

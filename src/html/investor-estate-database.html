@@ -7,7 +7,8 @@
 
 <body>
     <!-- Mobile Menu -->
-    @@include('partials/offcanvas/mobile-menu-investor.html', {
+    @@include('partials/offcanvas/mainMobileMenu.html', {
+        "userRole": "investor",
         "activeLink": "estate-database"
     })
 
@@ -15,7 +16,8 @@
     @@include('partials/layout/header.html')
 
     <!-- SIDEBAR -->
-    @@include('partials/layout/sidebar-investor.html', {
+    @@include('partials/components/sidebar.html', {
+        "userRole": "investor",
         "activeLink": "estate-database"
     })
 

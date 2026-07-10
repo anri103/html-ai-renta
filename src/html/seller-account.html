@@ -7,7 +7,8 @@
 
 <body>
     <!-- Mobile Menu -->
-    @@include('partials/offcanvas/mobile-menu-seller.html', {
+    @@include('partials/offcanvas/mainMobileMenu.html', {
+        "userRole": "seller",
         "activeLink": "account"
     })
 
@@ -15,7 +16,8 @@
     @@include('partials/layout/header.html')
 
     <!-- SIDEBAR -->
-    @@include('partials/layout/sidebar-seller.html', {
+    @@include('partials/components/sidebar.html', {
+        "userRole": "seller",
         "activeLink": "account"
     })
 
@@ -35,6 +37,8 @@
     @@include('partials/modals/account-change-user-role-2.html')
     @@include('partials/modals/account-change-user-pass-1.html')
     @@include('partials/modals/account-change-user-pass-2.html')
+    @@include('partials/modals/account-change-user-pass-3.html')
+    @@include('partials/modals/enter-promo-code-2.html')
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

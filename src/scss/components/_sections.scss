@@ -552,3 +552,19 @@
 .ai-send-form {
     margin-top: 1rem;
 }
+
+// tooltip
+.tooltip {
+    --cui-tooltip-max-width: 300px;
+    --cui-tooltip-padding-x: 0.75rem;
+    --cui-tooltip-padding-y: 0.75rem;
+    --cui-tooltip-color: #{$text-gray-70};
+    --cui-tooltip-bg: #{$neutral-50};
+    --cui-tooltip-opacity: 1;
+}
+.tooltip-inner {
+    box-shadow: 0px 0px 2px 0px rgba(30, 41, 59, 0.08), 0px 2px 4px 0px rgba(30, 41, 59, 0.12);
+}
+.tooltip-max-w-150px {
+    --cui-tooltip-max-width: 150px;
+}

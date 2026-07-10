@@ -7,7 +7,8 @@
 
 <body>
     <!-- Mobile Menu -->
-    @@include('partials/offcanvas/mobile-menu-investor.html', {
+    @@include('partials/offcanvas/mainMobileMenu.html', {
+        "userRole": "investor",
         "activeLink": "drafts"
     })
 
@@ -15,7 +16,8 @@
     @@include('partials/layout/header.html')
 
     <!-- SIDEBAR -->
-    @@include('partials/layout/sidebar-investor.html', {
+    @@include('partials/components/sidebar.html', {
+        "userRole": "investor",
         "activeLink": "drafts"
     })
 
@@ -59,7 +61,8 @@
     @@include('partials/layout/footer.html')
 
     <!-- MODALS -->
-    @@include('partials/modals/support-success.html')
+    @@include('partials/modals/estate-card-delete-draft-1.html')
+    @@include('partials/modals/estate-card-delete-draft-2.html')
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

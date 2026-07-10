@@ -7,7 +7,8 @@
 
 <body>
     <!-- Mobile Menu -->
-    @@include('partials/offcanvas/mobile-menu-seller.html', {
+    @@include('partials/offcanvas/mainMobileMenu.html', {
+        "userRole": "seller",
         "activeLink": "notifications"
     })
 
@@ -15,7 +16,8 @@
     @@include('partials/layout/header.html')
 
     <!-- SIDEBAR -->
-    @@include('partials/layout/sidebar-seller.html', {
+    @@include('partials/components/sidebar.html', {
+        "userRole": "seller",
         "activeLink": "notifications"
     })
 

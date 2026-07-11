@@ -382,6 +382,25 @@ function setupRadioCollapseReset(triggerLabel) {
 
 /**
  * ==========================================================================
+ * Псевдо-readonly для чекбоксов в таблице (input.check-input[data-readonly])
+ * У checkbox/radio нет нативного readonly — эмулируем блокировкой клика/клавиш
+ * ==========================================================================
+ */
+function initReadonlyCheckboxCells() {
+    const inputs = document.querySelectorAll('input.check-input[data-readonly]');
+    if (!inputs.length) return;
+
+    inputs.forEach(input => {
+        input.addEventListener('click', e => e.preventDefault());
+        input.addEventListener('keydown', e => {
+            if (e.key === ' ' || e.key === 'Enter') e.preventDefault();
+        });
+    });
+}
+
+
+/**
+ * ==========================================================================
  * Модалка #modalEstateCardDeleteDraft2 — автозакрытие через 5 секунд
  * ==========================================================================
  */
@@ -543,6 +562,7 @@ function initApp() {
     initSubmitModals();
     initTooltips();
     initRadioCollapseReset();
+    initReadonlyCheckboxCells();
     initAutoCloseModal();
     initReadMore();
     initAutocompleteExternalData();

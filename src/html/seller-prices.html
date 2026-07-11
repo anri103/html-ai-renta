@@ -12,25 +12,27 @@
         "activeLink": "prices"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
-
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "seller",
-        "activeLink": "prices"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-prices -->
-        @@include('partials/sections/prices.html')
-
-    </main>
-
-    <!-- FOOTER -->
-    <!-- @@include('partials/layout/footer.html') -->
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "seller",
+            "activeLink": "prices"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-prices -->
+            @@include('partials/sections/prices.html')
+    
+        </main>
+    
+        <!-- FOOTER -->
+        @@include('partials/layout/footer.html')
+    </div>
 
     <!-- MODALS -->
     @@include('partials/modals/enter-promo-code-1.html')

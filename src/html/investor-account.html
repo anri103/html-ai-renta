@@ -12,25 +12,24 @@
         "activeLink": "account"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
-
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "investor",
-        "activeLink": "account"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-account -->
-        @@include('partials/sections/account.html')
-
-    </main>
-
-    <!-- FOOTER -->
-    <!-- @@include('partials/layout/footer.html') -->
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "investor",
+            "activeLink": "account"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-account -->
+            @@include('partials/sections/account.html')
+    
+        </main>
+    </div>
 
     <!-- MODALS -->
     @@include('partials/modals/account-change-user-role-1.html')

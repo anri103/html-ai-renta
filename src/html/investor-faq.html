@@ -12,25 +12,27 @@
         "activeLink": "faq"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "investor",
+            "activeLink": "faq"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-faq -->
+            @@include('partials/sections/faq.html')
+    
+        </main>
 
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "investor",
-        "activeLink": "faq"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-faq -->
-        @@include('partials/sections/faq.html')
-
-    </main>
-
-    <!-- FOOTER -->
-    <!-- @@include('partials/layout/footer.html') -->
+        <!-- FOOTER -->
+        @@include('partials/layout/footer.html')
+    </div>
 
     <!-- MODALS -->
     @@include('partials/modals/support-success.html')

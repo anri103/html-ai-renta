@@ -12,53 +12,55 @@
         "activeLink": "drafts"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
-
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "investor",
-        "activeLink": "drafts"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-estate-list -->
-        <section class="section section-estate-list">
-            <div class="container-fluid">
-                <!-- grid -->
-                <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
-                    <!-- list-area -->
-                    <div class="col-span-12 col-span-lg-12 col-span-xl-12">
-                        <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl container-negative-mobile">
-
-                            <!-- cards list -->
-                            <div class="d-flex flex-column gap-2">
-                                @@include('partials/cards/estate.html', {
-                                    "cardType": "investor-draft"
-                                })
-                                @@include('partials/cards/estate.html', {
-                                    "cardType": "investor-draft"
-                                })
-                                @@include('partials/cards/estate.html', {
-                                    "cardType": "investor-draft"
-                                })
-                                @@include('partials/cards/estate.html', {
-                                    "cardType": "investor-draft"
-                                })
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "investor",
+            "activeLink": "drafts"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-estate-list -->
+            <section class="section section-estate-list">
+                <div class="container-fluid">
+                    <!-- grid -->
+                    <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
+                        <!-- list-area -->
+                        <div class="col-span-12 col-span-lg-12 col-span-xl-12">
+                            <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl container-negative-mobile">
+    
+                                <!-- cards list -->
+                                <div class="d-flex flex-column gap-2">
+                                    @@include('partials/cards/estate.html', {
+                                        "cardType": "investor-draft"
+                                    })
+                                    @@include('partials/cards/estate.html', {
+                                        "cardType": "investor-draft"
+                                    })
+                                    @@include('partials/cards/estate.html', {
+                                        "cardType": "investor-draft"
+                                    })
+                                    @@include('partials/cards/estate.html', {
+                                        "cardType": "investor-draft"
+                                    })
+                                </div>
+    
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    @@include('partials/layout/footer.html')
+            </section>
+    
+        </main>
+    
+        <!-- FOOTER -->
+        @@include('partials/layout/footer.html')
+    </div>
 
     <!-- MODALS -->
     @@include('partials/modals/estate-card-delete-draft-1.html')

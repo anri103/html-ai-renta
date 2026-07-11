@@ -20,84 +20,87 @@
 
 <body>
 
-    <!-- MAIN -->
-    <main class="app-main">
+    <div class="app-wrapper">
+        <!-- MAIN -->
+        <main class="app-main">
 
-        <section class="section min-vh-100" style="background: linear-gradient(180deg, #F8FAFC 0%, #E6EEFF 100%);">
-            <div class="container-fluid">
-                <div class="mb-11">
-                    <div class="row align-items-center">
-                        <div class="col-8">
-                            <a href="seller-prices.html" class="btn btn-secondary p-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
+            <!-- section -->
+            <section class="section min-vh-100" style="background: linear-gradient(180deg, #F8FAFC 0%, #E6EEFF 100%);">
+                <div class="container-fluid">
+                    <div class="mb-11">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <a href="seller-prices.html" class="btn btn-secondary p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-8 text-center">
+                                <a href="index.html">
+                                    <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-8 text-center">
-                            <a href="index.html">
-                                <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
-                            </a>
+                    </div>
+                    <div class="mx-auto" style="max-width: 460px;">
+                        <div class="position-relative d-flex flex-column bg-white rounded-3 p-5 p-md-6">
+                            <div class="text-center mb-11">
+                                <div class="text-gray-50 fw-400 mb-4">Изменить тариф на</div>
+                                <div class="h1 fw-700 mb-4">Название тарифа №2</div>
+                            </div>
+                            <div class="mb-10">
+    
+                                <div class="d-flex align-items-center justify-content-between gap-6">
+                                    <div class="fw-500">Количество генераций</div>
+                                    <div class="d-flex flex-wrap align-items-end gap-6 row-gap-0 justify-content-end">
+                                        <div class="fw-500 text-nowrap">50<span class="text-gray-50 small fw-400">/мес</span></div>
+                                    </div>
+                                </div>
+    
+                                <hr class="text-neutral-200 border-1 opacity-100 my-6">
+    
+                                <div class="d-flex align-items-center justify-content-between gap-6">
+                                    <div class="fw-500">Скидка</div>
+                                    <div class="d-flex flex-wrap align-items-end gap-6 row-gap-0 justify-content-end">
+                                        <div class="fw-500 text-nowrap">20%</div>
+                                    </div>
+                                </div>
+    
+                                <hr class="text-neutral-200 border-1 opacity-100 my-6">
+    
+                                <div class="d-flex align-items-center justify-content-between gap-6">
+                                    <div class="fw-500">Итого к&nbsp;оплате</div>
+                                    <div class="d-flex flex-wrap align-items-end gap-6 row-gap-0 justify-content-end">
+                                        <div class="text-gray-50 small fw-400 text-nowrap"><span class="text-decoration-line-through">7 000 ₽</span></div>
+                                        <div class="fw-500 text-nowrap">5 000 ₽<span class="text-gray-50 small fw-400">/мес</span></div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div>
+                                <form>
+                                    <div class="form-check mb-7">
+                                        <input class="form-check-input mustFilled" type="checkbox" value="" id="checkAgreeAddTariffPayment">
+                                        <label class="form-check-label text-gray-50" for="checkAgreeAddTariffPayment">
+                                            Подтверждая свою подписку, вы разрешаете взимать плату за этот и последующие платежи в соответствии с <a href="#" class="text-decoration-underline">пользовательским соглашением</a>
+                                        </label>
+                                    </div>
+                                    <div class="d-flex justify-content-center gap-2">
+                                        <button type="submit" class="btn btn-secondary w-100" disabled>Изменить</button>
+                                        <a href="seller-prices.html" class="btn btn-primary w-100">Оставить как&nbsp;есть</a>
+                                    </div>
+                                </form>
+                                <div class="text-center text-gray-50 small fw-400 mt-7">Текущий тариф будет доступен до 24.06.2026, затем подключится тариф “Название тарифа 2”.</div>
+                                <div class="text-center text-gray-50 small fw-400 mt-7">Дата следущего списания: <span>24.06.2026</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto" style="max-width: 460px;">
-                    <div class="position-relative d-flex flex-column bg-white rounded-3 p-5 p-md-6">
-                        <div class="text-center mb-11">
-                            <div class="text-gray-50 fw-400 mb-4">Изменить тариф на</div>
-                            <div class="h1 fw-700 mb-4">Название тарифа №2</div>
-                        </div>
-                        <div class="mb-10">
-
-                            <div class="d-flex align-items-center justify-content-between gap-6">
-                                <div class="fw-500">Количество генераций</div>
-                                <div class="d-flex flex-wrap align-items-end gap-6 row-gap-0 justify-content-end">
-                                    <div class="fw-500 text-nowrap">50<span class="text-gray-50 small fw-400">/мес</span></div>
-                                </div>
-                            </div>
-
-                            <hr class="text-neutral-200 border-1 opacity-100 my-6">
-
-                            <div class="d-flex align-items-center justify-content-between gap-6">
-                                <div class="fw-500">Скидка</div>
-                                <div class="d-flex flex-wrap align-items-end gap-6 row-gap-0 justify-content-end">
-                                    <div class="fw-500 text-nowrap">20%</div>
-                                </div>
-                            </div>
-
-                            <hr class="text-neutral-200 border-1 opacity-100 my-6">
-
-                            <div class="d-flex align-items-center justify-content-between gap-6">
-                                <div class="fw-500">Итого к&nbsp;оплате</div>
-                                <div class="d-flex flex-wrap align-items-end gap-6 row-gap-0 justify-content-end">
-                                    <div class="text-gray-50 small fw-400 text-nowrap"><span class="text-decoration-line-through">7 000 ₽</span></div>
-                                    <div class="fw-500 text-nowrap">5 000 ₽<span class="text-gray-50 small fw-400">/мес</span></div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div>
-                            <form>
-                                <div class="form-check mb-7">
-                                    <input class="form-check-input" type="checkbox" value="" id="checkAgreeAddTariffPayment">
-                                    <label class="form-check-label text-gray-50" for="checkAgreeAddTariffPayment">
-                                        Подтверждая свою подписку, вы разрешаете взимать плату за этот и последующие платежи в соответствии с <a href="#" class="text-decoration-underline">пользовательским соглашением</a>
-                                    </label>
-                                </div>
-                                <div class="d-flex justify-content-center gap-2">
-                                    <button type="submit" class="btn btn-secondary disabled w-100">Изменить</button>
-                                    <a href="seller-prices.html" class="btn btn-primary w-100">Оставить как&nbsp;есть</a>
-                                </div>
-                            </form>
-                            <div class="text-center text-gray-50 small fw-400 mt-7">Текущий тариф будет доступен до 24.06.2026, затем подключится тариф “Название тарифа 2”.</div>
-                            <div class="text-center text-gray-50 small fw-400 mt-7">Дата следущего списания: <span>24.06.2026</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
+            </section>
+    
+        </main>
+    </div>
 
     <!-- scripts -->
     <script src="assets/js/coreui.bundle.min.js"></script>

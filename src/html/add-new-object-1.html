@@ -12,225 +12,236 @@
         "activeLink": "objects"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
-
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "seller",
-        "activeLink": "objects"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section- -->
-        <section class="section section-">
-            <div class="container-fluid">
-
-                <!-- grid -->
-                <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
-                    <!-- list-area -->
-                    <div class="col-span-12 col-span-lg-12 col-span-xl-12">
-
-                        <div class="d-flex flex-column rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
-                            <!-- header -->
-                            <div>
-                                <div class="row align-items-center gx-2">
-                                    <div class="col-auto">
-                                        <a href="#modalChecklistLeave" class="btn btn-secondary p-2" data-coreui-toggle="modal">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-3 py-3 px-5 w-100 w-lg-auto">
-                                            <span class="h5 fw-600 mb-0">Запрос №00002</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- body -->
-                            <div class="flex-fill d-flex flex-column gap-10 py-9">
-                                <!-- Информация о помещении (1/3) -->
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "seller",
+            "activeLink": "objects"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section -->
+            <section class="section">
+                <div class="container-fluid">
+    
+                    <!-- grid -->
+                    <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
+                        <!-- list-area -->
+                        <div class="col-span-12 col-span-lg-12 col-span-xl-12">
+    
+                            <div class="d-flex flex-column gap-9 rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                                <!-- header -->
                                 <div>
-                                    <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(1/3)</sup></div>
-                                    <div class="row gy-9">
-                                        <!-- Адрес -->
-                                        <div class="col-lg-16 col-xl-24">
-                                            <label for="addObjectInputAddress" class="h5 fw-600 form-label">Адрес</label>
-                                            <div class="position-relative">
-                                                <div class="position-relative">
-                                                    <!-- field -->
-                                                    <input type="text" class="form-control pe-10" placeholder="Введите адрес" id="addObjectInputAddress">
-                                                    <!-- icon -->
-                                                    <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                        <div class="d-flex align-items-center gap-2">
-                                                            <span
-                                                                data-coreui-toggle="tooltip"
-                                                                data-coreui-placement="bottom"
-                                                                data-coreui-title="Подсказка"
-                                                            >
-                                                                <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                                    <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"/>
-                                                                    <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"/>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
-                                            </div>
-                                        </div>
-                                        <!-- Площадь -->
-                                        <div class="col-12 col-lg-3 col-xl-auto">
-                                            <label for="addObjectInputArea" class="h5 fw-600 form-label">Площадь</label>
-                                            <div class="position-relative">
-                                                <div class="position-relative" style="max-width: 150px;">
-                                                    <!-- field -->
-                                                    <input type="text" class="form-control pe-10" placeholder="--" id="addObjectInputArea">
-                                                    <!-- icon -->
-                                                    <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                        <div class="d-flex align-items-center gap-2">
-                                                            <div class="text-gray-50 fw-400 mb-0">м<sup>2</sup></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
-                                            </div>
-                                        </div>
-                                        <!-- Этаж -->
-                                        <div class="col-12 col-lg-5 col-xl-auto">
-                                            <label for="addObjectInputFloor" class="h5 fw-600 form-label">Этаж</label>
-                                            <div class="d-flex gap-6">
-                                                <div class="position-relative">
-                                                    <div class="position-relative" style="max-width: 80px;">
-                                                        <!-- field -->
-                                                        <input type="text" class="form-control" placeholder="--" id="addObjectInputFloor">
-                                                    </div>
-                                                </div>
-                                                <div class="small fw-400 text-gray-50 mb-0" style="max-width: 100px;">0 = цокольный этаж</div>
-                                            </div>
-                                        </div>
-                                        <!-- Ссылка на Авито/Циан -->
-                                        <div class="col-lg-16 col-xl-24">
-                                            <label for="addObjectInputLink" class="h5 fw-600 form-label">Ссылка на Авито/Циан</label>
-                                            <div class="position-relative">
-                                                <div class="position-relative">
-                                                    <!-- field -->
-                                                    <input type="text" class="form-control ps-10 pe-10" placeholder="Вставьте ссылку" id="addObjectInputLink">
-                                                    <!-- icon -->
-                                                    <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.903 10C15.963 10.629 16 11.292 16 12C16 12.2652 15.8946 12.5196 15.7071 12.7071C15.5196 12.8946 15.2652 13 15 13C14.7348 13 14.4804 12.8946 14.2929 12.7071C14.1054 12.5196 14 12.2652 14 12C14 11.287 13.961 10.622 13.895 10H10.092C9.953 11.33 9.952 12.67 10.088 14H12C12.2652 14 12.5196 14.1054 12.7071 14.2929C12.8946 14.4804 13 14.7348 13 15C13 15.2652 12.8946 15.5196 12.7071 15.7071C12.5196 15.8946 12.2652 16 12 16H10.416C10.885 18.08 11.618 19.41 12.001 20C12.001 20 12.79 20.013 12.927 20.002C13.1911 19.9849 13.4513 20.0723 13.6515 20.2453C13.8517 20.4184 13.9758 20.6632 13.997 20.927C14.0163 21.1914 13.9298 21.4526 13.7565 21.6533C13.5832 21.8539 13.3374 21.9776 13.073 21.997C12.979 22.004 12 22 12 22C6.486 22 2 17.514 2 12C2 6.485 6.486 2 12 2C17.514 2 22 6.485 22 12C22 12.379 21.964 12.749 21.921 13.116C21.8813 13.372 21.7439 13.6026 21.5377 13.7594C21.3315 13.9161 21.0725 13.9869 20.8153 13.9567C20.558 13.9265 20.3224 13.7978 20.1581 13.5976C19.9937 13.3974 19.9134 13.1412 19.934 12.883C19.969 12.592 20 12.3 20 12C20 11.308 19.902 10.64 19.737 10H15.903ZM11.988 4.036C11.602 4.642 10.888 5.967 10.424 8H13.561C13.095 5.967 12.376 4.642 11.988 4.036ZM4.263 14H8.082C8.01956 13.3365 7.98786 12.6704 7.987 12.004C7.987 11.334 8.02 10.666 8.083 10H4.263C4.09072 10.6528 4.00235 11.3249 4 12C4.0025 12.6751 4.09087 13.3472 4.263 14ZM5.082 16C6.0695 17.7037 7.64853 18.9852 9.519 19.601C8.99793 18.4493 8.61268 17.2408 8.371 16H5.082ZM8.373 8C8.61466 6.7583 9.00061 5.5491 9.523 4.397C7.65068 5.01232 6.07002 6.29471 5.082 8H8.373ZM15.612 8H18.917C17.9249 6.28668 16.3348 5.00032 14.452 4.388C14.9794 5.54217 15.3688 6.75456 15.612 8Z" fill="#64748B"></path>
-                                                            <path d="M17.2231 20.9442L14.6731 15.3342C14.631 15.2415 14.6182 15.1383 14.6364 15.0381C14.6546 14.938 14.7029 14.8458 14.7748 14.7739C14.8468 14.7019 14.9389 14.6537 15.0391 14.6355C15.1392 14.6173 15.2425 14.6301 15.3351 14.6722L20.9451 17.2222C21.0312 17.2612 21.1046 17.3238 21.1566 17.4027C21.2086 17.4817 21.2371 17.5738 21.2389 17.6683C21.2407 17.7629 21.2156 17.8559 21.1666 17.9368C21.1176 18.0177 21.0467 18.083 20.9621 18.1252L19.2201 18.9952C19.1235 19.0438 19.0453 19.1224 18.9971 19.2192L18.1261 20.9612C18.0839 21.0458 18.0186 21.1167 17.9377 21.1657C17.8569 21.2147 17.7638 21.2398 17.6692 21.238C17.5747 21.2362 17.4826 21.2077 17.4036 21.1557C17.3247 21.1037 17.2621 21.0303 17.2231 20.9442Z" fill="#64748B"></path>
-                                                        </svg>
-                                                    </div>
-                                                    <!-- icon -->
-                                                    <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                        <div class="d-flex align-items-center gap-2">
-                                                            <span
-                                                                data-coreui-toggle="tooltip"
-                                                                data-coreui-placement="bottom"
-                                                                data-coreui-title="Подсказка"
-                                                            >
-                                                                <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                                    <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"/>
-                                                                    <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"/>
-                                                                </svg>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Тип помещения -->
-                                        <div class="col-lg-16 col-xl-24">
-                                            <div class="d-flex flex-wrap gap-4 mb-2">
-                                                <div class="h5 fw-600 mb-0">Тип помещения</div>
-                                                <div class="d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2">Обязательное поле</div>
-                                            </div>
-                                            <div class="d-flex text-gray-50 fw-400 mb-5">
-                                                <svg class="flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <path d="M8.00024 2.08301C11.2678 2.08318 13.9163 4.73242 13.9163 8C13.9161 11.2674 11.2677 13.9158 8.00024 13.916C4.73267 13.916 2.08343 11.2675 2.08325 8C2.08325 4.73232 4.73256 2.08301 8.00024 2.08301Z" stroke="#64748B" stroke-width="1.5"/>
-                                                    <circle cx="7.99992" cy="7.99967" r="2.66667" fill="#64748B"/>
+                                    <div class="row align-items-start gx-2">
+                                        <div class="col-auto">
+                                            <a href="#modalChecklistLeave" class="btn btn-secondary p-2" data-coreui-toggle="modal">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
-                                                <span>Выберите вариант, который соответствует текущему использованию помещения</span>
-                                            </div>
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType1" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType1">Офис</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType2" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType2">Торговля</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType3" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType3">Склад</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType4" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType4">Помещение свободного назначения</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType5" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType5">Общественное питание</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType6" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType6">Пункт выдачи заказов</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType7" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType7">Производство</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType8" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType8">Автосервис</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType9" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType9">Бытовые услуги</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType10" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType10">Апартаменты</label>
-                                            </div>
+                                            </a>
                                         </div>
-                                        <!-- Вход в помещение -->
-                                        <div class="col-lg-16 col-xl-24">
-                                            <div class="d-flex flex-wrap gap-4 mb-5">
-                                                <div class="h5 fw-600 mb-0">Вход в помещение</div>
-                                            </div>
-                                            <div class="d-flex flex-wrap gap-2">
-                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter1" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter1">Независимый, с улицы</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter2" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter2">Независимый, со двора</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter3" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter3">Через общий вход (или подъезд)</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter4" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter4">Через внешнюю лестницу</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter5" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter5">Через вестибюль/рецепцию</label>
-                                                <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter6" autocomplete="off">
-                                                <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter6">Через смежные коммерческие помещения</label>
+                                        <div class="col">
+                                            <div class="row align-items-center gy-2">
+                                                <div class="col-lg-auto">
+                                                    <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-3 py-3 px-5 w-100 w-lg-auto" style="min-height: 44px;">
+                                                        <span class="h5 fw-600 mb-0">Запрос №00002</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg">
+                                                    <div class="progress add-object-progressbar" role="progressbar" aria-label="Прогресс" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar" style="width: 15%"></div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- body -->
+                                <div class="flex-fill d-flex flex-column gap-10">
+                                    <!-- Информация о помещении (1/3) -->
+                                    <div>
+                                        <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(1/3)</sup></div>
+                                        <div class="row gy-9">
+                                            <!-- Адрес -->
+                                            <div class="col-lg-16 col-xl-24">
+                                                <label for="addObjectInputAddress" class="h5 fw-600 form-label">Адрес</label>
+                                                <div class="position-relative">
+                                                    <div class="position-relative">
+                                                        <!-- field -->
+                                                        <input type="text" class="form-control pe-10" placeholder="Введите адрес" id="addObjectInputAddress">
+                                                        <!-- icon -->
+                                                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <span
+                                                                    data-coreui-toggle="tooltip"
+                                                                    data-coreui-placement="bottom"
+                                                                    data-coreui-title="Подсказка"
+                                                                >
+                                                                    <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"/>
+                                                                        <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"/>
+                                                                    </svg>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
+                                                </div>
+                                            </div>
+                                            <!-- Площадь -->
+                                            <div class="col-12 col-lg-3 col-xl-auto">
+                                                <label for="addObjectInputArea" class="h5 fw-600 form-label">Площадь</label>
+                                                <div class="position-relative">
+                                                    <div class="position-relative" style="max-width: 150px;">
+                                                        <!-- field -->
+                                                        <input type="text" class="form-control pe-10" placeholder="--" id="addObjectInputArea">
+                                                        <!-- icon -->
+                                                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <div class="text-gray-50 fw-400 mb-0">м<sup>2</sup></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
+                                                </div>
+                                            </div>
+                                            <!-- Этаж -->
+                                            <div class="col-12 col-lg-5 col-xl-auto">
+                                                <label for="addObjectInputFloor" class="h5 fw-600 form-label">Этаж</label>
+                                                <div class="d-flex gap-6">
+                                                    <div class="position-relative">
+                                                        <div class="position-relative" style="max-width: 80px;">
+                                                            <!-- field -->
+                                                            <input type="text" class="form-control" placeholder="--" id="addObjectInputFloor">
+                                                        </div>
+                                                    </div>
+                                                    <div class="small fw-400 text-gray-50 mb-0" style="max-width: 100px;">0 = цокольный этаж</div>
+                                                </div>
+                                            </div>
+                                            <!-- Ссылка на Авито/Циан -->
+                                            <div class="col-lg-16 col-xl-24">
+                                                <label for="addObjectInputLink" class="h5 fw-600 form-label">Ссылка на Авито/Циан</label>
+                                                <div class="position-relative">
+                                                    <div class="position-relative">
+                                                        <!-- field -->
+                                                        <input type="text" class="form-control ps-10 pe-10" placeholder="Вставьте ссылку" id="addObjectInputLink">
+                                                        <!-- icon -->
+                                                        <div class="position-absolute top-50 start-0 translate-middle-y ms-3">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.903 10C15.963 10.629 16 11.292 16 12C16 12.2652 15.8946 12.5196 15.7071 12.7071C15.5196 12.8946 15.2652 13 15 13C14.7348 13 14.4804 12.8946 14.2929 12.7071C14.1054 12.5196 14 12.2652 14 12C14 11.287 13.961 10.622 13.895 10H10.092C9.953 11.33 9.952 12.67 10.088 14H12C12.2652 14 12.5196 14.1054 12.7071 14.2929C12.8946 14.4804 13 14.7348 13 15C13 15.2652 12.8946 15.5196 12.7071 15.7071C12.5196 15.8946 12.2652 16 12 16H10.416C10.885 18.08 11.618 19.41 12.001 20C12.001 20 12.79 20.013 12.927 20.002C13.1911 19.9849 13.4513 20.0723 13.6515 20.2453C13.8517 20.4184 13.9758 20.6632 13.997 20.927C14.0163 21.1914 13.9298 21.4526 13.7565 21.6533C13.5832 21.8539 13.3374 21.9776 13.073 21.997C12.979 22.004 12 22 12 22C6.486 22 2 17.514 2 12C2 6.485 6.486 2 12 2C17.514 2 22 6.485 22 12C22 12.379 21.964 12.749 21.921 13.116C21.8813 13.372 21.7439 13.6026 21.5377 13.7594C21.3315 13.9161 21.0725 13.9869 20.8153 13.9567C20.558 13.9265 20.3224 13.7978 20.1581 13.5976C19.9937 13.3974 19.9134 13.1412 19.934 12.883C19.969 12.592 20 12.3 20 12C20 11.308 19.902 10.64 19.737 10H15.903ZM11.988 4.036C11.602 4.642 10.888 5.967 10.424 8H13.561C13.095 5.967 12.376 4.642 11.988 4.036ZM4.263 14H8.082C8.01956 13.3365 7.98786 12.6704 7.987 12.004C7.987 11.334 8.02 10.666 8.083 10H4.263C4.09072 10.6528 4.00235 11.3249 4 12C4.0025 12.6751 4.09087 13.3472 4.263 14ZM5.082 16C6.0695 17.7037 7.64853 18.9852 9.519 19.601C8.99793 18.4493 8.61268 17.2408 8.371 16H5.082ZM8.373 8C8.61466 6.7583 9.00061 5.5491 9.523 4.397C7.65068 5.01232 6.07002 6.29471 5.082 8H8.373ZM15.612 8H18.917C17.9249 6.28668 16.3348 5.00032 14.452 4.388C14.9794 5.54217 15.3688 6.75456 15.612 8Z" fill="#64748B"></path>
+                                                                <path d="M17.2231 20.9442L14.6731 15.3342C14.631 15.2415 14.6182 15.1383 14.6364 15.0381C14.6546 14.938 14.7029 14.8458 14.7748 14.7739C14.8468 14.7019 14.9389 14.6537 15.0391 14.6355C15.1392 14.6173 15.2425 14.6301 15.3351 14.6722L20.9451 17.2222C21.0312 17.2612 21.1046 17.3238 21.1566 17.4027C21.2086 17.4817 21.2371 17.5738 21.2389 17.6683C21.2407 17.7629 21.2156 17.8559 21.1666 17.9368C21.1176 18.0177 21.0467 18.083 20.9621 18.1252L19.2201 18.9952C19.1235 19.0438 19.0453 19.1224 18.9971 19.2192L18.1261 20.9612C18.0839 21.0458 18.0186 21.1167 17.9377 21.1657C17.8569 21.2147 17.7638 21.2398 17.6692 21.238C17.5747 21.2362 17.4826 21.2077 17.4036 21.1557C17.3247 21.1037 17.2621 21.0303 17.2231 20.9442Z" fill="#64748B"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <!-- icon -->
+                                                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                            <div class="d-flex align-items-center gap-2">
+                                                                <span
+                                                                    data-coreui-toggle="tooltip"
+                                                                    data-coreui-placement="bottom"
+                                                                    data-coreui-title="Подсказка"
+                                                                >
+                                                                    <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                                        <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"/>
+                                                                        <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"/>
+                                                                    </svg>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Тип помещения -->
+                                            <div class="col-lg-16 col-xl-24">
+                                                <div class="d-flex flex-wrap gap-4 mb-2">
+                                                    <div class="h5 fw-600 mb-0">Тип помещения</div>
+                                                    <div class="d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2">Обязательное поле</div>
+                                                </div>
+                                                <div class="d-flex text-gray-50 fw-400 mb-5">
+                                                    <svg class="flex-shrink-0 me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M8.00024 2.08301C11.2678 2.08318 13.9163 4.73242 13.9163 8C13.9161 11.2674 11.2677 13.9158 8.00024 13.916C4.73267 13.916 2.08343 11.2675 2.08325 8C2.08325 4.73232 4.73256 2.08301 8.00024 2.08301Z" stroke="#64748B" stroke-width="1.5"/>
+                                                        <circle cx="7.99992" cy="7.99967" r="2.66667" fill="#64748B"/>
+                                                    </svg>
+                                                    <span>Выберите вариант, который соответствует текущему использованию помещения</span>
+                                                </div>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType1" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType1">Офис</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType2" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType2">Торговля</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType3" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType3">Склад</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType4" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType4">Помещение свободного назначения</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType5" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType5">Общественное питание</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType6" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType6">Пункт выдачи заказов</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType7" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType7">Производство</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType8" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType8">Автосервис</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType9" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType9">Бытовые услуги</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType10" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType10">Апартаменты</label>
+                                                </div>
+                                            </div>
+                                            <!-- Вход в помещение -->
+                                            <div class="col-lg-16 col-xl-24">
+                                                <div class="d-flex flex-wrap gap-4 mb-5">
+                                                    <div class="h5 fw-600 mb-0">Вход в помещение</div>
+                                                </div>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter1" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter1">Независимый, с улицы</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter2" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter2">Независимый, со двора</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter3" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter3">Через общий вход (или подъезд)</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter4" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter4">Через внешнюю лестницу</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter5" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter5">Через вестибюль/рецепцию</label>
+                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter6" autocomplete="off">
+                                                    <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter6">Через смежные коммерческие помещения</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- footer -->
+                                <div class="d-flex justify-content-end gap-2">
+                                    <a href="#" class="btn btn-secondary">
+                                        <svg class="inline-icon-big me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M13 3.00087C12.9045 3 12.7973 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20296 19 9.09561 18.9991 9M13 3.00087C13.2856 3.00347 13.4663 3.01385 13.6388 3.05526C13.8429 3.10425 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59182 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53376 18.9963 8.71451 18.9991 9M13 3.00087V5.8C13 6.9201 13 7.47977 13.218 7.90759C13.4097 8.28392 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.9991M18.9991 9H19.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Сохранить черновик</span>
+                                    </a>
+                                    <a href="add-new-object-2.html" class="btn btn-primary">
+                                        <span>Далее</span>
+                                        <svg class="inline-icon-big ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                            <!-- footer -->
-                            <div class="d-flex justify-content-end gap-2">
-                                <a href="#" class="btn btn-secondary">
-                                    <svg class="inline-icon-big me-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M13 3.00087C12.9045 3 12.7973 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71547 5.21799 4.0918C5 4.51962 5 5.08009 5 6.2002V17.8002C5 18.9203 5 19.4801 5.21799 19.9079C5.40973 20.2842 5.71547 20.5905 6.0918 20.7822C6.51921 21 7.079 21 8.19694 21L15.8031 21C16.921 21 17.48 21 17.9074 20.7822C18.2837 20.5905 18.5905 20.2842 18.7822 19.9079C19 19.4805 19 18.9215 19 17.8036V9.32568C19 9.20296 19 9.09561 18.9991 9M13 3.00087C13.2856 3.00347 13.4663 3.01385 13.6388 3.05526C13.8429 3.10425 14.0379 3.18526 14.2168 3.29492C14.4186 3.41857 14.5918 3.59182 14.9375 3.9375L18.063 7.06298C18.4089 7.40889 18.5809 7.58136 18.7046 7.78319C18.8142 7.96214 18.8953 8.15726 18.9443 8.36133C18.9857 8.53376 18.9963 8.71451 18.9991 9M13 3.00087V5.8C13 6.9201 13 7.47977 13.218 7.90759C13.4097 8.28392 13.7155 8.59048 14.0918 8.78223C14.5192 9 15.079 9 16.1969 9H18.9991M18.9991 9H19.0002" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    <span>Сохранить черновик</span>
-                                </a>
-                                <a href="add-new-object-2.html" class="btn btn-primary">
-                                    <span>Далее</span>
-                                    <svg class="inline-icon-big ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </div>
+    
                         </div>
-
                     </div>
+    
                 </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    @@include('partials/layout/footer.html')
+            </section>
+    
+        </main>
+    
+        <!-- FOOTER -->
+        @@include('partials/layout/footer.html')
+    </div>
 
     <!-- MODALS -->
     @@include('partials/modals/checklist-leave.html')

@@ -12,51 +12,53 @@
         "activeLink": "objects"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
-
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "seller",
-        "activeLink": "objects"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-objects (with cards) -->
-        <section class="section section-objects">
-            <div class="container-fluid">
-                <div class="d-flex flex-column min-h-screen-lg min-h-screen-xl gap-6">
-
-                    @@include('partials/sections/objects-top-row.html')
-
-                    <!-- content-area -->
-                    <div class="flex-fill rounded-neutral-wrapper container-negative-mobile">
-
-                        <!-- cards wrapper -->
-                        <div class="d-flex flex-column gap-2">
-                            @@include('partials/cards/estate.html', {
-                                "cardType": "seller-common"
-                            })
-                            @@include('partials/cards/estate.html', {
-                                "cardType": "seller-deadline-soon"
-                            })
-                            @@include('partials/cards/estate.html', {
-                                "cardType": "seller-deadline-expired"
-                            })
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "seller",
+            "activeLink": "objects"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-objects (with cards) -->
+            <section class="section section-objects">
+                <div class="container-fluid">
+                    <div class="d-flex flex-column min-h-screen-lg min-h-screen-xl gap-6">
+    
+                        @@include('partials/sections/objects-top-row.html')
+    
+                        <!-- content-area -->
+                        <div class="flex-fill rounded-neutral-wrapper container-negative-mobile">
+    
+                            <!-- cards wrapper -->
+                            <div class="d-flex flex-column gap-2">
+                                @@include('partials/cards/estate.html', {
+                                    "cardType": "seller-common"
+                                })
+                                @@include('partials/cards/estate.html', {
+                                    "cardType": "seller-deadline-soon"
+                                })
+                                @@include('partials/cards/estate.html', {
+                                    "cardType": "seller-deadline-expired"
+                                })
+                            </div>
+    
                         </div>
-
+    
                     </div>
-
                 </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    @@include('partials/layout/footer.html')
+            </section>
+    
+        </main>
+    
+        <!-- FOOTER -->
+        @@include('partials/layout/footer.html')
+    </div>
 
     <!-- MODALS -->
     @@include('partials/modals/estate-card-repeat.html', {

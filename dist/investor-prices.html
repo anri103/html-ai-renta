@@ -136,8 +136,9 @@
     </div>
 </div>
 
-    <!-- HEADER -->
-    <header class="app-header app-header-mobile header-fixed">
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        <header class="app-header app-header-mobile header-fixed">
     <div class="container-fluid">
         <div class="header-row">
 
@@ -163,9 +164,9 @@
         </div>
     </div>
 </header>
-
-    <!-- SIDEBAR -->
-    <!-- component: app-sidebar -->
+    
+        <!-- SIDEBAR -->
+        <!-- component: app-sidebar -->
 <aside class="app-sidebar">
     <div class="app-sidebar-body">
 
@@ -287,12 +288,12 @@
 
     </div>
 </aside>
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-prices -->
-        <section class="section section-prices">
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-prices -->
+            <section class="section section-prices">
     <div class="container-fluid">
         <div class="d-flex flex-column justify-content-center min-h-screen-xl">
 
@@ -461,11 +462,40 @@
         </div>
     </div>
 </section>
-
-    </main>
-
-    <!-- FOOTER -->
     
+        </main>
+    
+        <!-- FOOTER -->
+        <footer class="app-footer">
+    <div class="container-fluid">
+        <div class="rounded-neutral-wrapper">
+            <!-- grid -->
+            <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
+                <!-- col: logo -->
+                <div class="col-span-12 col-span-lg-12 col-span-xl-12">
+                    <div class="d-flex flex-column gap-6">
+                        <a href="index.html">
+                            <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <!-- col: copyright -->
+                <div class="col-span-12 col-span-lg-12 col-span-xl-5">
+                    <div>&copy; 2026 ИП Яровенко Владислав Анатольевич</div>
+                </div>
+                <!-- col: legal-links -->
+                <div class="col-span-12 col-span-lg-12 col-span-xl-7">
+                    <div class="d-flex flex-wrap justify-content-xl-end gap-6 gap-xl-10 row-gap-xl-5">
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Политика конфиденциальности</a>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Пользовательское соглашение</a>
+                        <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Политика использования файлов cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
 
     <!-- MODALS -->
     <div class="modal modal-enter-promo-code fade" id="modalEnterPromoCode1" aria-hidden="true" tabindex="-1">

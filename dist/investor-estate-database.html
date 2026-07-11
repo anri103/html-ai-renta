@@ -136,8 +136,9 @@
     </div>
 </div>
 
-    <!-- HEADER -->
-    <header class="app-header app-header-mobile header-fixed">
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        <header class="app-header app-header-mobile header-fixed">
     <div class="container-fluid">
         <div class="header-row">
 
@@ -163,9 +164,9 @@
         </div>
     </div>
 </header>
-
-    <!-- SIDEBAR -->
-    <!-- component: app-sidebar -->
+    
+        <!-- SIDEBAR -->
+        <!-- component: app-sidebar -->
 <aside class="app-sidebar">
     <div class="app-sidebar-body">
 
@@ -287,31 +288,31 @@
 
     </div>
 </aside>
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-estate-list -->
-        <section class="section section-estate-list">
-            <div class="container-fluid">
-                <!-- grid -->
-                <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
-                    <div class="col-span-12 col-span-lg-12 col-span-xl-12">
-                        <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl container-negative-mobile">
-
-                            <!-- objects-toggler -->
-                            <div class="mb-6">
-                                <!-- btns group -->
-                                <div class="tab-group position-relative d-flex gap-2 bg-white rounded-3 p-2" style="max-width: 420px;">
-                                    <div class="tab-slider"></div>
-                                    <a href="#" class="btn tab-btn w-100 active">Все объявления</a>
-                                    <div class="divider-vertical"></div>
-                                    <a href="#" class="btn tab-btn w-100">Мои объявления</a>
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-estate-list -->
+            <section class="section section-estate-list">
+                <div class="container-fluid">
+                    <!-- grid -->
+                    <div class="d-grid grid-cols-12 row-gap-5 gap-md-6">
+                        <div class="col-span-12 col-span-lg-12 col-span-xl-12">
+                            <div class="rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl container-negative-mobile">
+    
+                                <!-- objects-toggler -->
+                                <div class="mb-6">
+                                    <!-- btns group -->
+                                    <div class="tab-group position-relative d-flex gap-2 bg-white rounded-3 p-2" style="max-width: 420px;">
+                                        <div class="tab-slider"></div>
+                                        <a href="#" class="btn tab-btn w-100 active">Все объявления</a>
+                                        <div class="divider-vertical"></div>
+                                        <a href="#" class="btn tab-btn w-100">Мои объявления</a>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <!-- sorting -->
-                            <!-- Desktop -->
+    
+                                <!-- sorting -->
+                                <!-- Desktop -->
 <div class="d-none d-xl-block mb-6">
     <div class="filter-bar" id="filterBarDesk">
         <div class="d-flex align-items-center justify-content-between gap-2">
@@ -677,7 +678,7 @@
         </div>
     </div>
 </div>
-                            <!-- mobile -->
+                                <!-- mobile -->
 <div class="d-xl-none mb-6">
     <div class="filter-bar" id="filterBarMob">
         <div class="d-flex align-items-center justify-content-between gap-2 overflow-x-auto scrollbar-thin mx-n-gx px-gx">
@@ -740,10 +741,10 @@
         </div>
     </div>
 </div>
-
-                            <!-- cards list -->
-                            <div class="d-flex flex-column gap-2">
-                                <div class="card card-estate">
+    
+                                <!-- cards list -->
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="card card-estate">
     <div class="card-body">
         <div class="d-flex flex-column gap-5 gap-xl-6">
             
@@ -867,7 +868,7 @@
         </div>
     </div>
 </div>
-                                <div class="card card-estate">
+                                    <div class="card card-estate">
     <div class="card-body">
         <div class="d-flex flex-column gap-5 gap-xl-6">
             
@@ -991,7 +992,7 @@
         </div>
     </div>
 </div>
-                                <div class="card card-estate">
+                                    <div class="card card-estate">
     <div class="card-body">
         <div class="d-flex flex-column gap-5 gap-xl-6">
             
@@ -1115,7 +1116,7 @@
         </div>
     </div>
 </div>
-                                <div class="card card-estate">
+                                    <div class="card card-estate">
     <div class="card-body">
         <div class="d-flex flex-column gap-5 gap-xl-6">
             
@@ -1239,18 +1240,18 @@
         </div>
     </div>
 </div>
+                                </div>
+    
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="app-footer">
+            </section>
+    
+        </main>
+    
+        <!-- FOOTER -->
+        <footer class="app-footer">
     <div class="container-fluid">
         <div class="rounded-neutral-wrapper">
             <!-- grid -->
@@ -1279,6 +1280,7 @@
         </div>
     </div>
 </footer>
+    </div>
 
     <!-- MODALS -->
     <!-- offcanvas filter city -->

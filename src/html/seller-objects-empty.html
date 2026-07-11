@@ -12,46 +12,46 @@
         "activeLink": "objects"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
-
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "seller",
-        "activeLink": "objects"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-objects (empty) -->
-        <section class="section section-objects">
-            <div class="container-fluid">
-                <div class="d-flex flex-column min-h-screen-lg min-h-screen-xl gap-6">
-
-                    @@include('partials/sections/objects-top-row.html')
-
-                    <!-- content-area -->
-                    <div class="flex-fill rounded-neutral-wrapper container-negative-mobile">
-
-                        <!-- empty wrapper -->
-                        @@include('partials/sections/objects-empty.html', {
-                            "userRole": "seller"
-                        })
-
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "seller",
+            "activeLink": "objects"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-objects (empty) -->
+            <section class="section section-objects">
+                <div class="container-fluid">
+                    <div class="d-flex flex-column min-h-screen-lg min-h-screen-xl gap-6">
+    
+                        @@include('partials/sections/objects-top-row.html')
+    
+                        <!-- content-area -->
+                        <div class="flex-fill rounded-neutral-wrapper container-negative-mobile">
+    
+                            <!-- empty wrapper -->
+                            @@include('partials/sections/objects-empty.html')
+    
+                        </div>
+    
                     </div>
-
                 </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    @@include('partials/layout/footer.html')
+            </section>
+    
+        </main>
+    
+        <!-- FOOTER -->
+        @@include('partials/layout/footer.html')
+    </div>
 
     <!-- MODALS -->
-    <!-- @@include('partials/modals/enter-promo-code-1.html') -->
+    <!-- empty -->
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

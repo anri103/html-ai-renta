@@ -7,7 +7,7 @@
 
 .app-footer {
     position: relative;
-    margin-bottom: 20px;
+    padding: 0 0 var(--section-padding-y);
 
     a {
         text-decoration: underline;

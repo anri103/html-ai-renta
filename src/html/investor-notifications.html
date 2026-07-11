@@ -12,28 +12,27 @@
         "activeLink": "notifications"
     })
 
-    <!-- HEADER -->
-    @@include('partials/layout/header.html')
-
-    <!-- SIDEBAR -->
-    @@include('partials/components/sidebar.html', {
-        "userRole": "investor",
-        "activeLink": "notifications"
-    })
-
-    <!-- MAIN -->
-    <main class="app-main">
-
-        <!-- section-notifications -->
-        @@include('partials/sections/notifications.html')
-
-    </main>
-
-    <!-- FOOTER -->
-    <!-- @@include('partials/layout/footer.html') -->
+    <div class="app-wrapper">
+        <!-- HEADER -->
+        @@include('partials/layout/header.html')
+    
+        <!-- SIDEBAR -->
+        @@include('partials/components/sidebar.html', {
+            "userRole": "investor",
+            "activeLink": "notifications"
+        })
+    
+        <!-- MAIN -->
+        <main class="app-main">
+    
+            <!-- section-notifications -->
+            @@include('partials/sections/notifications.html')
+    
+        </main>
+    </div>
 
     <!-- MODALS -->
-    <!-- @@include('partials/modals/success.html') -->
+    <!-- empty -->
 
     <!-- scripts -->
     @@include('partials/layout/scripts.html')

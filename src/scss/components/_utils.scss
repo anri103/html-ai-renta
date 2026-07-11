@@ -170,7 +170,7 @@
 .max-w-800px { max-width: 800px; }
 
 // min-height
-.min-h-screen { min-height: calc(100vh - (var(--header-height) + var(--section-padding-y)) - var(--section-padding-y) * 2); }
+.min-h-screen { min-height: calc(100vh - var(--section-padding-y) * 2); }
 
 // =========================================
 /* RESPONSIVE UTILITIES */
@@ -182,7 +182,7 @@
     .w-sm-auto { width: auto !important; }
 
     // min-height
-    .min-h-screen-sm { min-height: calc(100vh - (var(--header-height) + var(--section-padding-y)) - var(--section-padding-y) * 2); }
+    .min-h-screen-sm { min-height: calc(100vh - var(--section-padding-y) * 2); }
 }
 
 @include media-breakpoint-up(md) {
@@ -191,7 +191,7 @@
     .w-md-auto { width: auto !important; }
 
     // min-height
-    .min-h-screen-md { min-height: calc(100vh - (var(--header-height) + var(--section-padding-y)) - var(--section-padding-y) * 2); }
+    .min-h-screen-md { min-height: calc(100vh - var(--section-padding-y) * 2); }
 }
 
 @include media-breakpoint-up(lg) {
@@ -200,7 +200,7 @@
     .w-lg-auto { width: auto !important; }
 
     // min-height
-    .min-h-screen-lg { min-height: calc(100vh - (var(--header-height) + var(--section-padding-y)) - var(--section-padding-y) * 2); }
+    .min-h-screen-lg { min-height: calc(100vh - var(--section-padding-y) * 2); }
 }
 
 @include media-breakpoint-up(xl) {

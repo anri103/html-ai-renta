@@ -301,7 +301,7 @@
                         <!-- list-area -->
                         <div class="col-span-12 col-span-lg-12 col-span-xl-12">
     
-                            <div class="d-flex flex-column rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                            <div class="rounded-neutral-wrapper d-flex flex-column gap-9 min-h-screen-lg">
                                 <!-- header -->
                                 <div>
                                     <div class="row align-items-start gx-2">
@@ -329,18 +329,18 @@
                                     </div>
                                 </div>
                                 <!-- body -->
-                                <div class="flex-fill d-flex flex-column gap-10 py-9">
+                                <div class="flex-fill d-flex flex-column gap-10">
                                     <!-- Сведения о продаже и условиях аренды -->
                                     <div>
                                         <div class="h2 fw-700 mb-8">Сведения о продаже и условиях аренды</div>
                                         <div class="row gy-9">
                                             <!-- Стоимость продажи нежилого помещения -->
-                                            <div class="col-lg-24 col-xl-24">
-                                                <div class="d-flex gap-6">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
+                                                <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
                                                     <label for="addObjectInputNonResidentialPrice" class="h5 fw-600 mb-0" style="max-width: 200px;">Стоимость продажи нежилого помещения</label>
-                                                    <div class="d-flex gap-2">
-                                                        <div class="position-relative">
-                                                            <div class="position-relative" style="max-width: 200px;">
+                                                    <div class="d-flex flex-wrap row-gap-8 gap-2">
+                                                        <div class="position-relative flex-shrink-0">
+                                                            <div class="position-relative">
                                                                 <!-- field -->
                                                                 <input type="text" class="form-control pe-10" placeholder="" id="addObjectInputNonResidentialPrice">
                                                                 <!-- icon -->
@@ -362,8 +362,8 @@
                                                             </div>
                                                             <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
                                                         </div>
-                                                        <div class="position-relative">
-                                                            <div class="position-relative" style="max-width: 200px;">
+                                                        <div class="position-relative flex-shrink-0">
+                                                            <div class="position-relative">
                                                                 <!-- field -->
                                                                 <input type="text" class="form-control bg-success-200 border-success-200 pe-10" placeholder="--- ---" id="addObjectInputNonResidentialPricePerSquareMeter" readonly>
                                                                 <!-- icon -->
@@ -377,15 +377,17 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Критические дефекты помещения или здания -->
-                                            <div class="col-lg-24 col-xl-24">
+                                            <!-- Дополнительные условия продажи -->
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxAdditionalSaleTerms" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxAdditionalSaleTerms" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxAdditionalSaleTerms" data-coreui-toggle="collapse" data-coreui-target="#collapseInputAdditionalSaleTerms" aria-expanded="false">
-                                                        <span>Дополнительные условия продажи (при наличии)</span>
-                                                        <svg class="inline-icon ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                            <path d="M12.6668 6L8.00016 10.6667L3.3335 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
+                                                        <span class="d-flex align-items-center">
+                                                            <span>Дополнительные условия продажи (при&nbsp;наличии)</span>
+                                                            <svg class="inline-icon ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <path d="M12.6668 6L8.00016 10.6667L3.3335 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
                                                     </label>
                                                 </div>
                                                 <div class="collapse" id="collapseInputAdditionalSaleTerms">
@@ -445,19 +447,19 @@
                                             <!-- Тип юр. лица -->
                                             <div class="col-lg-24 col-xl-24">
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="radio" class="btn-check d-none" name="option" id="addObjectRadio1" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="option" id="addObjectRadio1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadio1">Юридическое лицо</label>
-                                                    <input type="radio" class="btn-check d-none" name="option" id="addObjectRadio2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="option" id="addObjectRadio2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadio2">ИП</label>
-                                                    <input type="radio" class="btn-check d-none" name="option" id="addObjectRadio3" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="option" id="addObjectRadio3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadio3">Самозанятый</label>
-                                                    <input type="radio" class="btn-check d-none" name="option" id="addObjectRadio4" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="option" id="addObjectRadio4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadio4">Физическое лицо</label>
                                                 </div>
                                             </div>
                                             <!-- Принадлежит к сетевой структуре -->
                                             <div class="col-lg-24 col-xl-auto">
-                                                <div class="d-flex align-items-center justify-content-between gap-6 mt-4">
+                                                <div class="d-flex align-items-center gap-6 mt-4">
                                                     <div class="form-check form-switch mb-0">
                                                         <input class="form-check-input" type="checkbox" value="" id="addObjectSwitch" switch>
                                                         <label class="form-check-label text-gray-60 fw-500" for="addObjectSwitch">Принадлежит к сетевой структуре</label>
@@ -482,7 +484,7 @@
                                         <div class="row gy-9">
                                             <!-- Срок аренды -->
                                             <div class="col-lg-24 col-xl-auto">
-                                                <div class="d-flex gap-6">
+                                                <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
                                                     <label for="addObjectInput-YYY-1" class="h5 fw-600 mb-0" style="max-width: 80px;">Срок аренды:</label>
                                                     <div class="d-flex gap-2">
                                                         <div class="position-relative">
@@ -524,7 +526,7 @@
                                             </div>
                                             <!-- Дата начала истечения срока аренды: -->
                                             <div class="col-lg-24 col-xl-auto">
-                                                <div class="d-flex gap-6">
+                                                <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
                                                     <label for="addObjectInput-ZZZ-1" class="h5 fw-600 mb-0" style="max-width: 210px;">Дата начала истечения срока аренды:</label>
                                                     <div class="d-flex align-items-center gap-2">
                                                         <div class="position-relative">

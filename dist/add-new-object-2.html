@@ -301,7 +301,7 @@
                         <!-- list-area -->
                         <div class="col-span-12 col-span-lg-12 col-span-xl-12">
     
-                            <div class="d-flex flex-column rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                            <div class="rounded-neutral-wrapper d-flex flex-column gap-9 min-h-screen-lg">
                                 <!-- header -->
                                 <div>
                                     <div class="row align-items-start gx-2">
@@ -329,16 +329,16 @@
                                     </div>
                                 </div>
                                 <!-- body -->
-                                <div class="flex-fill d-flex flex-column gap-10 py-9">
+                                <div class="flex-fill d-flex flex-column gap-10">
                                     <!-- Информация о помещении (2/3) -->
                                     <div>
                                         <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(2/3)</sup></div>
                                         <div class="row gy-9">
                                             <!-- Выделенная электрическая мощность на помещение -->
-                                            <div class="col-lg-24 col-xl-auto">
-                                                <div class="d-flex gap-6">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
+                                                <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
                                                     <label for="addObjectInputPower" class="h5 fw-600 mb-0" style="max-width: 250px;">Выделенная электрическая мощность на помещение:</label>
-                                                    <div class="position-relative">
+                                                    <div class="position-relative flex-shrink-0">
                                                         <div class="position-relative" style="max-width: 100px;">
                                                             <!-- field -->
                                                             <input type="text" class="form-control pe-10" placeholder="--" id="addObjectInputPower">
@@ -353,7 +353,7 @@
                                                 </div>
                                             </div>
                                             <!-- Наличие в помещении инженерных систем -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-2">
                                                     <div class="h5 fw-600 mb-0">Наличие в помещении инженерных систем</div>
                                                 </div>
@@ -364,41 +364,41 @@
                                                     <span>Выберите варианты</span>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems1" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems1">Электроснабжение</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems2" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems2">Водоснабжение</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems3" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems3">Водоотведение</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems4" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems4">Теплоснабжение</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems5" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems5" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems5">Приточно-вытяжные системы</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems6" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems6" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems6">Кондиционирование</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems7" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems7" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems7">Дымоудаление</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems8" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems8" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems8">Пожарная сигнализация</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems9" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems9" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems9">Автоматическое пожаротушение</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems10" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems10" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems10">Видеонаблюдение</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems11" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems11" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems11">СКУД/Домофон</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems12" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems12" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems12">Охранная сигнализация</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems13" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems13" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems13">Интернет/Телеком</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems14" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems14" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems14">Wi-Fi</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems15" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems15" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems15">Телевидение</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems16" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems16" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems16">Конференц-связь</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystems17" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystems17" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystems17">Серверная</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxEngineeringSystemsLast" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxEngineeringSystemsLast" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxEngineeringSystemsLast" data-coreui-toggle="collapse" data-coreui-target="#collapseInputEngineeringSystems" aria-expanded="false">Иное:</label>
                                                 </div>
                                                 <div class="collapse" id="collapseInputEngineeringSystems">
@@ -430,9 +430,9 @@
                                                 </div>
                                             </div>
                                             <!-- Оборудование, переданное в аренду и подлежащее отчуждению вместе с помещением -->
-                                            <div class="col-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="row gy-9">
-                                                    <div class="col-lg-24 col-xl-12">
+                                                    <div class="col-lg-24 col-xl-12 col-xxl-12">
                                                         <div class="h5 fw-600 mb-4">Оборудование, переданное в&nbsp;аренду и&nbsp;подлежащее отчуждению вместе с&nbsp;помещением</div>
                                                         <div class="position-relative">
                                                             <div class="position-relative">
@@ -455,7 +455,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-24 col-xl-12">
+                                                    <div class="col-lg-24 col-xl-12 col-xxl-12">
                                                         <div class="h5 fw-600 mb-4">Мебель и&nbsp;элементы интерьера, переданные в&nbsp;аренду и&nbsp;подлежащее отчуждению вместе с&nbsp;помещением</div>
                                                         <div class="position-relative">
                                                             <div class="position-relative">

@@ -34,7 +34,7 @@
                         <!-- list-area -->
                         <div class="col-span-12 col-span-lg-12 col-span-xl-12">
     
-                            <div class="d-flex flex-column gap-9 rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                            <div class="rounded-neutral-wrapper d-flex flex-column gap-9 min-h-screen-lg">
                                 <!-- header -->
                                 <div>
                                     <div class="row align-items-start gx-2">
@@ -68,7 +68,7 @@
                                         <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(1/3)</sup></div>
                                         <div class="row gy-9">
                                             <!-- Адрес -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-15 col-xxl-24">
                                                 <label for="addObjectInputAddress" class="h5 fw-600 form-label">Адрес</label>
                                                 <div class="position-relative">
                                                     <div class="position-relative">
@@ -93,38 +93,43 @@
                                                     <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
                                                 </div>
                                             </div>
-                                            <!-- Площадь -->
-                                            <div class="col-12 col-lg-3 col-xl-auto">
-                                                <label for="addObjectInputArea" class="h5 fw-600 form-label">Площадь</label>
-                                                <div class="position-relative">
-                                                    <div class="position-relative" style="max-width: 150px;">
-                                                        <!-- field -->
-                                                        <input type="text" class="form-control pe-10" placeholder="--" id="addObjectInputArea">
-                                                        <!-- icon -->
-                                                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                            <div class="d-flex align-items-center gap-2">
-                                                                <div class="text-gray-50 fw-400 mb-0">м<sup>2</sup></div>
+                                            <!-- Площадь + Этаж -->
+                                            <div class="col-lg-24 col-xl-9 col-xxl-24">
+                                                <div class="row gy-9">
+                                                    <!-- Площадь -->
+                                                    <div class="col-auto">
+                                                        <label for="addObjectInputArea" class="h5 fw-600 form-label">Площадь</label>
+                                                        <div class="position-relative">
+                                                            <div class="position-relative" style="max-width: 150px;">
+                                                                <!-- field -->
+                                                                <input type="text" class="form-control pe-10" placeholder="--" id="addObjectInputArea">
+                                                                <!-- icon -->
+                                                                <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                                    <div class="d-flex align-items-center gap-2">
+                                                                        <div class="text-gray-50 fw-400 mb-0">м<sup>2</sup></div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
+                                                            <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
                                                         </div>
                                                     </div>
-                                                    <div class="position-absolute top-100 start-0 d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2" style="transform:translateY(-20%)">Обязательное поле</div>
-                                                </div>
-                                            </div>
-                                            <!-- Этаж -->
-                                            <div class="col-12 col-lg-5 col-xl-auto">
-                                                <label for="addObjectInputFloor" class="h5 fw-600 form-label">Этаж</label>
-                                                <div class="d-flex gap-6">
-                                                    <div class="position-relative">
-                                                        <div class="position-relative" style="max-width: 80px;">
-                                                            <!-- field -->
-                                                            <input type="text" class="form-control" placeholder="--" id="addObjectInputFloor">
+                                                    <!-- Этаж -->
+                                                    <div class="col-auto">
+                                                        <label for="addObjectInputFloor" class="h5 fw-600 form-label">Этаж</label>
+                                                        <div class="d-flex gap-6">
+                                                            <div class="position-relative flex-shrink-0">
+                                                                <div class="position-relative" style="max-width: 80px;">
+                                                                    <!-- field -->
+                                                                    <input type="text" class="form-control" placeholder="--" id="addObjectInputFloor">
+                                                                </div>
+                                                            </div>
+                                                            <div class="small fw-400 text-gray-50 mb-0" style="max-width: 100px;">0 = цокольный этаж</div>
                                                         </div>
                                                     </div>
-                                                    <div class="small fw-400 text-gray-50 mb-0" style="max-width: 100px;">0 = цокольный этаж</div>
                                                 </div>
                                             </div>
                                             <!-- Ссылка на Авито/Циан -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-15 col-xxl-24">
                                                 <label for="addObjectInputLink" class="h5 fw-600 form-label">Ссылка на Авито/Циан</label>
                                                 <div class="position-relative">
                                                     <div class="position-relative">
@@ -156,7 +161,7 @@
                                                 </div>
                                             </div>
                                             <!-- Тип помещения -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-15 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-2">
                                                     <div class="h5 fw-600 mb-0">Тип помещения</div>
                                                     <div class="d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2">Обязательное поле</div>
@@ -169,45 +174,45 @@
                                                     <span>Выберите вариант, который соответствует текущему использованию помещения</span>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType1" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType1">Офис</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType2">Торговля</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType3" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType3">Склад</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType4" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType4">Помещение свободного назначения</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType5" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType5" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType5">Общественное питание</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType6" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType6" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType6">Пункт выдачи заказов</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType7" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType7" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType7">Производство</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType8" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType8" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType8">Автосервис</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType9" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType9" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType9">Бытовые услуги</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectType" id="addObjectRadioObjectType10" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectType" id="addObjectRadioObjectType10" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectType10">Апартаменты</label>
                                                 </div>
                                             </div>
                                             <!-- Вход в помещение -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-15 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-5">
                                                     <div class="h5 fw-600 mb-0">Вход в помещение</div>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter1" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectEnter" id="addObjectRadioObjectEnter1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter1">Независимый, с улицы</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectEnter" id="addObjectRadioObjectEnter2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter2">Независимый, со двора</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter3" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectEnter" id="addObjectRadioObjectEnter3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter3">Через общий вход (или подъезд)</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter4" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectEnter" id="addObjectRadioObjectEnter4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter4">Через внешнюю лестницу</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter5" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectEnter" id="addObjectRadioObjectEnter5" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter5">Через вестибюль/рецепцию</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionObjectEnter" id="addObjectRadioObjectEnter6" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionObjectEnter" id="addObjectRadioObjectEnter6" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioObjectEnter6">Через смежные коммерческие помещения</label>
                                                 </div>
                                             </div>

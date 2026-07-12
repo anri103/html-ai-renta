@@ -34,7 +34,7 @@
                         <!-- list-area -->
                         <div class="col-span-12 col-span-lg-12 col-span-xl-12">
     
-                            <div class="d-flex flex-column rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                            <div class="rounded-neutral-wrapper d-flex flex-column gap-9 min-h-screen-lg">
                                 <!-- header -->
                                 <div>
                                     <div class="row align-items-start gx-2">
@@ -62,82 +62,87 @@
                                     </div>
                                 </div>
                                 <!-- body -->
-                                <div class="flex-fill d-flex flex-column gap-10 py-9">
+                                <div class="flex-fill d-flex flex-column gap-10">
                                     <!-- Информация о здании -->
                                     <div>
                                         <div class="h2 fw-700 mb-8">Информация о здании</div>
                                         <div class="row gy-9">
                                             <!-- Тип здания -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-5">
                                                     <div class="h5 fw-600 mb-0">Тип здания</div>
                                                     <div class="d-inline-block bg-warning-200 text-warning-700 rounded-2 small fw-500 text-nowrap py-1 px-2">Обязательно выберите</div>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType1" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType1">Бизнес-центр «А»</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType2">Бизнес-центр «B»</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType3" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType3">Бизнес-центр «C»</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType4" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType4">Торговый комплекс</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType5" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType5" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType5">Складской комплекс</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType6" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType6" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType6">Производственный комплекс</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType7" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType7" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType7">Жилой многоквартирный дом</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType8" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType8" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType8">Здание апартаментов</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType9" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType9" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType9">Гостиница (отель)</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingType" id="addObjectRadioBuildingType10" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingType" id="addObjectRadioBuildingType10" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingType10">Отдельно стоящее здание (свободного назначения)</label>
                                                 </div>
                                             </div>
-                                            <!-- Количество этажей в здании -->
-                                            <div class="col-lg-24 col-xl-8">
-                                                <div class="d-flex gap-6">
-                                                    <label for="addObjectInputFloors" class="h5 fw-600 mb-0" style="max-width: 160px;">Количество этажей в здании:</label>
-                                                    <div class="position-relative">
-                                                        <div class="position-relative" style="max-width: 60px;">
-                                                            <!-- field -->
-                                                            <input type="text" class="form-control" placeholder="---" id="addObjectInputFloors">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Год ввода в эксплуатацию (строительства) здания -->
-                                            <div class="col-lg-12 col-xl-8">
-                                                <div class="d-flex gap-6">
-                                                    <label for="addObjectInputCommissioningYear" class="h5 fw-600 mb-0" style="max-width: 240px;">Год ввода в эксплуатацию (строительства) здания:</label>
-                                                    <div class="position-relative">
-                                                        <div class="position-relative" style="max-width: 100px;">
-                                                            <!-- field -->
-                                                            <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputCommissioningYear">
-                                                            <!-- icon -->
-                                                            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <div class="text-gray-50 fw-400 mb-0">год</div>
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
+                                                <div class="row gy-9 gx-xl-10 gx-xxl-12">
+
+                                                    <!-- Количество этажей в здании -->
+                                                    <div class="col-xl-auto">
+                                                        <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
+                                                            <label for="addObjectInputFloors" class="h5 fw-600 mb-0" style="max-width: 160px;">Количество этажей в здании:</label>
+                                                            <div class="position-relative flex-shrink-0">
+                                                                <div class="position-relative" style="max-width: 60px;">
+                                                                    <!-- field -->
+                                                                    <input type="text" class="form-control" placeholder="---" id="addObjectInputFloors">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <!-- Год реконструкции здания (при наличии) -->
-                                            <div class="col-lg-12 col-xl-8">
-                                                <div class="d-flex gap-6">
-                                                    <label for="addObjectInputReconstructionYear" class="h5 fw-600 mb-0" style="max-width: 205px;">Год реконструкции здания (при наличии):</label>
-                                                    <div class="position-relative">
-                                                        <div class="position-relative" style="max-width: 100px;">
-                                                            <!-- field -->
-                                                            <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputReconstructionYear">
-                                                            <!-- icon -->
-                                                            <div class="position-absolute top-50 end-0 translate-middle-y me-3">
-                                                                <div class="d-flex align-items-center gap-2">
-                                                                    <div class="text-gray-50 fw-400 mb-0">год</div>
+                                                    <!-- Год ввода в эксплуатацию (строительства) здания -->
+                                                    <div class="col-xl-auto">
+                                                        <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
+                                                            <label for="addObjectInputCommissioningYear" class="h5 fw-600 mb-0" style="max-width: 240px;">Год ввода в эксплуатацию (строительства) здания:</label>
+                                                            <div class="position-relative flex-shrink-0">
+                                                                <div class="position-relative" style="max-width: 100px;">
+                                                                    <!-- field -->
+                                                                    <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputCommissioningYear">
+                                                                    <!-- icon -->
+                                                                    <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                                        <div class="d-flex align-items-center gap-2">
+                                                                            <div class="text-gray-50 fw-400 mb-0">год</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Год реконструкции здания (при наличии) -->
+                                                    <div class="col-xl-auto">
+                                                        <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
+                                                            <label for="addObjectInputReconstructionYear" class="h5 fw-600 mb-0" style="max-width: 205px;">Год реконструкции здания (при наличии):</label>
+                                                            <div class="position-relative flex-shrink-0">
+                                                                <div class="position-relative" style="max-width: 100px;">
+                                                                    <!-- field -->
+                                                                    <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputReconstructionYear">
+                                                                    <!-- icon -->
+                                                                    <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                                        <div class="d-flex align-items-center gap-2">
+                                                                            <div class="text-gray-50 fw-400 mb-0">год</div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -145,26 +150,26 @@
                                                 </div>
                                             </div>
                                             <!-- Управление зданием осуществляется -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-5">
                                                     <div class="h5 fw-600 mb-0">Управление зданием осуществляется</div>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy1" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedBy1">Управляющая компания</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedBy2">Товарищество собственников</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy3" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedBy3">Сам собственник</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy4" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedBy4">Государственная / муниципальная управляющая организация</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy5" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy5" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedBy5">Специализированный девелопер или доверительный управляющий</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy6" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy6" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedBy6">Прямые договоры собственников с ресурсоснабжающими и сервисными организациями (без единого управляющего органа)</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy7" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedBy7" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedBy7">Сервисная (эксплуатационная) компания застройщика</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedByLast" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionBuildingManagedBy" id="addObjectRadioBuildingManagedByLast" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioBuildingManagedByLast" data-coreui-toggle="collapse" data-coreui-target="#collapseInputBuildingManagedBy" aria-expanded="false">Иное:</label>
                                                 </div>
                                                 <div class="collapse" id="collapseInputBuildingManagedBy">
@@ -196,28 +201,28 @@
                                                 </div>
                                             </div>
                                             <!-- Право на земельный участок -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-5">
                                                     <div class="h5 fw-600 mb-0">Право на земельный участок</div>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight1" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight1">Доля на собственника помещения не оформлено</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight2">Доля в праве собственности</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight3" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight3">Доля в праве постоянного (бессрочного) пользования</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight4" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight4">Доля в праве аренды земельного участка</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight5" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight5" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight5">Доля в праве субаренды</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight6" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight6" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight6">Доля в праве безвозмездного срочного пользования земельным участком</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight7" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight7" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight7">Доля в праве ограниченного пользования (земельный сервитут)</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRight8" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRight8" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRight8">Доля в праве застройки (суперфиция)</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionLandRight" id="addObjectRadioLandRightLast" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionLandRight" id="addObjectRadioLandRightLast" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioLandRightLast" data-coreui-toggle="collapse" data-coreui-target="#collapseInputLandRight" aria-expanded="false">Иное:</label>
                                                 </div>
                                                 <div class="collapse" id="collapseInputLandRight">

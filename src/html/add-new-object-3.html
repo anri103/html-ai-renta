@@ -34,7 +34,7 @@
                         <!-- list-area -->
                         <div class="col-span-12 col-span-lg-12 col-span-xl-12">
     
-                            <div class="d-flex flex-column rounded-neutral-wrapper min-h-screen-lg min-h-screen-xl">
+                            <div class="rounded-neutral-wrapper d-flex flex-column gap-9 min-h-screen-lg">
                                 <!-- header -->
                                 <div>
                                     <div class="row align-items-start gx-2">
@@ -62,17 +62,17 @@
                                     </div>
                                 </div>
                                 <!-- body -->
-                                <div class="flex-fill d-flex flex-column gap-10 py-9">
+                                <div class="flex-fill d-flex flex-column gap-10">
                                     <!-- Информация о помещении (3/3) -->
                                     <div>
                                         <div class="h2 fw-700 mb-8">Информация о помещении <sup class="text-gray-50">(3/3)</sup></div>
                                         <div class="row gy-9">
                                             <!-- Год последнего капитального ремонта помещения -->
-                                            <div class="col-lg-24 col-xl-12">
+                                            <div class="col-lg-24 col-xl-12 col-xxl-12">
                                                 <div class="d-flex flex-column gap-6">
-                                                    <div class="d-flex gap-6">
+                                                    <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
                                                         <label for="addObjectInputLastRenovation" class="h5 fw-600 mb-0" style="max-width: 270px;">Год последнего капитального ремонта помещения</label>
-                                                        <div class="position-relative">
+                                                        <div class="position-relative flex-shrink-0">
                                                             <div class="position-relative" style="max-width: 100px;">
                                                                 <!-- field -->
                                                                 <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputLastRenovation">
@@ -108,11 +108,11 @@
                                                 </div>
                                             </div>
                                             <!-- Год последнего текущего ремонта помещения -->
-                                            <div class="col-lg-24 col-xl-12">
+                                            <div class="col-lg-24 col-xl-12 col-xxl-12">
                                                 <div class="d-flex flex-column gap-6">
-                                                    <div class="d-flex gap-6">
+                                                    <div class="d-flex flex-column flex-xl-row row-gap-5 gap-6">
                                                         <label for="addObjectInputCurrentRenovation" class="h5 fw-600 mb-0" style="max-width: 270px;">Год последнего текущего ремонта помещения</label>
-                                                        <div class="position-relative">
+                                                        <div class="position-relative flex-shrink-0">
                                                             <div class="position-relative" style="max-width: 100px;">
                                                                 <!-- field -->
                                                                 <input type="text" class="form-control pe-10" placeholder="----" id="addObjectInputCurrentRenovation">
@@ -148,14 +148,14 @@
                                                 </div>
                                             </div>
                                             <!-- Критические дефекты помещения или здания -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-5">
                                                     <div class="h5 fw-600 mb-0">Критические дефекты помещения или здания</div>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="radio" class="btn-check d-none" name="optionCriticalDefects" id="addObjectRadioCriticalDefects1" autocomplete="off" checked>
+                                                    <input type="radio" class="btn-check" name="optionCriticalDefects" id="addObjectRadioCriticalDefects1" autocomplete="off" checked>
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioCriticalDefects1">Критических дефектов нет</label>
-                                                    <input type="radio" class="btn-check d-none" name="optionCriticalDefects" id="addObjectRadioCriticalDefects2" autocomplete="off">
+                                                    <input type="radio" class="btn-check" name="optionCriticalDefects" id="addObjectRadioCriticalDefects2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectRadioCriticalDefects2" data-coreui-toggle="collapse" data-coreui-target="#collapseInputCriticalDefects" aria-expanded="false">Есть критические дефекты</label>
                                                 </div>
                                                 <div class="collapse" id="collapseInputCriticalDefects">
@@ -187,7 +187,7 @@
                                                 </div>
                                             </div>
                                             <!-- Наличие обременений -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <div class="d-flex flex-wrap gap-4 mb-2">
                                                     <div class="h5 fw-600 mb-0">Наличие обременений</div>
                                                 </div>
@@ -198,21 +198,21 @@
                                                     <span>Выберите варианты</span>
                                                 </div>
                                                 <div class="d-flex flex-wrap gap-2">
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrances1" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrances1" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrances1">Сервитут</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrances2" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrances2" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrances2">Залог</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrances3" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrances3" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrances3">Судебный или административный арест</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrances4" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrances4" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrances4">Аренда более 1 года</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrances5" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrances5" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrances5">Безвозмездное пользование более 1 года</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrances6" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrances6" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrances6">Доверительное управление</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrances7" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrances7" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrances7">Статус объекта культурного наследия</label>
-                                                    <input type="checkbox" class="btn-check d-none" id="addObjectCheckboxPresenceOfEncumbrancesLast" autocomplete="off">
+                                                    <input type="checkbox" class="btn-check" id="addObjectCheckboxPresenceOfEncumbrancesLast" autocomplete="off">
                                                     <label class="btn btn-secondary-2 btn-sm text-start" for="addObjectCheckboxPresenceOfEncumbrancesLast" data-coreui-toggle="collapse" data-coreui-target="#collapseInputPresenceOfEncumbrances" aria-expanded="false">Иное:</label>
                                                 </div>
                                                 <div class="collapse" id="collapseInputPresenceOfEncumbrances">
@@ -244,14 +244,14 @@
                                                 </div>
                                             </div>
                                             <!-- Дополнительная информация, влияющая на ликвидность помещения -->
-                                            <div class="col-lg-16 col-xl-24">
+                                            <div class="col-lg-24 col-xl-24 col-xxl-24">
                                                 <label for="addObjectInputLiquidityOfPremises" class="h5 fw-600 form-label">Дополнительная информация, влияющая на ликвидность помещения:</label>
                                                 <div class="position-relative">
                                                     <div class="position-relative">
                                                         <!-- field -->
-                                                        <input type="text" class="form-control pe-10" placeholder="Перечислите" id="addObjectInputLiquidityOfPremises">
+                                                        <textarea class="form-control pb-10" rows="3" placeholder="Перечислите" id="addObjectInputLiquidityOfPremises"></textarea>
                                                         <!-- icon -->
-                                                        <div class="position-absolute top-50 end-0 translate-middle-y me-3">
+                                                        <div class="position-absolute bottom-0 end-0 mb-3 me-3">
                                                             <div class="d-flex align-items-center gap-2">
                                                                 <div class="text-gray-50 fw-400 mb-0">0/200</div>
                                                                 <span

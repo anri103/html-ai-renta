@@ -165,6 +165,7 @@
 
 // height
 .h-20px { height: 20px !important; }
+.h-screen { height: calc(100vh - var(--section-padding-y) * 2); }
 
 // max-width
 .max-w-800px { max-width: 800px; }
@@ -181,6 +182,9 @@
     .w-sm-100 { width: 100% !important; }
     .w-sm-auto { width: auto !important; }
 
+    // height
+    .h-screen-sm { height: calc(100vh - var(--section-padding-y) * 2); }
+
     // min-height
     .min-h-screen-sm { min-height: calc(100vh - var(--section-padding-y) * 2); }
 }
@@ -189,6 +193,9 @@
     // width
     .w-md-100 { width: 100% !important; }
     .w-md-auto { width: auto !important; }
+
+    // height
+    .h-screen-md { height: calc(100vh - var(--section-padding-y) * 2); }
 
     // min-height
     .min-h-screen-md { min-height: calc(100vh - var(--section-padding-y) * 2); }
@@ -199,6 +206,9 @@
     .w-lg-100 { width: 100% !important; }
     .w-lg-auto { width: auto !important; }
 
+    // height
+    .h-screen-lg { height: calc(100vh - var(--section-padding-y) * 2); }
+
     // min-height
     .min-h-screen-lg { min-height: calc(100vh - var(--section-padding-y) * 2); }
 }
@@ -208,6 +218,9 @@
     .w-xl-100 { width: 100% !important; }
     .w-xl-auto { width: auto !important; }
 
+    // height
+    .h-screen-xl { height: calc(100vh - var(--section-padding-y) * 2); }
+
     // min-height
     .min-h-screen-xl { min-height: calc(100vh - var(--section-padding-y) * 2); }
 }
@@ -216,6 +229,9 @@
     // width
     .w-xxl-100 { width: 100% !important; }
     .w-xxl-auto { width: auto !important; }
+
+    // height
+    .h-screen-xxl { height: calc(100vh - var(--section-padding-y) * 2); }
 
     // min-height
     .min-h-screen-xxl { min-height: calc(100vh - var(--section-padding-y) * 2); }

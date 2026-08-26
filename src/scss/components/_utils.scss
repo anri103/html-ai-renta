@@ -119,6 +119,10 @@
 .border-error-800 { border-color: $error-800 !important; }
 .border-error-900 { border-color: $error-900 !important; }
 
+.bg-gradient-primary {
+    background: linear-gradient(180deg, #F8FAFC 0%, #E6EEFF 100%) !important;
+}
+
 .bg-img {
     background-position: 50% 50%;
     background-repeat: no-repeat;

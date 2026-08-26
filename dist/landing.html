@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <link rel="icon" href="img/favicon/favicon.svg" sizes="32x32" /> -->
+    <title>Лендинг</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="assets/fonts/Golos-Text/Golos-Text.css">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader" id="preloader">
+    <div class="animation-preloader">
+        <div class="spinner"></div>
+    </div>
+    <div class="loader">
+        <div class="row">
+            <div class="col loader-section">
+                <div class="bg"></div>
+            </div>
+            <div class="col loader-section">
+                <div class="bg"></div>
+            </div>
+            <div class="col loader-section">
+                <div class="bg"></div>
+            </div>
+            <div class="col loader-section">
+                <div class="bg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="site-wrapper">
+        <!-- HEADER -->
+        <header class="site-header">
+            <!-- desktop -->
+            <div class="site-header__desktop">
+                <div class="header-bar">
+                    <div class="container">
+        
+                        <!-- logo -->
+                        <div class="header-widget__logo">
+                            <a href="index.html">
+                                <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+                            </a>
+                        </div>
+        
+                        <!-- navigation -->
+                        <nav class="header-widget__navigation">
+                            <ul class="primary-nav" id="primaryNav">
+                                <li>
+                                    <a href="#home1">
+                                        <span>Как работает</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#home2">
+                                        <span>Продавцам</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#home3">
+                                        <span>Инвесторам</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#home4">
+                                        <span>Вопрос-ответ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+        
+                        <!-- sign-btn -->
+                        <div class="header-widget__btns d-flex align-items-center gap-2">
+                            <a href="sign-in.html" class="btn btn-secondary">Войти</a>
+                            <a href="#" class="btn btn-primary">Создать паспорт</a>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            <!-- mobile -->
+            <div class="site-header__mobile">
+                <div class="header-bar">
+                    <div class="container">
+        
+                        <!-- logo -->
+                        <div class="header-widget__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/logo.svg" alt="Мобильные системы и технологии">
+                            </a>
+                        </div>
+    
+                        <div class="d-flex align-items-center gap-3">
+                            <!-- mobile-toggler -->
+                            <button type="button" class="header-widget__mobile-toggler btn btn-primary btn-icon-l" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMobileMenu">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18" fill="none">
+                                    <rect width="30" height="2" fill="currentColor"></rect>
+                                    <rect y="8" width="22" height="2" fill="currentColor"></rect>
+                                    <rect y="16" width="30" height="2" fill="currentColor"></rect>
+                                </svg>
+                            </button>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="site-main">
+    
+            <!-- section-home-hero -->
+            <section class="section section-home-hero">
+                <div class="container">
+                    <div class="d-grid grid-cols-24 row-gap-3 gap-md-6">
+
+                        <div class="col-span-24 col-span-md-24 col-span-lg-18">
+                            <div class="rounded-neutral-wrapper bg-gradient-primary p-xl-10 h-100">
+                                <div class="subtitle">Экономический паспорт доходной коммерческой недвижимости</div>
+                                <div class="title h1 fw-700 mb-0">Я&nbsp;помогу обосновать стоимость объекта и&nbsp;оценить его&nbsp;рентабельность</div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-24 col-span-md-11 col-span-lg-6 d-none d-lg-block">
+                            <div class="rounded-neutral-wrapper overflow-hidden p-0 h-100">
+                                <img class="object-fit-cover w-100 h-100" src="assets/img/landing/hero.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-span-24 col-span-md-13 col-span-lg-9">
+                            <div class="rounded-neutral-wrapper overflow-hidden p-0 h-100">
+                                <img class="object-fit-cover w-100 h-100" src="assets/img/landing/hero-1.jpg" alt="">
+                                <div class="position-absolute bottom-0 m-6">
+                                    <div class="d-flex align-items-center rounded bg-white p-3 p-xl-6">
+                                        <div class="fw-500">Скачать пример Экономического паспорта и Экспресс-анализа</div>
+                                        <div>
+                                            <a href="#" class="btn btn-outline-primary p-2">
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M4 17V19C4 19.5304 4.21071 20.0391 4.58579 20.4142C4.96086 20.7893 5.46957 21 6 21H18C18.5304 21 19.0391 20.7893 19.4142 20.4142C19.7893 20.0391 20 19.5304 20 19V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7 11L12 16L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 4V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-span-24 col-span-md-11 col-span-lg-6 d-none d-md-block d-lg-none">
+                            <div class="rounded-neutral-wrapper overflow-hidden p-0 h-100">
+                                <img class="object-fit-cover w-100 h-100" src="assets/img/landing/hero.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-span-24 col-span-md-24 col-span-lg-15">
+                            <div class="rounded-neutral-wrapper bg-gradient-primary h-100">
+                                <div class="d-flex flex-column justify-content-between gap-3 gap-xl-7 h-100">
+                                    <div>
+                                        <div class="text-uppercase text-gray-60 mb-2">Вы Продавец или инвестор?</div>
+                                        <div class="h4 fw-600 mb-0">Заполните информацию об&nbsp;объекте&nbsp;— я&nbsp;рассчитаю его&nbsp;экономику и&nbsp;сформирую Экономический паспорт с&nbsp;ключевыми показателями:</div>
+                                    </div>
+                                    <div class="hero-list">
+                                        <div class="d-flex flex-column gap-4 gap-md-5">
+                                            <div class="d-flex gap-2">
+                                                <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M2.66797 7.99992L5.9678 11.2997L13.0395 4.22876" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div class="text-gray-60">Чистый операционный доход (NOI)</div>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M2.66797 7.99992L5.9678 11.2997L13.0395 4.22876" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Показатель рентабельности инвестиций (ROI)</div>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M2.66797 7.99992L5.9678 11.2997L13.0395 4.22876" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Ставка капитализации (Cap Rate)</div>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M2.66797 7.99992L5.9678 11.2997L13.0395 4.22876" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Окупаемость</div>
+                                            </div>
+                                        </div>
+
+                                        <hr class="border-neutral-300 opacity-100">
+
+                                        <div class="d-flex flex-column gap-4 gap-md-5">
+                                            <div class="d-flex gap-2">
+                                                <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 2.66675V13.3334" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2.66797 8H13.3346" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Экспресс-анализ с рекомендациями по покупке или продаже</div>
+                                            </div>
+                                            <div class="d-flex gap-2">
+                                                <svg class="list-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 2.66675V13.3334" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M2.66797 8H13.3346" stroke="#3771FD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>
+                                                    Другие экономические показатели 
+                                                    <span data-coreui-toggle="tooltip" data-coreui-title="Подсказка">
+                                                        <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                            <rect x="1" y="1" width="22" height="22" rx="11" stroke="#64748B" stroke-width="2"></rect>
+                                                            <path d="M10.922 13.54V12.966C10.922 12.77 10.95 12.588 11.006 12.42C11.0713 12.2427 11.16 12.0793 11.272 11.93C11.384 11.7807 11.5147 11.636 11.664 11.496C11.8227 11.356 11.9907 11.2113 12.168 11.062C12.4667 10.81 12.7 10.5813 12.868 10.376C13.0453 10.1613 13.134 9.93267 13.134 9.69C13.134 9.53133 13.1107 9.39133 13.064 9.27C13.0267 9.14867 12.9613 9.05067 12.868 8.976C12.7747 8.892 12.6533 8.82667 12.504 8.78C12.364 8.73333 12.1913 8.71 11.986 8.71C11.622 8.71 11.342 8.808 11.146 9.004C10.95 9.2 10.852 9.47533 10.852 9.83H8.64001C8.64001 9.41933 8.71935 9.04133 8.87801 8.696C9.04601 8.35067 9.27001 8.04267 9.55001 7.772C9.83935 7.50133 10.1893 7.29133 10.6 7.142C11.02 6.99267 11.4867 6.918 12 6.918C12.5507 6.918 13.0313 6.988 13.442 7.128C13.862 7.268 14.212 7.45933 14.492 7.702C14.7813 7.94467 14.996 8.22933 15.136 8.556C15.2853 8.88267 15.36 9.23733 15.36 9.62C15.36 9.90933 15.3273 10.1707 15.262 10.404C15.1967 10.6373 15.1033 10.852 14.982 11.048C14.8607 11.2347 14.7253 11.4073 14.576 11.566C14.436 11.7247 14.2867 11.8693 14.128 12C13.8853 12.2147 13.694 12.392 13.554 12.532C13.4233 12.672 13.3207 12.7887 13.246 12.882C13.1713 12.9753 13.1247 13.0547 13.106 13.12C13.0873 13.1853 13.078 13.2553 13.078 13.33V13.54H10.922ZM12 17.082C11.8133 17.082 11.636 17.0447 11.468 16.97C11.3093 16.9047 11.1693 16.816 11.048 16.704C10.936 16.5827 10.8427 16.4427 10.768 16.284C10.7027 16.116 10.67 15.9433 10.67 15.766C10.67 15.57 10.7027 15.3927 10.768 15.234C10.8427 15.066 10.936 14.9213 11.048 14.8C11.1693 14.6787 11.3093 14.5853 11.468 14.52C11.6267 14.4547 11.804 14.422 12 14.422C12.1867 14.422 12.3593 14.4547 12.518 14.52C12.686 14.5853 12.8307 14.6787 12.952 14.8C13.0733 14.9213 13.1667 15.066 13.232 15.234C13.2973 15.3927 13.33 15.57 13.33 15.766C13.33 15.9527 13.2927 16.1253 13.218 16.284C13.1527 16.4427 13.0593 16.5827 12.938 16.704C12.8167 16.8253 12.6767 16.9187 12.518 16.984C12.3593 17.0493 12.1867 17.082 12 17.082Z" fill="#64748B"></path>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn btn-primary w-100">Создать экономический паспорт</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-home-faq">
+                
+            </section>
+    
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+
+        </footer>
+    </div>
+
+    <!-- MODALS -->
+
+    <!-- scripts -->
+    <script src="assets/js/coreui.bundle.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

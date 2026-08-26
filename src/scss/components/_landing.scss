@@ -1,0 +1,123 @@
+@use '../variables' as *;
+@use '../coreui' as *;
+
+// =========================================
+/* LANDING */
+// =========================================
+
+.site-wrapper .container {
+    max-width: 1280px;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+// main
+.site-main {
+    position: relative;
+    overflow: hidden;
+}
+
+// header
+.site-header {
+
+    @include media-breakpoint-down(xl) {
+        &__desktop {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        &__mobile {
+            display: none;
+        }
+    }
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+    padding: 16px 0;
+
+    & > .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.primary-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        padding: 11px 20px;
+        color: $text-gray-50;
+        font-size: 16px;
+        font-weight: 400;
+
+        &:hover,
+        &.active {
+            color: $text-primary;
+        }
+    }
+}
+
+// section-home-hero
+.section-home-hero {
+
+    .subtitle {
+        max-width: 276px;
+        display: inline-block;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 6px 8px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        background-color: #7575B2;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .hero-list {
+        .list-icon {
+            margin-top: 2px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .subtitle {
+            max-width: 100%;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .subtitle {
+            font-size: 16px;
+            padding: 8px 16px;
+            margin-bottom: 24px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+        }
+    }
+}

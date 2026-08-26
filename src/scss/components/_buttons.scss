@@ -61,6 +61,23 @@
     --cui-btn-disabled-border-color: #{$brand-100};
 }
 
+.btn-outline-primary {
+    --cui-btn-color: #{$brand-500};
+    --cui-btn-border-color: #{$brand-500};
+    --cui-btn-hover-color: #{$text-white};
+    --cui-btn-hover-bg: #{$brand-500};
+    --cui-btn-hover-border-color: #{$brand-500};
+    --cui-btn-focus-shadow-rgb: 55, 113, 253;
+    --cui-btn-active-color: #{$text-white};
+    --cui-btn-active-bg: #{$brand-500};
+    --cui-btn-active-border-color: #{$brand-500};
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(8, 10, 12, 0.125);
+    --cui-btn-disabled-color: #{$brand-500};
+    --cui-btn-disabled-bg: transparent;
+    --cui-btn-disabled-border-color: #{$brand-500};
+    --cui-gradient: none;
+}
+
 .btn-secondary {
     --cui-btn-color: #{$text-gray-60};
     --cui-btn-bg: #{$neutral-200};

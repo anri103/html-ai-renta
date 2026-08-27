@@ -1,43 +1,73 @@
-<section class="section section-home-tabs">
+<section class="section section-home-tabs" data-active-tab="sell">
     <div class="container">
         <div class="d-grid grid-cols-1 grid-cols-lg-2 gap-3 gap-md-6">
             <!-- col -->
             <div class="d-flex flex-column gap-3 gap-md-6">
-                <div class="rounded-neutral-wrapper bg-gradient-purple">
+                <div class="rounded-neutral-wrapper bg-gradient-purple flex-fill">
                     <!-- title -->
                     <div class="text-white h2 fw-700 mb-5 mb-md-6">Кем вы выступаете в сделке?</div>
                     <!-- btns group -->
                     <div class="tab-group position-relative d-flex gap-2 bg-white rounded-3 p-2">
                         <div class="tab-slider"></div>
-                        <a href="#" class="btn tab-btn w-100 active">Продаю объект</a>
+                        <a href="#" class="btn tab-btn w-100 active" data-tab-target="sell">Продаю объект</a>
                         <div class="divider-vertical"></div>
-                        <a href="#" class="btn tab-btn w-100">Рассматриваю покупку</a>
+                        <a href="#" class="btn tab-btn w-100" data-tab-target="buy">Рассматриваю покупку</a>
                     </div>
 
                     <hr class="text-white opacity-50 my-md-6">
 
-                    <div class="text-white h3 fw-600 mb-3 mb-md-4">Представьте объект как готовую инвестицию</div>
-                    <div class="text-gray-30">Подходит собственникам, брокерам и риелторам, которые готовят и представляют объекты к продаже</div>
+                    <div data-tab="sell">
+                        <div class="text-white h3 fw-600 mb-3 mb-md-4">Представьте объект как готовую инвестицию</div>
+                        <div class="text-gray-30">Подходит собственникам, брокерам и риелторам, которые готовят и представляют объекты к продаже</div>
+                    </div>
+
+                    <div data-tab="buy">
+                        <div class="text-white h3 fw-600 mb-3 mb-md-4">Оцените инвестицию до покупки</div>
+                        <div class="text-gray-30">Подходит инвесторам, брокерам и риелторам, которые подбирают и оценивают объекты для покупки</div>
+                    </div>
+
                 </div>
                 <div class="rounded-neutral-wrapper bg-gradient-primary">
                     <div class="d-flex flex-column flex-md-row gap-6 gap-md-4">
                         <div>
-                            <img class="feature-img" src="assets/img/landing/feature-1.png" alt="">
+                            <div data-tab="sell">
+                                <img class="feature-img" src="assets/img/landing/feature-1.png" alt="">
+                            </div>
+                            <div data-tab="buy">
+                                <img class="feature-img" src="assets/img/landing/feature-buy-1.png" alt="">
+                            </div>
                         </div>
                         <div>
-                            <div class="h4 fw-600 mb-4">Защитите цену цифрами</div>
-                            <div class="text-gray-60">Экспресс-анализ выявит сильные стороны объекта и подскажет аргументы, которые помогут обосновать стоимость на переговорах</div>
+                            <div data-tab="sell">
+                                <div class="h4 fw-600 mb-4">Защитите цену цифрами</div>
+                                <div class="text-gray-60">Экспресс-анализ выявит сильные стороны объекта и подскажет аргументы, которые помогут обосновать стоимость на переговорах</div>
+                            </div>
+                            <div data-tab="buy">
+                                <div class="h4 fw-600 mb-4">Проверьте объект до покупки</div>
+                                <div class="text-gray-60">Узнайте полную сумму вложений: стоимость приобретения, дополнительные расходы, затраты на запуск и дальнейшую эксплуатацию арендного бизнеса</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="rounded-neutral-wrapper bg-gradient-lime">
                     <div class="d-flex flex-column flex-md-row gap-6 gap-md-4">
                         <div>
-                            <img class="feature-img" src="assets/img/landing/feature-2.png" alt="">
+                            <div data-tab="sell">
+                                <img class="feature-img" src="assets/img/landing/feature-2.png" alt="">
+                            </div>
+                            <div data-tab="buy">
+                                <img class="feature-img" src="assets/img/landing/feature-buy-2.png" alt="">
+                            </div>
                         </div>
                         <div>
-                            <div class="h4 fw-600 mb-4">Один документ вместо долгих объяснений</div>
-                            <div class="text-gray-60">Характеристики объекта, данные арендатора, условия договора и факторы риска собраны в единую инвестиционную модель. Покупатель сможет изучить её ещё до встречи</div>
+                            <div data-tab="sell">
+                                <div class="h4 fw-600 mb-4">Один документ вместо долгих объяснений</div>
+                                <div class="text-gray-60">Характеристики объекта, данные арендатора, условия договора и факторы риска собраны в единую инвестиционную модель. Покупатель сможет изучить её ещё до встречи</div>
+                            </div>
+                            <div data-tab="buy">
+                                <div class="h4 fw-600 mb-4">База недвижимости</div>
+                                <div class="text-gray-60">Изучайте предложения с готовыми Экономическими паспортами и связывайтесь с продавцами заинтересовавших объектов</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,11 +77,22 @@
                 <div class="rounded-neutral-wrapper bg-gradient-primary">
                     <div class="d-flex flex-column flex-md-row gap-6 gap-md-4">
                         <div>
-                            <img class="feature-img" src="assets/img/landing/feature-3.png" alt="">
+                            <div data-tab="sell">
+                                <img class="feature-img" src="assets/img/landing/feature-3.png" alt="">
+                            </div>
+                            <div data-tab="buy">
+                                <img class="feature-img" src="assets/img/landing/feature-buy-3.png" alt="">
+                            </div>
                         </div>
                         <div>
-                            <div class="h4 fw-600 mb-4">Выделитесь среди объявлений</div>
-                            <div class="text-gray-60">Представьте объект как готовый инвестиционный продукт, а не очередное предложение с фотографиями и общей ценой</div>
+                            <div data-tab="sell">
+                                <div class="h4 fw-600 mb-4">Выделитесь среди объявлений</div>
+                                <div class="text-gray-60">Представьте объект как готовый инвестиционный продукт, а не очередное предложение с фотографиями и общей ценой</div>
+                            </div>
+                            <div data-tab="buy">
+                                <div class="h4 fw-600 mb-4">Найдите основания для торга</div>
+                                <div class="text-gray-60">Экспресс-анализ покажет расходы, условия договора и риски, которые могли не учесть в цене. Используйте их как аргументы на переговорах</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,11 +100,22 @@
                     <div class="rounded-neutral-wrapper bg-gradient-primary">
                         <div class="d-flex flex-column justify-content-between gap-6 gap-md-4 h-100">
                             <div class="order-lg-last">
-                                <img class="feature-img" src="assets/img/landing/feature-4.png" alt="">
+                                <div data-tab="sell">
+                                    <img class="feature-img" src="assets/img/landing/feature-4.png" alt="">
+                                </div>
+                                <div data-tab="buy">
+                                    <img class="feature-img" src="assets/img/landing/feature-buy-4.png" alt="">
+                                </div>
                             </div>
                             <div>
-                                <div class="h4 fw-600 mb-4">Говорите на языке инвестора</div>
-                                <div class="text-gray-60">Не просто «хороший объект», а понятные цифры, условия аренды, расходы, доходность и риски</div>
+                                <div data-tab="sell">
+                                    <div class="h4 fw-600 mb-4">Говорите на языке инвестора</div>
+                                    <div class="text-gray-60">Не просто «хороший объект», а понятные цифры, условия аренды, расходы, доходность и риски</div>
+                                </div>
+                                <div data-tab="buy">
+                                    <div class="h4 fw-600 mb-4">Сравнивайте объекты по единым критериям</div>
+                                    <div class="text-gray-60">Все проанализирован-ные объекты приводятся к одному формату. Сравнивайте показатели, расходы и риски без таблиц и ручных расчётов</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,14 +123,30 @@
                     <div class="rounded-neutral-wrapper bg-gradient-blue">
                         <div class="d-flex flex-column justify-content-between gap-6 gap-md-4 h-100">
                             <div>
-                                <div class="h4 fw-600 mb-4">Покажите экономику объекта</div>
-                                <div class="text-gray-60">Экономический паспорт раскрывает доходы, расходы, NOI, Cap Rate, ROI и срок окупаемости</div>
+                                <div data-tab="sell">
+                                    <div class="h4 fw-600 mb-4">Покажите экономику объекта</div>
+                                    <div class="text-gray-60">Экономический паспорт раскрывает доходы, расходы, NOI, Cap Rate, ROI и срок окупаемости</div>
+                                </div>
+                                <div data-tab="buy">
+                                    <div class="h4 fw-600 mb-4">Оцените реальную доходность</div>
+                                    <div class="text-gray-60">Сервис рассчитает NOI, Cap Rate, ROI, срок окупаемости, операционные расходы и другие показатели инвестиционной привлекательности</div>
+                                </div>
                             </div>
                             <div>
-                                <img class="feature-img" src="assets/img/landing/feature-5.png" alt="">
+                                <div data-tab="sell">
+                                    <img class="feature-img" src="assets/img/landing/feature-5.png" alt="">
+                                </div>
+                                <div data-tab="buy">
+                                    <img class="feature-img" src="assets/img/landing/feature-buy-5.png" alt="">
+                                </div>
                             </div>
                             <div>
-                                <a href="#" class="btn btn-primary w-100">Подготовить объект</a>
+                                <div data-tab="sell">
+                                    <a href="#" class="btn btn-primary w-100">Подготовить объект</a>
+                                </div>
+                                <div data-tab="buy">
+                                    <a href="#" class="btn btn-primary w-100">Проверить объект</a>
+                                </div>
                             </div>
                         </div>
                     </div>

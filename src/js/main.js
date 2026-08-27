@@ -108,12 +108,34 @@ function initTabSliders() {
     groups.forEach(setupTabSlider);
 }
 
+function initTabContent(root) {
+    root.querySelectorAll('[data-tab]').forEach(el => {
+        const isActive = el.dataset.tab === root.dataset.activeTab;
+        el.classList.toggle('is-active', isActive);
+        el.classList.toggle('is-hidden', !isActive);
+    });
+}
+
+function switchTabContent(root, newTab) {
+    root.querySelectorAll('[data-tab]').forEach(el => {
+        const isActive = el.dataset.tab === newTab;
+        el.classList.toggle('is-active', isActive);
+        el.classList.toggle('is-hidden', !isActive);
+    });
+}
+
 function setupTabSlider(group) {
     const slider = group.querySelector('.tab-slider');
     const buttons = group.querySelectorAll('.tab-btn');
-    const activeBtn = group.querySelector('.tab-btn.active');
+    let activeBtn = group.querySelector('.tab-btn.active');
 
     if (!slider || !buttons.length || !activeBtn) return;
+
+    const root = group.closest('[data-active-tab]');
+    if (root && !root.dataset.tabInitDone) {
+        initTabContent(root);
+        root.dataset.tabInitDone = 'true';
+    }
 
     function moveSlider(el) {
         const groupRect = group.getBoundingClientRect();
@@ -122,21 +144,32 @@ function setupTabSlider(group) {
         slider.style.transform = `translateX(${btnRect.left - groupRect.left - 4}px)`;
     }
 
+    function selectTab(btn) {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeBtn = btn;
+        moveSlider(btn);
+
+        root.dataset.activeTab = btn.dataset.tabTarget;
+        switchTabContent(root, btn.dataset.tabTarget);
+    }
+
     moveSlider(activeBtn);
 
     buttons.forEach(btn => {
-        btn.addEventListener('mouseenter', () => {
-            buttons.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            moveSlider(btn);
-        });
+        btn.addEventListener('mouseenter', () => moveSlider(btn));
+        btn.addEventListener('mouseleave', () => moveSlider(activeBtn));
 
-        btn.addEventListener('mouseleave', () => {
-            buttons.forEach(b => b.classList.remove('active'));
-            activeBtn.classList.add('active');
-            moveSlider(activeBtn);
-        });
+        const isTabMode = Boolean(root && btn.dataset.tabTarget);
+        if (isTabMode) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                selectTab(btn);
+            });
+        }
     });
+
+    window.addEventListener('resize', () => moveSlider(activeBtn));
 }
 
 
@@ -565,17 +598,28 @@ function initSwipers() {
 
     if (!navElement || !aboutElement) return;
 
+    const globalProgress = section.querySelector(
+        '.swiper-global-progress__bar'
+    );
+
     const navSwiper = new Swiper(navElement, {
         direction: 'vertical',
 
         slidesPerView: 'auto',
-        spaceBetween: 0,
+        spaceBetween: 20,
+
+        // centeredSlides: true,
+        // centeredSlidesBounds: true,
 
         watchSlidesProgress: true,
 
-        allowTouchMove: false,
+        // allowTouchMove: false,
 
-        slideToClickedSlide: true,
+        // slideToClickedSlide: true,
+        speed: 700, // синхронизируем со скоростью aboutSwiper
+
+        observer: true,        // следит за изменениями DOM/размеров
+        observeParents: true,  // и за родительскими контейнерами тоже
     });
 
     const aboutSwiper = new Swiper(aboutElement, {
@@ -587,7 +631,7 @@ function initSwipers() {
         loop: true,
 
         autoplay: {
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
@@ -603,31 +647,78 @@ function initSwipers() {
 
         on: {
             slideChange: function (swiper) {
+                /*
+                 * Сбрасываем индивидуальные индикаторы.
+                 */
                 navSwiper.slides.forEach(function (slide) {
-                    slide.style.setProperty('--progress', '0%');
+                    const indicator = slide.querySelector(
+                        '.vertical-slider__timer-indicator'
+                    );
+
+                    if (!indicator) return;
+
+                    indicator.style.transform = 'scaleX(0)';
                 });
 
-                updateSwiperCounter(swiper, navSwiper, section);
+                /*
+                 * Сбрасываем общий индикатор.
+                 */
+                if (globalProgress) {
+                    globalProgress.style.transform = 'scaleX(0)';
+                }
+
+                updateSwiperCounter(
+                    swiper,
+                    navSwiper,
+                    section
+                );
             },
 
-            autoplayTimeLeft: function (swiper, timeLeft, percentage) {
-                const activeSlide = navSwiper.slides[navSwiper.activeIndex];
+            autoplayTimeLeft: function (
+                swiper,
+                timeLeft,
+                percentage
+            ) {
+                /*
+                 * Получаем именно реальный индекс,
+                 * потому что основной Swiper работает с loop.
+                 */
+                const activeIndex = swiper.realIndex;
+
+                const activeSlide =
+                    navSwiper.slides[activeIndex];
 
                 if (!activeSlide) return;
 
-                const progress = (1 - percentage) * 100;
+                const progress = 1 - percentage;
 
-                activeSlide.style.setProperty(
-                    '--progress',
-                    progress + '%'
-                );
+                /*
+                 * Индикатор конкретного пункта.
+                 */
+                const indicator =
+                    activeSlide.querySelector(
+                        '.vertical-slider__timer-indicator'
+                    );
+
+                if (indicator) {
+                    indicator.style.transform =
+                        `scaleX(${progress})`;
+                }
+
+                /*
+                 * Общий индикатор.
+                 */
+                if (globalProgress) {
+                    globalProgress.style.transform =
+                        `scaleX(${progress})`;
+                }
             },
         },
+
     });
 
     updateSwiperCounter(aboutSwiper, navSwiper, section);
 }
-
 
 function updateSwiperCounter(swiper, navSwiper, section) {
     const counter = section.querySelector('.js-swiper-counter');
@@ -637,7 +728,7 @@ function updateSwiperCounter(swiper, navSwiper, section) {
     const current = swiper.realIndex + 1;
     const total = navSwiper.slides.length;
 
-    counter.textContent = current + '/' + total;
+    counter.textContent = `${current}/${total}`;
 }
 
 

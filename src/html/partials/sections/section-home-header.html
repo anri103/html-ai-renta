@@ -1,0 +1,114 @@
+<header class="site-header">
+    <!-- desktop -->
+    <div class="site-header__desktop">
+        <div class="header-bar">
+            <div class="container">
+
+                <!-- logo -->
+                <div class="header-widget__logo">
+                    <a href="index.html">
+                        <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+                    </a>
+                </div>
+
+                <!-- navigation -->
+                <nav class="header-widget__navigation">
+                    <ul class="primary-nav" id="primaryNav">
+                        <li>
+                            <a href="#home1">
+                                <span>Как работает</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#home2">
+                                <span>Продавцам</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#home3">
+                                <span>Инвесторам</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#home4">
+                                <span>Вопрос-ответ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- sign-btn -->
+                <div class="header-widget__btns d-flex align-items-center gap-2">
+                    <a href="sign-in.html" class="btn btn-secondary">Войти</a>
+                    <a href="#" class="btn btn-primary">Создать паспорт</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- mobile -->
+    <div class="site-header__mobile">
+        <div class="header-bar">
+            <div class="container">
+                <div class="container-inner">
+
+                    <!-- logo -->
+                    <div class="header-widget__logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo/logo.svg" alt="Мобильные системы и технологии">
+                        </a>
+                    </div>
+    
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- mobile-toggler -->
+                        <button type="button" class="btn btn-secondary p-2" data-coreui-toggle="offcanvas" data-coreui-target="#offcanvasMobileMenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 17H19M5 12H19M5 7H19" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- offcanvasMobileMenu -->
+<div class="offcanvas offcanvas-top rounded-3" tabindex="-1" id="offcanvasMobileMenu">
+    <div class="offcanvas-header justify-content-between">
+        <a href="index.html">
+            <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+        </a>
+        <button type="button" class="btn btn-secondary p-2" data-coreui-dismiss="offcanvas" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-flex flex-column justify-content-between h-100">
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav" id="mobileNav">
+                    <li class="nav-item">
+                        <a href="#">Как работает</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Продавцам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Инвесторам</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Вопрос-ответ</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr class="border-neutral-300 opacity-100">
+            <div class="d-flex flex-column gap-2">
+                <a href="sign-in.html" class="btn btn-secondary w-100">Войти</a>
+                <a href="#" class="btn btn-primary w-100">Создать паспорт</a>
+            </div>
+        </div>
+    </div>
+</div>

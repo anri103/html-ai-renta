@@ -122,6 +122,21 @@
 .bg-gradient-primary {
     background: linear-gradient(180deg, #F8FAFC 0%, #E6EEFF 100%) !important;
 }
+.bg-gradient-dark {
+    background: linear-gradient(180deg, #434D6C 0%, #040407 100%) !important;
+}
+.bg-gradient-dark-light {
+    background: linear-gradient(360deg, #020204 0%, #9FB8FF 100%) !important;
+}
+.bg-gradient-purple {
+    background: linear-gradient(180deg, #96B2FF 0%, #7575B2 100%) !important;
+}
+.bg-gradient-lime {
+    background: linear-gradient(180deg, #D3F9E7 0%, #C8D6FF 100%) !important;
+}
+.bg-gradient-blue {
+    background: linear-gradient(180deg, #C7D6FF 0%, #D4EEFF 100%) !important;
+}
 
 .bg-img {
     background-position: 50% 50%;

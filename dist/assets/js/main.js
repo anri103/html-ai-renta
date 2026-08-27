@@ -550,6 +550,99 @@ function initAutocompleteExternalData() {
 
 /**
  * ==========================================================================
+ * Swiper Sliders
+ * ==========================================================================
+ */
+function initSwipers() {
+    if (typeof Swiper === 'undefined') return;
+
+    const section = document.querySelector('.section-home-slider');
+
+    if (!section) return;
+
+    const navElement = section.querySelector('.vertical-slider__nav');
+    const aboutElement = section.querySelector('.swiperAbout');
+
+    if (!navElement || !aboutElement) return;
+
+    const navSwiper = new Swiper(navElement, {
+        direction: 'vertical',
+
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+
+        watchSlidesProgress: true,
+
+        allowTouchMove: false,
+
+        slideToClickedSlide: true,
+    });
+
+    const aboutSwiper = new Swiper(aboutElement, {
+        slidesPerView: 1,
+        spaceBetween: 20,
+
+        speed: 700,
+
+        loop: true,
+
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        navigation: {
+            nextEl: '.section-home-slider .btn-swiper-next',
+            prevEl: '.section-home-slider .btn-swiper-prev',
+        },
+
+        thumbs: {
+            swiper: navSwiper,
+        },
+
+        on: {
+            slideChange: function (swiper) {
+                navSwiper.slides.forEach(function (slide) {
+                    slide.style.setProperty('--progress', '0%');
+                });
+
+                updateSwiperCounter(swiper, navSwiper, section);
+            },
+
+            autoplayTimeLeft: function (swiper, timeLeft, percentage) {
+                const activeSlide = navSwiper.slides[navSwiper.activeIndex];
+
+                if (!activeSlide) return;
+
+                const progress = (1 - percentage) * 100;
+
+                activeSlide.style.setProperty(
+                    '--progress',
+                    progress + '%'
+                );
+            },
+        },
+    });
+
+    updateSwiperCounter(aboutSwiper, navSwiper, section);
+}
+
+
+function updateSwiperCounter(swiper, navSwiper, section) {
+    const counter = section.querySelector('.js-swiper-counter');
+
+    if (!counter) return;
+
+    const current = swiper.realIndex + 1;
+    const total = navSwiper.slides.length;
+
+    counter.textContent = current + '/' + total;
+}
+
+
+/**
+ * ==========================================================================
  * Bootstrap: запуск всех модулей после готовности DOM
  * ==========================================================================
  */
@@ -566,6 +659,7 @@ function initApp() {
     initAutoCloseModal();
     initReadMore();
     initAutocompleteExternalData();
+    initSwipers();
 }
 
 if (document.readyState === 'loading') {

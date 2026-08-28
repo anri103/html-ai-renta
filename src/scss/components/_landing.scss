@@ -354,12 +354,6 @@
     .sliders-area {
         overflow: hidden;
     }
-
-    @include media-breakpoint-up(lg) {
-        .sliders-area {
-            height: 515px;
-        }
-    }
 }
 
 .swiper-global-progress {
@@ -387,13 +381,11 @@
 
 .vertical-slider {
     &__nav {
-        height: 515px;
-
-        .swiper-wrapper {
-            align-items: center;
-        }
+        // .swiper-wrapper {
+        //     align-items: center;
+        // }
         .swiper-slide {
-            height: auto;
+            height: 100%;
         }
     }
 

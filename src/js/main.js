@@ -603,9 +603,9 @@ function initSwipers() {
     );
 
     const navSwiper = new Swiper(navElement, {
-        direction: 'vertical',
+        // direction: 'vertical',
 
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         spaceBetween: 20,
 
         // centeredSlides: true,
@@ -631,7 +631,7 @@ function initSwipers() {
         loop: true,
 
         autoplay: {
-            delay: 10000,
+            delay: 15000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },

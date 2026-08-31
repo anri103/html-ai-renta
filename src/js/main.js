@@ -172,6 +172,23 @@ function setupTabSlider(group) {
     window.addEventListener('resize', () => moveSlider(activeBtn));
 }
 
+document.querySelectorAll('#primaryNav a[data-tab], #mobileNav a[data-tab]').forEach(link => {
+    link.addEventListener('click', () => {
+        const tab = link.dataset.tab;
+        const target = document.querySelector('.section-home-tabs');
+
+        if (!target) return;
+
+        const button = target.querySelector(
+            `.tab-btn[data-tab-target="${tab}"]`
+        );
+
+        if (button) {
+            button.click();
+        }
+    });
+});
+
 
 /**
  * ==========================================================================
@@ -721,14 +738,72 @@ function initSwipers() {
 }
 
 function updateSwiperCounter(swiper, navSwiper, section) {
-    const counter = section.querySelector('.js-swiper-counter');
+    const counters = section.querySelectorAll('.js-swiper-counter');
 
-    if (!counter) return;
+    if (!counters.length) return;
 
     const current = swiper.realIndex + 1;
     const total = navSwiper.slides.length;
 
-    counter.textContent = `${current}/${total}`;
+    counters.forEach(function (counter) {
+        counter.textContent = `${current}/${total}`;
+    });
+}
+
+//////////////////////////////////////////////////////////////////
+// [ Fixed Header ]
+
+function initFixedHeader() {
+    const header = document.querySelector('.container-desktop-inner');
+    if (!header) return;
+
+    window.addEventListener('scroll', function () {
+        header.classList.toggle('js-fixed', window.scrollY > 50);
+    });
+}
+
+//////////////////////////////////////////////////////////////////
+// [ Landing Close Offcanvas after click link mobile menu ]
+
+function initCloseOffcanvas() {
+    const scrollToTarget = (target) => {
+        const y = target.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    };
+
+    const offcanvasEl = document.getElementById('offcanvasMobileMenu');
+
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest(
+            '#primaryNav a[href*="#"], #mobileNav a[href*="#"]'
+        );
+        if (!link) return;
+
+        const hash = link.hash;
+        if (!hash) return;
+
+        let target;
+        try {
+            target = document.querySelector(hash);
+        } catch {
+            return;
+        }
+        if (!target) return;
+
+        e.preventDefault();
+
+        const offcanvas = offcanvasEl && coreui.OffCanvas.getInstance(offcanvasEl);
+
+        if (offcanvas && offcanvasEl.classList.contains('show')) {
+            offcanvasEl.addEventListener('hidden.coreui.offcanvas', () => {
+                scrollToTarget(target);
+            }, { once: true });
+
+            offcanvas.hide();
+        } else {
+            scrollToTarget(target);
+        }
+    });
 }
 
 
@@ -751,6 +826,8 @@ function initApp() {
     initReadMore();
     initAutocompleteExternalData();
     initSwipers();
+    initFixedHeader();
+    initCloseOffcanvas();
 }
 
 if (document.readyState === 'loading') {

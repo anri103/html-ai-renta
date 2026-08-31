@@ -3,46 +3,48 @@
     <div class="site-header__desktop">
         <div class="header-bar">
             <div class="container">
+                <div class="container-desktop-inner">
 
-                <!-- logo -->
-                <div class="header-widget__logo">
-                    <a href="index.html">
-                        <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
-                    </a>
+                    <!-- logo -->
+                    <div class="header-widget__logo">
+                        <a href="index.html">
+                            <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+    
+                    <!-- navigation -->
+                    <nav class="header-widget__navigation">
+                        <ul class="primary-nav" id="primaryNav">
+                            <li>
+                                <a href="#homeSlider">
+                                    <span>Как работает</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#homeTabs" data-tab="sell">
+                                    <span>Продавцам</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#homeTabs" data-tab="buy">
+                                    <span>Инвесторам</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#homeFaq">
+                                    <span>Вопрос-ответ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <!-- sign-btn -->
+                    <div class="header-widget__btns d-flex align-items-center gap-2">
+                        <a href="sign-in.html" class="btn btn-secondary">Войти</a>
+                        <a href="#" class="btn btn-primary">Создать паспорт</a>
+                    </div>
+
                 </div>
-
-                <!-- navigation -->
-                <nav class="header-widget__navigation">
-                    <ul class="primary-nav" id="primaryNav">
-                        <li>
-                            <a href="#home1">
-                                <span>Как работает</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home2">
-                                <span>Продавцам</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home3">
-                                <span>Инвесторам</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home4">
-                                <span>Вопрос-ответ</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!-- sign-btn -->
-                <div class="header-widget__btns d-flex align-items-center gap-2">
-                    <a href="sign-in.html" class="btn btn-secondary">Войти</a>
-                    <a href="#" class="btn btn-primary">Создать паспорт</a>
-                </div>
-
             </div>
         </div>
     </div>
@@ -91,16 +93,16 @@
             <nav class="mobile-navigation">
                 <ul class="mobile-nav" id="mobileNav">
                     <li class="nav-item">
-                        <a href="#">Как работает</a>
+                        <a href="#homeSlider">Как работает</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Продавцам</a>
+                        <a href="#homeTabs" data-tab="sell">Продавцам</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Инвесторам</a>
+                        <a href="#homeTabs" data-tab="buy">Инвесторам</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Вопрос-ответ</a>
+                        <a href="#homeFaq">Вопрос-ответ</a>
                     </li>
                 </ul>
             </nav>

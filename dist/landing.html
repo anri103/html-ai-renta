@@ -49,46 +49,48 @@
     <div class="site-header__desktop">
         <div class="header-bar">
             <div class="container">
+                <div class="container-desktop-inner">
 
-                <!-- logo -->
-                <div class="header-widget__logo">
-                    <a href="index.html">
-                        <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
-                    </a>
+                    <!-- logo -->
+                    <div class="header-widget__logo">
+                        <a href="index.html">
+                            <img class="app-logo" src="assets/img/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+    
+                    <!-- navigation -->
+                    <nav class="header-widget__navigation">
+                        <ul class="primary-nav" id="primaryNav">
+                            <li>
+                                <a href="#homeSlider">
+                                    <span>Как работает</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#homeTabs" data-tab="sell">
+                                    <span>Продавцам</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#homeTabs" data-tab="buy">
+                                    <span>Инвесторам</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#homeFaq">
+                                    <span>Вопрос-ответ</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <!-- sign-btn -->
+                    <div class="header-widget__btns d-flex align-items-center gap-2">
+                        <a href="sign-in.html" class="btn btn-secondary">Войти</a>
+                        <a href="#" class="btn btn-primary">Создать паспорт</a>
+                    </div>
+
                 </div>
-
-                <!-- navigation -->
-                <nav class="header-widget__navigation">
-                    <ul class="primary-nav" id="primaryNav">
-                        <li>
-                            <a href="#home1">
-                                <span>Как работает</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home2">
-                                <span>Продавцам</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home3">
-                                <span>Инвесторам</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#home4">
-                                <span>Вопрос-ответ</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <!-- sign-btn -->
-                <div class="header-widget__btns d-flex align-items-center gap-2">
-                    <a href="sign-in.html" class="btn btn-secondary">Войти</a>
-                    <a href="#" class="btn btn-primary">Создать паспорт</a>
-                </div>
-
             </div>
         </div>
     </div>
@@ -137,16 +139,16 @@
             <nav class="mobile-navigation">
                 <ul class="mobile-nav" id="mobileNav">
                     <li class="nav-item">
-                        <a href="#">Как работает</a>
+                        <a href="#homeSlider">Как работает</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Продавцам</a>
+                        <a href="#homeTabs" data-tab="sell">Продавцам</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Инвесторам</a>
+                        <a href="#homeTabs" data-tab="buy">Инвесторам</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#">Вопрос-ответ</a>
+                        <a href="#homeFaq">Вопрос-ответ</a>
                     </li>
                 </ul>
             </nav>
@@ -176,13 +178,13 @@
 
             <div class="col-span-24 col-span-md-11 col-span-lg-6 d-none d-lg-block">
                 <div class="rounded-neutral-wrapper overflow-hidden p-0 h-100">
-                    <img class="object-fit-cover w-100 h-100" src="assets/img/landing/hero.jpg" alt="">
+                    <img class="object-fit-cover w-100 h-100" src="assets/img/landing/hero.png" alt="">
                 </div>
             </div>
 
             <div class="col-span-24 col-span-md-13 col-span-lg-9">
                 <div class="rounded-neutral-wrapper overflow-hidden p-0 h-100">
-                    <img class="object-fit-cover w-100 h-100" src="assets/img/landing/hero-1.jpg" alt="">
+                    <img class="object-fit-cover w-100 h-100" src="assets/img/landing/hero-1.png" alt="">
                     <div class="position-absolute bottom-0 m-6">
                         <div class="d-flex align-items-center gap-2 rounded bg-white p-3 p-xl-6">
                             <div class="fw-500">Скачать пример Экономического паспорта и Экспресс-анализа</div>
@@ -281,12 +283,31 @@
 
             <!-- section-home-slider -->
             <section class="section section-home-slider">
+    <div class="section__anchor" id="homeSlider"></div>
     <div class="container container-wide">
         <div class="rounded-neutral-wrapper bg-gradient-primary">
             <div class="container gx-0">
 
                 <div class="d-flex align-items-center justify-content-between gap-2 mb-6">
                     <h2 class="h2 fw-700 mb-0">Как работает ИИ&nbsp;Рента</h2>
+
+                    <div class="d-lg-none">
+                        <div class="d-flex align-items-center gap-6 mt-3">
+                            <div class="fs-4 text-gray-50 js-swiper-counter">1/5</div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn-swiper-prev btn btn-secondary p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn-swiper-next btn btn-secondary p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="swiper-global-progress">
@@ -310,7 +331,7 @@
                                         <div class="vertical-slider__timer-indicator"></div>
                                         <div class="h4 fw-600 mb-4">2. Получите бесплатную проверку данных от ИИ Ренты</div>
                                         <div class="text-box text-gray-60">
-                                            <p>Перед расчётом ИИ Рента проверит, насколько полно и корректно заполнена информация об объекте, укажет на возможные неточности и предложит рекомендации.</p>
+                                            <p>Перед расчётом ИИ&nbsp;Рента проверит, насколько полно и корректно заполнена информация об объекте, укажет на возможные неточности и предложит рекомендации.</p>
                                             <p>Вы сможете задать нейросети дополнительные вопросы, уточнить спорные моменты и внести изменения в данные прямо перед созданием документов</p>
                                         </div>
                                     </div>
@@ -318,7 +339,7 @@
                                         <div class="vertical-slider__timer-indicator"></div>
                                         <div class="h4 fw-600 mb-4">3. Сформируйте Экономический паспорт и Экспресс-анализ</div>
                                         <div class="text-box text-gray-60">
-                                            <p>После проверки данных ИИ Рента сформирует два документа:</p>
+                                            <p>После проверки данных ИИ&nbsp;Рента сформирует два документа:</p>
                                             <p>Экономический паспорт — с ключевыми финансовыми показателями объекта.</p>
                                             <p>Экспресс ИИ-анализ — с оценкой доходности, рисков, ликвидности и инвестиционного потенциала.</p>
                                             <p>После формирования документов вы сможете задать Ренте дополнительные вопросы по расчётам, выводам и рекомендациям</p>
@@ -361,7 +382,7 @@
                                         <div class="d-lg-none mb-6">
                                             <div class="h4 fw-600 mb-4">2. Получите бесплатную проверку данных от ИИ Ренты</div>
                                             <div class="text-box text-gray-60">
-                                                <p>Перед расчётом ИИ Рента проверит, насколько полно и корректно заполнена информация об объекте, укажет на возможные неточности и предложит рекомендации.</p>
+                                                <p>Перед расчётом ИИ&nbsp;Рента проверит, насколько полно и корректно заполнена информация об объекте, укажет на возможные неточности и предложит рекомендации.</p>
                                                 <p>Вы сможете задать нейросети дополнительные вопросы, уточнить спорные моменты и внести изменения в данные прямо перед созданием документов</p>
                                             </div>
                                         </div>
@@ -372,7 +393,7 @@
                                         <div class="d-lg-none mb-6">
                                             <div class="h4 fw-600 mb-4">3. Сформируйте Экономический паспорт и Экспресс-анализ</div>
                                             <div class="text-box text-gray-60">
-                                                <p>После проверки данных ИИ Рента сформирует два документа:</p>
+                                                <p>После проверки данных ИИ&nbsp;Рента сформирует два документа:</p>
                                                 <p>Экономический паспорт — с ключевыми финансовыми показателями объекта.</p>
                                                 <p>Экспресс ИИ-анализ — с оценкой доходности, рисков, ликвидности и инвестиционного потенциала.</p>
                                                 <p>После формирования документов вы сможете задать Ренте дополнительные вопросы по расчётам, выводам и рекомендациям</p>
@@ -409,20 +430,22 @@
                     </div>
                 </div>
 
-                <div class="d-flex align-items-center gap-6 mt-3">
-                    <div class="d-flex gap-2">
-                        <button type="button" class="btn-swiper-prev btn btn-secondary p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                        <button type="button" class="btn-swiper-next btn btn-secondary p-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
+                <div class="d-none d-lg-block">
+                    <div class="d-flex align-items-center gap-6 mt-3">
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn-swiper-prev btn btn-secondary p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="btn-swiper-next btn btn-secondary p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="fs-4 text-gray-50 js-swiper-counter">1/5</div>
                     </div>
-                    <div class="fs-4 text-gray-50 js-swiper-counter">1/5</div>
                 </div>
 
             </div>
@@ -432,6 +455,7 @@
 
             <!-- section-home-tabs -->
             <section class="section section-home-tabs" data-active-tab="sell">
+    <div class="section__anchor" id="homeTabs"></div>
     <div class="container">
         <div class="d-grid grid-cols-1 grid-cols-lg-2 gap-3 gap-md-6">
             <!-- col -->
@@ -534,10 +558,10 @@
                         <div class="d-flex flex-column justify-content-between gap-6 gap-md-4 h-100">
                             <div class="order-lg-last">
                                 <div data-tab="sell">
-                                    <img class="feature-img" src="assets/img/landing/feature-4.png" alt="">
+                                    <img class="feature-img feature-img-big" src="assets/img/landing/feature-4.png" alt="">
                                 </div>
                                 <div data-tab="buy">
-                                    <img class="feature-img" src="assets/img/landing/feature-buy-4.png" alt="">
+                                    <img class="feature-img feature-img-big" src="assets/img/landing/feature-buy-4.png" alt="">
                                 </div>
                             </div>
                             <div>
@@ -567,10 +591,10 @@
                             </div>
                             <div>
                                 <div data-tab="sell">
-                                    <img class="feature-img" src="assets/img/landing/feature-5.png" alt="">
+                                    <img class="feature-img feature-img-big" src="assets/img/landing/feature-5.png" alt="">
                                 </div>
                                 <div data-tab="buy">
-                                    <img class="feature-img" src="assets/img/landing/feature-buy-5.png" alt="">
+                                    <img class="feature-img feature-img-big" src="assets/img/landing/feature-buy-5.png" alt="">
                                 </div>
                             </div>
                             <div>
@@ -591,6 +615,8 @@
 
             <!-- section-home-faq -->
             <section class="section section-home-faq">
+    <div class="section__anchor" id="homeFaq"></div>
+
     <div class="container">
         <div class="rounded-neutral-wrapper bg-gradient-primary h-100">
 
@@ -776,7 +802,7 @@
                     <div id="faq-answer-7" class="accordion-collapse collapse" data-coreui-parent="#accordionFaq">
                         <div class="accordion-body">
                             <p>В Excel или онлайн-калькуляторе можно самостоятельно рассчитать отдельные финансовые показатели.</p>
-                            <p>ИИ Рента объединяет в одном сервисе профессиональный чек-лист, финансовую модель, проверку исходных данных, анализ объекта, здания, арендаторов, договоров, доходов, расходов и рисков. В результате вы получаете не набор разрозненных расчётов, а готовый Экономический паспорт и Экспресс-анализ для принятия решения или проведения переговоров.</p>
+                            <p>ИИ&nbsp;Рента объединяет в одном сервисе профессиональный чек-лист, финансовую модель, проверку исходных данных, анализ объекта, здания, арендаторов, договоров, доходов, расходов и рисков. В результате вы получаете не набор разрозненных расчётов, а готовый Экономический паспорт и Экспресс-анализ для принятия решения или проведения переговоров.</p>
                         </div>
                     </div>
                 </div>
@@ -885,6 +911,8 @@
 
             <!-- section-home-cta -->
             <section class="section section-home-cta">
+    <div class="section__anchor" id="homeCta"></div>
+
     <div class="container container-wide">
 
         <!-- mobile -->
@@ -893,7 +921,7 @@
                 <img class="img-fluid" src="assets/img/landing/cta-mob.jpg" alt="">
                 <div class="bg-gradient-dark rounded-3 p-5">
                     <div class="text-white h4 fw-700 mb-2">Оцените объект на основе реальных показателей</div>
-                    <div class="text-gray-30">Заполните данные об&nbsp;объекте&nbsp;— ИИ Рента рассчитает ключевые показатели и&nbsp;сформирует Экономический паспорт для&nbsp;оценки доходности, окупаемости и&nbsp;рисков</div>
+                    <div class="text-gray-30">Заполните данные об&nbsp;объекте&nbsp;— ИИ&nbsp;Рента рассчитает ключевые показатели и&nbsp;сформирует Экономический паспорт для&nbsp;оценки доходности, окупаемости и&nbsp;рисков</div>
                     <div class="d-flex flex-column gap-2 mt-6">
                         <a href="#" class="btn btn-primary w-100">Создать экономический паспорт</a>
                         <a href="#" class="btn btn-secondary w-100">Скачать пример</a>
@@ -910,7 +938,7 @@
                     <div class="row g-0">
                         <div class="col-md-11 ms-auto">
                             <div class="text-white h1 fw-700 mb-4">Оцените объект на основе реальных показателей</div>
-                            <div class="text-gray-30">Заполните данные об&nbsp;объекте&nbsp;— ИИ Рента рассчитает ключевые показатели и&nbsp;сформирует Экономический паспорт для&nbsp;оценки доходности, окупаемости и&nbsp;рисков</div>
+                            <div class="text-gray-30">Заполните данные об&nbsp;объекте&nbsp;— ИИ&nbsp;Рента рассчитает ключевые показатели и&nbsp;сформирует Экономический паспорт для&nbsp;оценки доходности, окупаемости и&nbsp;рисков</div>
                             <div class="d-flex flex-wrap gap-2 mt-7">
                                 <a href="#" class="btn btn-secondary w-100 w-xl-auto">Скачать пример</a>
                                 <a href="#" class="btn btn-primary w-100 w-xl-auto">Создать экономический паспорт</a>

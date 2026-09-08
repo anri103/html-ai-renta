@@ -675,6 +675,15 @@
         }
     }
 
+    @include media-breakpoint-down(sm) {
+        &__body {
+            flex-wrap: wrap;
+        }
+        &__btn {
+            flex: 1 1 100%;
+        }
+    }
+
     @include media-breakpoint-up(md) {
         padding: 20px;
 
